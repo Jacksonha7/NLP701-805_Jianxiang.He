@@ -10,10 +10,10 @@ Visual-only keyframe searchers (T\*, VSLS) cannot handle text-related tasks. Alt
 
 ## To-do
  
-- [ ] Fix the VSI bugs above and align the code with the paper formulas
-- [ ] Fix the Logic-in-Frames hard-coded paths and environment files
-- [ ] Single evaluation script for all search metrics
-- [ ] Re-run T\*, VSLS and VSI with the fixed code and compare against the paper numbers
+- [x] Fix the VSI bugs above and align the code with the paper formulas
+- [x] Fix the Logic-in-Frames hard-coded paths and environment files
+- [x] Single evaluation script for all search metrics
+- [x] Re-run T\*, VSLS and VSI with the fixed code and compare against the paper numbers
 - [ ] Encoder ablation: MiniLM, MPNet, BGE (weeks 8–10)
 - [ ] Error analysis of the text-referred questions that are still missed (weeks 11–12)
 - [ ] Text weight chosen per question instead of per task type (weeks 13–14, if time allows)
