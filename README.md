@@ -15,6 +15,7 @@ At present, there are still several issues that need to be studied:
 
 ## Overleaf Link
 - [Project](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
+- [Proposal](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 - [Assignment 1](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 
 ## Document Description
