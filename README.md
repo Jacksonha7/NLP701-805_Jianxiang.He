@@ -13,6 +13,12 @@ At present, there are still several issues that need to be studied:
 - [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) (VSI, CVPR 2026 Findings): the main system. I rebuilt the environment and ran keyframe search end-to-end on a real video.
 - [Logic-in-Frames](https://github.com/guoweiyu/Logic-in-Frames) (VSLS, NeurIPS 2025): the visual-only baseline with logical relations between objects.
 
+## Overleaf Link
+- [Project](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
+- [Assignment 1](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
+
+## Document Description
+
 ## To-do
  
 - [x] Fix the VSI bugs above and align the code with the paper formulas
