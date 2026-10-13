@@ -17,6 +17,7 @@ At present, there are still several issues that need to be studied:
 - [Project](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 - [Proposal](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 - [Assignment 1](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
+- [Mid-Term Report](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 
 ## Document Description
 
