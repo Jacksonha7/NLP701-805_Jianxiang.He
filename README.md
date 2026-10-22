@@ -38,14 +38,16 @@ python Keyframe_Matching.py --input_json reproduced/VSI_PTonly_LongVideoBench_gp
 - **160 vs. 220 questions:** the subset has 220 questions, but in each file 60 of them have no keyframe output.
   `Keyframe_Matching.py` leaves these questions out, so its numbers use 160 questions.
 
-## Overleaf Link
+## 4.New features added
+
+## 5.Overleaf Link
 - [Project](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 - [Proposal](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 - [Assignment 1](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 - [Mid-Term Report](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 
 
-## To-do
+## 6.To-do
  
 - [x] Reproduce the keyframe_search function of VSI
 - [ ] Encoder ablation: MiniLM, MPNet, BGE (weeks 8–10)
