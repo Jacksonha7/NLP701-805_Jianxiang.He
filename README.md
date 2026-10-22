@@ -35,6 +35,11 @@ python Keyframe_Matching.py --input_json reproduced/VSI_PTonly_LongVideoBench_gp
 | VSLS | Visual + logic | 20.62% (33/160) | 15.00% (33/220) | 4.22% (54/1280) |
 | **VSI** | Visual + subtitle | **45.00%** (72/160) | **32.73%** (72/220) | **14.61%** (187/1280) |
 
+- **Video-level acc.** is the share of questions where at least one of the 8 keyframes is a hit.
+  This is the "overall match rate" that `Keyframe_Matching.py` prints.
+- **Frame-level acc.** is the number of hit keyframes divided by the total number of returned keyframes (160 × 8 = 1280).
+- **160 vs. 220 questions:** the subset has 220 questions, but in each file 60 of them have no keyframe output.
+  `Keyframe_Matching.py` leaves these questions out, so its numbers use 160 questions.
 
 ## Overleaf Link
 - [Project](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
