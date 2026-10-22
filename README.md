@@ -1,7 +1,7 @@
 # Textual Semantic Matching for Keyframe Search in Long-Video Understanding
 
 ## 1.Why
-Visual-only keyframe searchers (T\*, VSLS) cannot handle text-related tasks. Although the VSI method that utilizes text information has achieved certain improvements in text-related tasks, it still has not solved all the problems.
+Visual-only keyframe searchers cannot handle text-related tasks. Although the VSI method that utilizes text information has achieved certain improvements in text-related tasks, it still has not solved all the problems.
 
 ## 2.Problem
 At present, there are still several issues that need to be studied: 
@@ -22,14 +22,12 @@ if it lies within 200 frames of a ground-truth position
 
 ```bash
 python Keyframe_Matching.py --input_json reproduced/Tstar_PTonly_LongVideoBench_gpt4_cot_vid1.json --num_frame 8 --threshold 200
-python Keyframe_Matching.py --input_json reproduced/VSLS_PTonly_LongVideoBench_gpt4_cot_vid1.json  --num_frame 8 --threshold 200
 python Keyframe_Matching.py --input_json reproduced/VSI_PTonly_LongVideoBench_gpt4_cot_vid1.json   --num_frame 8 --threshold 200
 ```
 
 | Method | Modality | Video-level acc. (160 Qs) | Video-level acc. (all 220 Qs) | Frame-level acc. |
 |---|---|---|---|---|
 | T\* | Visual | 23.12% (37/160) | 16.82% (37/220) | 5.55% (71/1280) |
-| VSLS | Visual + logic | 20.62% (33/160) | 15.00% (33/220) | 4.22% (54/1280) |
 | **VSI** | Visual + subtitle | **45.00%** (72/160) | **32.73%** (72/220) | **14.61%** (187/1280) |
 
 - **Video-level acc.** is the share of questions where at least one of the 8 keyframes is a hit.
