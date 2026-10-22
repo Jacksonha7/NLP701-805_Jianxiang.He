@@ -29,7 +29,11 @@ python Keyframe_Matching.py --input_json reproduced/VSLS_PTonly_LongVideoBench_g
 python Keyframe_Matching.py --input_json reproduced/VSI_PTonly_LongVideoBench_gpt4_cot_vid1.json   --num_frame 8 --threshold 200
 ```
 
-
+| Method | Modality | Video-level acc. (160 Qs) | Video-level acc. (all 220 Qs) | Frame-level acc. |
+|---|---|---|---|---|
+| T\* | Visual | 23.12% (37/160) | 16.82% (37/220) | 5.55% (71/1280) |
+| VSLS | Visual + logic | 20.62% (33/160) | 15.00% (33/220) | 4.22% (54/1280) |
+| **VSI** | Visual + subtitle | **45.00%** (72/160) | **32.73%** (72/220) | **14.61%** (187/1280) |
 
 
 ## Overleaf Link
