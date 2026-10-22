@@ -9,7 +9,6 @@ At present, there are still several issues that need to be studied:
 - Could we make better use of the text information rather than simply conducting a search similar to "control F"?
 
 ## 3.Reproduced repositories
- 
 - [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) (VSI, CVPR 2026 Findings): the main system. I rebuilt the environment and ran keyframe search end-to-end on a real video.
 - [Logic-in-Frames](https://github.com/guoweiyu/Logic-in-Frames) (VSLS, NeurIPS 2025): the visual-only baseline with logical relations between objects.
 
@@ -39,8 +38,6 @@ python Keyframe_Matching.py --input_json reproduced/VSI_PTonly_LongVideoBench_gp
 - [Assignment 1](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 - [Mid-Term Report](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
 
-## Document Description
-[Reproducibility Results Document](https://drive.google.com/file/d/1RzoOcrgSveEaJ2TCmqgzNX3f_AUM4Vyj/view?usp=sharing): All the replicated results are stored in this compressed file. You can obtain the experimental results by running the keyframe_matching.py script in the code repository.
 
 ## To-do
  
