@@ -16,10 +16,7 @@ At present, there are still several issues that need to be studied:
 **Step1:** 
 you need to configure the environment according to the code in the original [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) code repository and [Logic-in-Frames](https://github.com/guoweiyu/Logic-in-Frames) code respository and download the [LongVideoBench](https://huggingface.co/datasets/longvideobench/LongVideoBench) dataset.
 
-**Step2:** 
-
-
-**Step3：** Use `Keyframe_Matching.py` to evaluate the three files in `reproduced/`.
+**Step2：** Use `Keyframe_Matching.py` to evaluate the three files in `reproduced/`.
 Each method returns the top 8 keyframes per question. A keyframe counts as a hit
 if it lies within 200 frames of a ground-truth position
 
