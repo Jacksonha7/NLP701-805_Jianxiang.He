@@ -14,7 +14,10 @@ At present, there are still several issues that need to be studied:
 - [Logic-in-Frames](https://github.com/guoweiyu/Logic-in-Frames) (VSLS, NeurIPS 2025): the visual-only baseline with logical relations between objects.
 
 ### 3.1 Reproduction process
-Step1: you need to configure the environment according to the code in the original [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) code repository and download the [LongVideoBench](https://huggingface.co/datasets/longvideobench/LongVideoBench) dataset.
+**Step1:** you need to configure the environment according to the code in the original [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) code repository and download the [LongVideoBench](https://huggingface.co/datasets/longvideobench/LongVideoBench) dataset.
+
+**Step2:** 
+
 
 
 ## Overleaf Link
