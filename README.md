@@ -1,17 +1,21 @@
 # Textual Semantic Matching for Keyframe Search in Long-Video Understanding
 
-## Why
+## 1.Why
 Visual-only keyframe searchers (T\*, VSLS) cannot handle text-related tasks. Although the VSI method that utilizes text information has achieved certain improvements in text-related tasks, it still has not solved all the problems.
 
-## Problem
+## 2.Problem
 At present, there are still several issues that need to be studied: 
 - VSI has increased the accuracy rate of locating the key frames for text-related problems to 45%, but this figure is still very low. What is the reason for this? Can further improvements be made in text positioning?
 - Could we make better use of the text information rather than simply conducting a search similar to "control F"?
 
-## Reproduced repositories
+## 3.Reproduced repositories
  
 - [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) (VSI, CVPR 2026 Findings): the main system. I rebuilt the environment and ran keyframe search end-to-end on a real video.
 - [Logic-in-Frames](https://github.com/guoweiyu/Logic-in-Frames) (VSLS, NeurIPS 2025): the visual-only baseline with logical relations between objects.
+
+### 3.1 Reproduction process
+Step1: you need to configure the environment according to the code in the original [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) code repository and download the [LongVideoBench](https://huggingface.co/datasets/longvideobench/LongVideoBench) dataset.
+
 
 ## Overleaf Link
 - [Project](https://www.overleaf.com/read/spfjgfpsbsdr#e336e6)
