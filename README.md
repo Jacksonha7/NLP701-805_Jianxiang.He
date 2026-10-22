@@ -14,9 +14,22 @@ At present, there are still several issues that need to be studied:
 - [Logic-in-Frames](https://github.com/guoweiyu/Logic-in-Frames) (VSLS, NeurIPS 2025): the visual-only baseline with logical relations between objects.
 
 ### 3.1 Reproduction process
-**Step1:** you need to configure the environment according to the code in the original [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) code repository and download the [LongVideoBench](https://huggingface.co/datasets/longvideobench/LongVideoBench) dataset.
+**Step1:** 
+you need to configure the environment according to the code in the original [Visual-Subtitle-Integration](https://github.com/Jacksonha7/Visual-Subtitle-Integration) code repository and download the [LongVideoBench](https://huggingface.co/datasets/longvideobench/LongVideoBench) dataset.
 
 **Step2:** 
+
+
+**Step3：** Use `Keyframe_Matching.py` to evaluate the three files in `reproduced/`.
+Each method returns the top 8 keyframes per question. A keyframe counts as a hit
+if it lies within 200 frames of a ground-truth position
+
+```bash
+python Keyframe_Matching.py --input_json reproduced/Tstar_PTonly_LongVideoBench_gpt4_cot_vid1.json --num_frame 8 --threshold 200
+python Keyframe_Matching.py --input_json reproduced/VSLS_PTonly_LongVideoBench_gpt4_cot_vid1.json  --num_frame 8 --threshold 200
+python Keyframe_Matching.py --input_json reproduced/VSI_PTonly_LongVideoBench_gpt4_cot_vid1.json   --num_frame 8 --threshold 200
+```
+
 
 
 
