@@ -45,10 +45,10 @@ class SubtitleVariantFramework(MultimodalTStarFramework):
         self.q, self.args, self.scorer = question, args, scorer
 
     def _compute_text_similarity_scores(self) -> np.ndarray:
-        subs = self.q.subtitles(fix_offset=False)
+        subs = self.q.subtitles(fix_offset=self.args.fix_offset)
         if self.scorer is None or not subs:
             return np.zeros(self.total_frame_num)
-        query = self.q.question
+        query = (self.q.quote or self.q.question) if self.args.query == "quote" else self.q.question
         lines = [s.text for s in subs]
         if self.args.scorer == "mpnet":
             sims = self.text_calculator._compute_text_similarities(query, lines)
@@ -83,6 +83,8 @@ def main():
         "yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py"))
     ap.add_argument("--checkpoint_path", default="/l/users/jianxiang.he/YOLO-World/weights/s_stage1-d1c1d7d8.pth")
     ap.add_argument("--scorer", default="mpnet", choices=["none", *DENSE_MODELS, "bm25"])
+    ap.add_argument("--query", default="full", choices=["full", "quote"])
+    ap.add_argument("--fix_offset", action="store_true")
     ap.add_argument("--text_weight", type=float, default=0.3)
     ap.add_argument("--theta", type=float, default=0.5, help="soft-threshold knee (VSI default 0.5)")
     ap.add_argument("--search_nframes", type=int, default=8)
