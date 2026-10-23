@@ -8,9 +8,7 @@ from typing import List, Optional, Tuple
 
 DATA_ROOT = "/nfs-stor/jianxiang.he/continual-vsi/data/LongVideoBench"
 TEXT_CATEGORIES = ("T2A", "T2E", "T2O")
-POSITION_FPS = 24.0
-# Search accuracy counts a hit within 200 frames of a ground-truth keyframe.
-TOLERANCE_S = 200 / POSITION_FPS
+TOLERANCE_S = 8.33
 
 QUOTE_RE = re.compile(r"['\"“‘](.{6,}?)['\"”’](?=[\s?,.]|$)")
 
@@ -90,7 +88,7 @@ def load_questions(root: str = DATA_ROOT,
             duration=float(it["duration"]),
             duration_group=int(it["duration_group"]),
             sub_offset=float(it["starting_timestamp_for_subtitles"]),
-            gt_secs=[p / POSITION_FPS for p in it["position"]],
+            gt_secs=[p / 24 for p in it["position"]],
             candidates=list(it["candidates"]),
         )
         q.subtitles_raw = load_subtitles(os.path.join(root, "subtitles", it["subtitle_path"]))
