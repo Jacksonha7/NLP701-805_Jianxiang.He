@@ -1,0 +1,42 @@
+{
+  "command": "/home/jianxiang.he/.conda/envs/vsi/bin/python nlp805/run_fused_search.py --name mpnet_quote --out_dir /home/jianxiang.he/Project/Visual-Subtitle-Integration/nlp805/experiments/exp2_query/outputs --tmp_dir /home/jianxiang.he/Project/Visual-Subtitle-Integration/nlp805/experiments/exp2_query/outputs/score_history/mpnet_quote --device cuda:1 --query quote --scorer mpnet --text_weight 0.3 --theta 0.5 --search_nframes 8 --seed 0 --qid_seed --grid_fix",
+  "args": {
+    "name": "mpnet_quote",
+    "out_dir": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/nlp805/experiments/exp2_query/outputs",
+    "grounding_json": "/nfs-stor/jianxiang.he/nlp805/frame_search/MVSLS_0_w0.3_rel0.0_LongVideoBench_gpt4_cot_all.json",
+    "grounding_fallback": [
+      "/nfs-stor/jianxiang.he/nlp805/frame_search/KFS_UNI_0_F32_rel0.0_PTonly_LongVideoBench_gpt4_cot_vid1.json",
+      "/nfs-stor/jianxiang.he/nlp805/grounding/qwen3vl8b.json"
+    ],
+    "config_path": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/third_party/YOLO-World/configs/pretrain/yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py",
+    "checkpoint_path": "/l/users/jianxiang.he/YOLO-World/weights/s_stage1-d1c1d7d8.pth",
+    "scorer": "mpnet",
+    "query": "quote",
+    "fix_offset": false,
+    "grid_fix": true,
+    "text_weight": 0.3,
+    "theta": 0.5,
+    "groups": null,
+    "qid_seed": true,
+    "search_nframes": 8,
+    "device": "cuda:1",
+    "seed": 0,
+    "limit": 0,
+    "only": null,
+    "tmp_dir": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/nlp805/experiments/exp2_query/outputs/score_history/mpnet_quote"
+  },
+  "text_encoder": "sentence-transformers/all-mpnet-base-v2",
+  "git_commit": "c65be4b6852b8596924a741063cf6e6725b0767f",
+  "source_sha256": {
+    "VSI_keyframe_search.py": "36077b03ecaae4ee",
+    "TStar/interface_searcher.py": "485da5b71eb60ec0",
+    "TStar/interface_yolo.py": "8f01448a73b19205",
+    "nlp805/run_fused_search.py": "64f254effa71ea59",
+    "nlp805/data.py": "663a0fec50dd3b8b",
+    "nlp805/retrievers.py": "caa1083d7e1966f7"
+  },
+  "host": "gpu-46",
+  "slurm_job_id": "336181",
+  "cuda_visible_devices": "0,1",
+  "started": "2026-10-23 02:00:35"
+}

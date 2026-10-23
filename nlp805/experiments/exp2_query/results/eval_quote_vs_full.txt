@@ -1,0 +1,4 @@
+220 questions (all grounding) common to 2 runs; search acc@8, tolerance 8.33s
+run                 all  delta vs mpnet_full          95% CI      15s     60s    600s   3600s
+mpnet_full        80.91            +0.00 [ +0.00, +0.00]   100.00   96.43   91.38   61.29
+mpnet_quote       94.09           +13.18 [ +8.64,+17.73]   100.00   96.43   96.55   89.25
