@@ -1,0 +1,31 @@
+cd /home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core && /home/jianxiang.he/.conda/envs/vsi/bin/python run_multimodal_search.py --device cuda:0 --output_dir results/output --text_weight 0.0 --search_nframes 8 --run_name full --wandb_tags full,w0.0
+# SLURM_JOB_ID=336257
+JobId=336257 JobName=vsi-lvb
+   UserId=jianxiang.he(2829) GroupId=cscc-users(2012) MCS_label=N/A
+   Priority=2467 Nice=0 Account=cscc-users QOS=cscc-gpu-qos
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:08 TimeLimit=1-00:00:00 TimeMin=N/A
+   SubmitTime=2026-10-22T21:36:01 EligibleTime=2026-10-22T21:36:01
+   AccrueTime=2026-10-22T21:36:01
+   StartTime=2026-10-22T21:43:12 EndTime=2026-10-23T21:43:12 Deadline=N/A
+   PreemptEligibleTime=2026-10-22T21:43:12 PreemptTime=None
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-22T21:43:12 Scheduler=Main
+   Partition=cscc-gpu-p AllocNode:Sid=ciai-login-1:2165007
+   ReqNodeList=(null) ExcNodeList=gpu-[05,12,15,24,62]
+   NodeList=gpu-49
+   BatchHost=gpu-49
+   NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=8,mem=64G,node=1,billing=8,gres/gpu=1
+   AllocTRES=cpu=8,mem=64G,node=1,billing=8,gres/gpu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=8 MinMemoryNode=64G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core/scripts/run_lvb.sbatch
+   WorkDir=/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core
+   StdErr=/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core/logs/vsi-lvb_336257.out
+   StdIn=/dev/null
+   StdOut=/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core/logs/vsi-lvb_336257.out
+   TresPerNode=gres/gpu:1
+   TresPerTask=cpu=8

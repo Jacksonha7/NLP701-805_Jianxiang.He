@@ -1,0 +1,2 @@
+# 2026-10-23 11:21:35  host=ciai-login-1  conda=vsi
+cd /home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/reproduced/new && python Keyframe_Matching.py --input_json R2_Tstar_PTonly_LongVideoBench_gpt4_cot_vid1.json --num_frame 8 --output_dir matching_results/R2_Tstar

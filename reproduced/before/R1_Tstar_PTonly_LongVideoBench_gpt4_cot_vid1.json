@@ -14,24 +14,12 @@
             "target_objects": [
                 "woman",
                 "clothing",
-                "ancient building"
+                "temple"
             ],
             "cue_objects": [
                 "subtitle",
                 "path",
-                "plants"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "clothing",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "ancient building",
-                    "spatial"
-                ]
+                "building"
             ]
         },
         "keyframe_timestamps": [
@@ -600,26 +588,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "pink hat",
-                "red sleeves"
+                "woman_pink_hat",
+                "woman_dark_blue",
+                "light_yellow_wall"
             ],
             "cue_objects": [
-                "light yellow wall",
-                "dark blue outfit",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "pink hat",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "red sleeves",
-                    "attribute"
-                ]
+                "subtitle_text",
+                "rice_field",
+                "stone_carving"
             ]
         },
         "keyframe_timestamps": [
@@ -1189,30 +1165,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "white shirt",
-                "building"
+                "building",
+                "street light"
             ],
             "cue_objects": [
-                "red",
-                "white",
-                "right"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "white shirt",
-                    "attribute"
-                ],
-                [
-                    "building",
-                    "red",
-                    "attribute"
-                ],
-                [
-                    "building",
-                    "white",
-                    "attribute"
-                ]
+                "car",
+                "computer",
+                "cell phone"
             ]
         },
         "keyframe_timestamps": [
@@ -1899,26 +1858,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "black and white woven top",
-                "glasses"
+                "door",
+                "lamp"
             ],
             "cue_objects": [
-                "door",
-                "computer",
-                "lamp",
-                "phone"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "black and white woven top",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "glasses",
-                    "attribute"
-                ]
+                "glasses",
+                "black_hair",
+                "top"
             ]
         },
         "keyframe_timestamps": [
@@ -2604,31 +2550,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "tree",
+                "man",
+                "cap",
                 "glasses"
             ],
             "cue_objects": [
+                "tree",
                 "window",
-                "black clothing",
-                "cap"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "black clothing",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "tree",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "cap",
-                    "attribute"
-                ]
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -2994,31 +2923,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "spacesuit",
-                "telescope",
-                "tree"
+                "woman",
+                "man",
+                "telescope"
             ],
             "cue_objects": [
-                "screen",
-                "subtitle",
-                "launch"
-            ],
-            "relations": [
-                [
-                    "spacesuit",
-                    "black",
-                    "attribute"
-                ],
-                [
-                    "spacesuit",
-                    "straps",
-                    "attribute"
-                ],
-                [
-                    "telescope",
-                    "launch",
-                    "spatial"
-                ]
+                "glasses",
+                "spacesuit",
+                "tree"
             ]
         },
         "keyframe_timestamps": [
@@ -3384,31 +3296,13 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "people",
-                "car",
-                "soldier"
+                "people wearing overalls",
+                "soldier wearing camouflage",
+                "black car"
             ],
             "cue_objects": [
-                "wall",
-                "tree",
+                "big tree",
                 "police car"
-            ],
-            "relations": [
-                [
-                    "people",
-                    "car",
-                    "spatial"
-                ],
-                [
-                    "soldier",
-                    "people",
-                    "spatial"
-                ],
-                [
-                    "car",
-                    "wall",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -3795,26 +3689,15 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "portrait",
                 "tree trunk",
-                "prismatic barrier"
+                "prismatic barrier",
+                "portrait of a woman with short hair"
             ],
             "cue_objects": [
-                "wall",
-                "wooden board",
-                "cone"
-            ],
-            "relations": [
-                [
-                    "portrait",
-                    "wall",
-                    "spatial"
-                ],
-                [
-                    "tree trunk",
-                    "prismatic barrier",
-                    "spatial"
-                ]
+                "wine glass",
+                "airplane",
+                "armored vehicle",
+                "police"
             ]
         },
         "keyframe_timestamps": [
@@ -4201,31 +4084,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
+                "man",
                 "guitar",
                 "microphone"
             ],
             "cue_objects": [
-                "olive_background",
-                "red_shirt",
-                "stage"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "red_shirt",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "guitar",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "microphone",
-                    "spatial"
-                ]
+                "subtitle",
+                "stage",
+                "audience"
             ]
         },
         "keyframe_timestamps": [
@@ -4555,31 +4421,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
+                "man",
                 "guitar",
                 "microphone"
             ],
             "cue_objects": [
-                "stage",
                 "audience",
-                "screen"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "red shirt",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "microphone",
-                    "spatial"
-                ],
-                [
-                    "audience",
-                    "stage",
-                    "spatial"
-                ]
+                "screen",
+                "subtitles"
             ]
         },
         "keyframe_timestamps": [
@@ -4909,26 +4758,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "blue cube",
-                "orange cube",
-                "man"
+                "cube",
+                "man",
+                "glasses"
             ],
             "cue_objects": [
-                "grey coat",
-                "khaki base",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "blue cube",
-                    "orange cube",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "grey coat",
-                    "attribute"
-                ]
+                "filter",
+                "activation_map",
+                "coat"
             ]
         },
         "keyframe_timestamps": [
@@ -5307,26 +5144,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "person",
+                "man_wearing_glasses",
                 "cube",
-                "text"
+                "black_english_letters"
             ],
             "cue_objects": [
-                "white_background",
-                "yellow_icon",
-                "black_text"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "cube",
-                    "spatial"
-                ],
-                [
-                    "cube",
-                    "text",
-                    "spatial"
-                ]
+                "sphere",
+                "round_shape",
+                "here_caption"
             ]
         },
         "keyframe_timestamps": [
@@ -5706,30 +5531,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "red suspenders",
-                "black leggings"
+                "stage",
+                "frames"
             ],
             "cue_objects": [
-                "black stage",
-                "black frames",
-                "people"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "red suspenders",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "black leggings",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "black stage",
-                    "spatial"
-                ]
+                "subtitle",
+                "performers",
+                "audience"
             ]
         },
         "keyframe_timestamps": [
@@ -6244,30 +6052,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "curly hair",
-                "purple pen"
-            ],
-            "cue_objects": [
-                "long-sleeved top",
-                "necklace",
+                "pen",
                 "notebook"
             ],
-            "relations": [
-                [
-                    "woman",
-                    "curly hair",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "purple pen",
-                    "spatial"
-                ],
-                [
-                    "purple pen",
-                    "notebook",
-                    "spatial"
-                ]
+            "cue_objects": [
+                "text",
+                "book",
+                "stage"
             ]
         },
         "keyframe_timestamps": [
@@ -6781,33 +6572,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "picture",
-                "timestamps",
-                "earrings",
-                "necklace"
-            ],
-            "cue_objects": [
+                "lady",
                 "display screen",
-                "light brown clothes",
-                "white wall",
                 "wooden planks"
             ],
-            "relations": [
-                [
-                    "picture",
-                    "timestamps",
-                    "attribute"
-                ],
-                [
-                    "lady",
-                    "light brown clothes",
-                    "attribute"
-                ],
-                [
-                    "display screen",
-                    "timestamps",
-                    "spatial"
-                ]
+            "cue_objects": [
+                "earrings",
+                "glasses",
+                "blue robe"
             ]
         },
         "keyframe_timestamps": [
@@ -7468,26 +7240,9 @@
                 "microphones"
             ],
             "cue_objects": [
-                "gray suit",
                 "blue flags",
-                "large hall"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "podium",
-                    "spatial"
-                ],
-                [
-                    "podium",
-                    "microphones",
-                    "spatial"
-                ],
-                [
-                    "blue flags",
-                    "large hall",
-                    "spatial"
-                ]
+                "glasses",
+                "dark brown door"
             ]
         },
         "keyframe_timestamps": [
@@ -8143,32 +7898,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "sofa",
-                "jacket",
-                "dress"
+                "man",
+                "woman",
+                "white sofa"
             ],
             "cue_objects": [
-                "white sofa",
                 "black dress",
-                "gray jacket"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "sofa",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "jacket",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "dress",
-                    "attribute"
-                ]
+                "dark gray jacket",
+                "beige pillow with blue design"
             ]
         },
         "keyframe_timestamps": [
@@ -8734,27 +8471,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "television",
-                "wristwatch",
-                "glasses",
-                "hat"
+                "black television",
+                "black wristwatch",
+                "black-framed glasses"
             ],
             "cue_objects": [
-                "waiting_room",
-                "green_jacket",
-                "blue_jacket"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "green_jacket",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "blue_jacket",
-                    "attribute"
-                ]
+                "black knitted hat",
+                "man",
+                "woman"
             ]
         },
         "keyframe_timestamps": [
@@ -9321,25 +9045,13 @@
         "grounding_objects": {
             "target_objects": [
                 "person",
-                "experimental instruments",
-                "desk"
+                "desk",
+                "window"
             ],
             "cue_objects": [
-                "olive-colored desk",
-                "white window",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "experimental instruments",
-                    "spatial"
-                ],
-                [
-                    "desk",
-                    "olive-colored",
-                    "attribute"
-                ]
+                "Patrick Craine",
+                "olive-colored",
+                "white"
             ]
         },
         "keyframe_timestamps": [
@@ -9632,31 +9344,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "blue and white shirt",
-                "black glasses"
+                "man",
+                "transparent_tubes",
+                "white_pipes"
             ],
             "cue_objects": [
-                "brown experiment tables",
-                "white walls",
-                "transparent tubes"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "blue and white shirt",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "black glasses",
-                    "attribute"
-                ],
-                [
-                    "transparent tubes",
-                    "person",
-                    "spatial"
-                ]
+                "black_glasses",
+                "yellow_pipes",
+                "blue_shirt"
             ]
         },
         "keyframe_timestamps": [
@@ -9951,24 +9646,12 @@
             "target_objects": [
                 "boat",
                 "sea",
-                "roof"
+                "text"
             ],
             "cue_objects": [
-                "yellow letters",
-                "clouds",
-                "shimmering sea"
-            ],
-            "relations": [
-                [
-                    "boat",
-                    "sea",
-                    "spatial"
-                ],
-                [
-                    "roof",
-                    "color",
-                    "attribute"
-                ]
+                "crater",
+                "tsunami",
+                "clouds"
             ]
         },
         "keyframe_timestamps": [
@@ -10623,26 +10306,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "lake",
                 "building",
+                "lake",
                 "mountain"
             ],
             "cue_objects": [
-                "shore",
                 "sky",
-                "clouds"
-            ],
-            "relations": [
-                [
-                    "building",
-                    "light yellow",
-                    "attribute"
-                ],
-                [
-                    "building",
-                    "lake",
-                    "spatial"
-                ]
+                "window",
+                "cloud"
             ]
         },
         "keyframe_timestamps": [
@@ -11299,24 +10970,12 @@
             "target_objects": [
                 "woman",
                 "child",
-                "headscarf"
+                "hands"
             ],
             "cue_objects": [
+                "headscarf",
                 "hut",
-                "sunlight",
-                "mobile phone"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "child",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "headscarf",
-                    "attribute"
-                ]
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -11686,26 +11345,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "yellow cart",
-                "black top"
+                "man1",
+                "man2",
+                "cart"
             ],
             "cue_objects": [
-                "yellow earth",
-                "home",
-                "sun"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "black top",
-                    "attribute"
-                ],
-                [
-                    "yellow cart",
-                    "person",
-                    "spatial"
-                ]
+                "distressed_expression",
+                "striped_top",
+                "hands_on"
             ]
         },
         "keyframe_timestamps": [
@@ -12075,31 +11722,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "white paper",
-                "microphone"
+                "man",
+                "paper",
+                "flagpole"
             ],
             "cue_objects": [
-                "flagpoles",
-                "white ribbons",
-                "clothing"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "white paper",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "blue clothing",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "microphone",
-                    "spatial"
-                ]
+                "ribbon",
+                "microphone",
+                "suit"
             ]
         },
         "keyframe_timestamps": [
@@ -12464,31 +12094,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
+                "hand",
                 "paper",
-                "pencil",
-                "pen"
+                "marker"
             ],
             "cue_objects": [
-                "pink paper strips",
-                "orange paper",
-                "blue paper"
-            ],
-            "relations": [
-                [
-                    "paper",
-                    "orange",
-                    "attribute"
-                ],
-                [
-                    "paper",
-                    "blue",
-                    "attribute"
-                ],
-                [
-                    "pencil",
-                    "paper",
-                    "spatial"
-                ]
+                "arrow",
+                "formula",
+                "pink paper"
             ]
         },
         "keyframe_timestamps": [
@@ -12848,31 +12461,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "red circular frame",
-                "yellow paper"
+                "hands",
+                "paper",
+                "markers"
             ],
             "cue_objects": [
-                "black head colorful body stationery",
-                "strips of paper",
-                "subtitles"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "red circular frame",
-                    "spatial"
-                ],
-                [
-                    "yellow paper",
-                    "strips of paper",
-                    "spatial"
-                ],
-                [
-                    "stationery",
-                    "black head colorful body",
-                    "attribute"
-                ]
+                "nail polish",
+                "outerwear",
+                "necklace"
             ]
         },
         "keyframe_timestamps": [
@@ -13232,26 +12828,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "lamp",
                 "table",
-                "chair"
+                "chair",
+                "lamp"
             ],
             "cue_objects": [
-                "person",
                 "teapot",
+                "woman",
                 "hat"
-            ],
-            "relations": [
-                [
-                    "lamp",
-                    "table",
-                    "spatial"
-                ],
-                [
-                    "table",
-                    "chair",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -13743,24 +13327,12 @@
             "target_objects": [
                 "table",
                 "chair",
-                "teapot"
-            ],
-            "cue_objects": [
-                "blue sky",
-                "yellow stars",
                 "house"
             ],
-            "relations": [
-                [
-                    "table",
-                    "chair",
-                    "spatial"
-                ],
-                [
-                    "teapot",
-                    "table",
-                    "spatial"
-                ]
+            "cue_objects": [
+                "subtitle",
+                "stars",
+                "sky"
             ]
         },
         "keyframe_timestamps": [
@@ -14250,31 +13822,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "spoon",
-                "mashed potatoes",
-                "glass dish"
+                "cheese",
+                "egg",
+                "glass_dish"
             ],
             "cue_objects": [
-                "minced meat",
-                "cheese",
-                "green onion"
-            ],
-            "relations": [
-                [
-                    "spoon",
-                    "mashed potatoes",
-                    "spatial"
-                ],
-                [
-                    "cheese",
-                    "minced meat",
-                    "spatial"
-                ],
-                [
-                    "green onion",
-                    "cheese",
-                    "spatial"
-                ]
+                "knife",
+                "pot",
+                "green_onion"
             ]
         },
         "keyframe_timestamps": [
@@ -14622,26 +14177,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "plate",
-                "food",
-                "glove"
+                "hand",
+                "cheese",
+                "pot"
             ],
             "cue_objects": [
-                "cheese",
-                "meat",
-                "potato"
-            ],
-            "relations": [
-                [
-                    "glove",
-                    "food",
-                    "spatial"
-                ],
-                [
-                    "plate",
-                    "food",
-                    "spatial"
-                ]
+                "glove",
+                "seasoning",
+                "fork"
             ]
         },
         "keyframe_timestamps": [
@@ -14990,32 +14533,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "red striped dress",
-                "glasses",
+                "microphone",
                 "pearl necklace"
             ],
             "cue_objects": [
-                "microphone",
-                "yellow dress",
-                "gray dress",
-                "green clothes"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "red striped dress",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "pearl necklace",
-                    "attribute"
-                ]
+                "green clothes",
+                "pearl earrings",
+                "diamond necklace"
             ]
         },
         "keyframe_timestamps": [
@@ -15458,31 +14982,13 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "man",
-                "white paper"
+                "Blue clothes",
+                "White wristwatch",
+                "Microphone"
             ],
             "cue_objects": [
-                "blue clothes",
-                "microphone",
-                "white hair"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "blue clothes",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "white paper",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "white hair",
-                    "attribute"
-                ]
+                "Badge with a blue strap",
+                "Earring"
             ]
         },
         "keyframe_timestamps": [
@@ -15927,24 +15433,12 @@
             "target_objects": [
                 "man",
                 "sculpture",
-                "shirt"
+                "camera"
             ],
             "cue_objects": [
-                "steps",
-                "plants",
-                "benches"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "shirt",
-                    "attribute"
-                ],
-                [
-                    "sculpture",
-                    "man",
-                    "spatial"
-                ]
+                "shirt",
+                "building",
+                "plants"
             ]
         },
         "keyframe_timestamps": [
@@ -16300,31 +15794,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "man",
                 "woman",
+                "sculpture",
                 "shoes"
             ],
             "cue_objects": [
-                "glass_building",
+                "man",
                 "trees",
-                "sculpture"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "woman",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "shoes",
-                    "attribute"
-                ],
-                [
-                    "sculpture",
-                    "glass_building",
-                    "spatial"
-                ]
+                "building"
             ]
         },
         "keyframe_timestamps": [
@@ -16680,31 +16157,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "hat",
-                "shirt",
-                "building"
+                "a duckbill cap",
+                "a black shirt",
+                "a yellow building"
             ],
             "cue_objects": [
-                "alley",
-                "sunlight",
-                "glare"
-            ],
-            "relations": [
-                [
-                    "hat",
-                    "round",
-                    "attribute"
-                ],
-                [
-                    "shirt",
-                    "black",
-                    "attribute"
-                ],
-                [
-                    "building",
-                    "alley",
-                    "spatial"
-                ]
+                "a round hat",
+                "a top hat",
+                "a pair of black-framed glasses"
             ]
         },
         "keyframe_timestamps": [
@@ -17123,31 +16583,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "duckbill hat",
-                "colorful clothes"
+                "man",
+                "decorative lamp",
+                "bracelet"
             ],
             "cue_objects": [
-                "decorative lamp",
+                "subtitle",
                 "text",
                 "hands"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "duckbill hat",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "colorful clothes",
-                    "attribute"
-                ],
-                [
-                    "decorative lamp",
-                    "purple light",
-                    "attribute"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -17567,30 +17010,13 @@
         "grounding_objects": {
             "target_objects": [
                 "tank",
-                "gun barrel",
-                "C-shaped logo"
+                "C_shape",
+                "background"
             ],
             "cue_objects": [
-                "sunlight",
-                "grass",
-                "yellow tank"
-            ],
-            "relations": [
-                [
-                    "tank",
-                    "yellow",
-                    "attribute"
-                ],
-                [
-                    "C-shaped logo",
-                    "tank",
-                    "spatial"
-                ],
-                [
-                    "gun barrel",
-                    "tank",
-                    "spatial"
-                ]
+                "subtitle",
+                "sun",
+                "grass"
             ]
         },
         "keyframe_timestamps": [
@@ -17986,26 +17412,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "military vehicle",
-                "camera-like object",
-                "hat"
+                "military_vehicle",
+                "person",
+                "camera_like_object"
             ],
             "cue_objects": [
                 "desert",
                 "sky",
                 "subtitle"
-            ],
-            "relations": [
-                [
-                    "military vehicle",
-                    "camera-like object",
-                    "spatial"
-                ],
-                [
-                    "hat",
-                    "person",
-                    "attribute"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -18402,30 +17816,13 @@
         "grounding_objects": {
             "target_objects": [
                 "plate",
-                "buns",
-                "hand"
+                "muffin",
+                "cloth"
             ],
             "cue_objects": [
-                "cloth",
-                "pumpkin",
-                "jar"
-            ],
-            "relations": [
-                [
-                    "plate",
-                    "buns",
-                    "spatial"
-                ],
-                [
-                    "hand",
-                    "buns",
-                    "spatial"
-                ],
-                [
-                    "cloth",
-                    "checkered",
-                    "attribute"
-                ]
+                "hand",
+                "subtitle",
+                "pumpkin"
             ]
         },
         "keyframe_timestamps": [
@@ -18573,31 +17970,13 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "gray hoodie",
-                "pink-packaged tea",
-                "refrigerator"
+                "Black Overcoat",
+                "Coat Rack",
+                "Refrigerator"
             ],
             "cue_objects": [
-                "coat rack",
-                "black overcoat",
-                "refrigerator"
-            ],
-            "relations": [
-                [
-                    "gray hoodie",
-                    "pink-packaged tea",
-                    "spatial"
-                ],
-                [
-                    "coat rack",
-                    "black overcoat",
-                    "spatial"
-                ],
-                [
-                    "refrigerator",
-                    "gray hoodie",
-                    "spatial"
-                ]
+                "Television",
+                "Tableware"
             ]
         },
         "keyframe_timestamps": [
@@ -18731,7 +18110,18 @@
             401
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "plane",
+                "green mountain scene",
+                "river"
+            ],
+            "cue_objects": [
+                "yellow tree",
+                "number 1",
+                "number 5"
+            ]
+        },
         "error": "list index out of range",
         "keyframe_timestamps": [],
         "is_subtitle_question": true
@@ -18749,26 +18139,15 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "man",
-                "short sleeves",
-                "long sleeves"
+                "man1",
+                "man2",
+                "remote"
             ],
             "cue_objects": [
-                "white tiled wallpaper",
-                "candy circles",
-                "remote control"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "short sleeves",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "long sleeves",
-                    "attribute"
-                ]
+                "shirt1",
+                "shirt2",
+                "sleeve1",
+                "sleeve2"
             ]
         },
         "keyframe_timestamps": [
@@ -18909,7 +18288,18 @@
             176
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "man",
+                "glasses"
+            ],
+            "cue_objects": [
+                "bracelet",
+                "ring",
+                "earrings"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": false
@@ -18929,29 +18319,12 @@
             "target_objects": [
                 "woman",
                 "food",
-                "cake cartoon character"
+                "cake_cartoon_character"
             ],
             "cue_objects": [
-                "kitchen",
-                "table",
-                "red apron"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "red apron",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "cake cartoon character",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "food",
-                    "spatial"
-                ]
+                "tray",
+                "apron",
+                "marble_counter"
             ]
         },
         "keyframe_timestamps": [
@@ -19118,20 +18491,8 @@
             ],
             "cue_objects": [
                 "polka_dot_pattern",
-                "gold_color",
-                "striped_pattern"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "black and white polka dot shirt",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "black and white striped shirt with black and gold collar",
-                    "attribute"
-                ]
+                "black_color",
+                "white_color"
             ]
         },
         "keyframe_timestamps": [
@@ -19290,7 +18651,18 @@
             289
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "limited_plan_icon",
+                "assuming_surprise_icon",
+                "didn_t_try_icon"
+            ],
+            "cue_objects": [
+                "book_icon",
+                "sequence_icon",
+                "mid_conclusion_text"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19306,7 +18678,18 @@
             192
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "sailboat",
+                "mountain ridge"
+            ],
+            "cue_objects": [
+                "black sunglasses",
+                "white sailor cap",
+                "red short sleeve shirt"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19322,7 +18705,18 @@
             150
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "woman",
+                "sound_visualization"
+            ],
+            "cue_objects": [
+                "man_raising_hands",
+                "woman_patterned_shawl",
+                "woman_headscarf"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19338,7 +18732,18 @@
             171
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "computer",
+                "chair"
+            ],
+            "cue_objects": [
+                "monitor",
+                "keyboard",
+                "glasses"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": false
@@ -19355,7 +18760,18 @@
             235
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "hands",
+                "egg",
+                "cup"
+            ],
+            "cue_objects": [
+                "egg",
+                "cup",
+                "hands"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19371,7 +18787,17 @@
             158
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man_left",
+                "man_right",
+                "tank"
+            ],
+            "cue_objects": [
+                "subtitle",
+                "hand_gesture"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19388,7 +18814,18 @@
             51
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "bowl",
+                "hands",
+                "table"
+            ],
+            "cue_objects": [
+                "microwave",
+                "oven",
+                "cutting_board"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": false
@@ -19404,7 +18841,18 @@
             57
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "container",
+                "bag"
+            ],
+            "cue_objects": [
+                "pot",
+                "eggs",
+                "milk"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19420,7 +18868,18 @@
             14
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "flag",
+                "background"
+            ],
+            "cue_objects": [
+                "man",
+                "flag",
+                "background"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19436,7 +18895,18 @@
             78
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "jacket",
+                "pants"
+            ],
+            "cue_objects": [
+                "white_shirt",
+                "yellow_jacket",
+                "yellow_pants"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19452,7 +18922,18 @@
             19
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "megaphone",
+                "bed"
+            ],
+            "cue_objects": [
+                "speaker",
+                "wall",
+                "window"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19468,7 +18949,18 @@
             142
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "dish",
+                "plate",
+                "gloves"
+            ],
+            "cue_objects": [
+                "table",
+                "knife",
+                "fork"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19484,7 +18976,18 @@
             96
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "microphone",
+                "news_ticker"
+            ],
+            "cue_objects": [
+                "store",
+                "phone",
+                "camera"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19500,7 +19003,18 @@
             257
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "Car",
+                "streetlight",
+                "fence"
+            ],
+            "cue_objects": [
+                "Person",
+                "Security",
+                "Text"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19516,7 +19030,18 @@
             78
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "brain_diagram",
+                "math_problems",
+                "subtitle"
+            ],
+            "cue_objects": [
+                "right_side_brain",
+                "left_side_brain",
+                "stains"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19532,7 +19057,18 @@
             172
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "copper bracelet",
+                "wooden door"
+            ],
+            "cue_objects": [
+                "white-framed Pegasus painting",
+                "black bracelet",
+                "pink manicured hands"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": false
@@ -19548,7 +19084,18 @@
             115
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "black screen",
+                "short-sleeved shirt"
+            ],
+            "cue_objects": [
+                "red print",
+                "blue print",
+                "green print"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19564,7 +19111,18 @@
             16
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "boy",
+                "bench",
+                "forest"
+            ],
+            "cue_objects": [
+                "subtitle",
+                "shirt",
+                "trees"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19580,7 +19138,18 @@
             52
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "tissue",
+                "bright lamp"
+            ],
+            "cue_objects": [
+                "milk tea",
+                "mirror",
+                "necklace"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19596,7 +19165,18 @@
             159
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "eggs",
+                "milk tea",
+                "ice cream bars"
+            ],
+            "cue_objects": [
+                "fried chicken",
+                "shelf",
+                "subtitle"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19612,7 +19192,18 @@
             131
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "photo",
+                "wall"
+            ],
+            "cue_objects": [
+                "shadow",
+                "hand",
+                "frame"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19628,7 +19219,18 @@
             203
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "person",
+                "camel",
+                "sand_dune"
+            ],
+            "cue_objects": [
+                "building",
+                "tree",
+                "sky"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19644,7 +19246,18 @@
             79
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "desk",
+                "water_bottle"
+            ],
+            "cue_objects": [
+                "hands",
+                "camera",
+                "cheek"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19660,7 +19273,18 @@
             112
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "person",
+                "shark",
+                "tunnel"
+            ],
+            "cue_objects": [
+                "fish",
+                "coral",
+                "camera"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19676,7 +19300,18 @@
             20
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "gaming_chair",
+                "bookshelf"
+            ],
+            "cue_objects": [
+                "hand",
+                "wall",
+                "flag"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -19696,29 +19331,12 @@
             "target_objects": [
                 "person",
                 "book",
-                "pen"
+                "tank"
             ],
             "cue_objects": [
-                "tank",
-                "khaki outerwear",
-                "hat"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "book",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "pen",
-                    "spatial"
-                ],
-                [
-                    "book",
-                    "color",
-                    "attribute"
-                ]
+                "pen",
+                "hat",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -22673,26 +22291,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "helmet",
-                "shield"
+                "person_left",
+                "person_right",
+                "shield_left"
             ],
             "cue_objects": [
+                "subtitle",
                 "knife",
-                "orange ground",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "helmet",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "shield",
-                    "spatial"
-                ]
+                "helmet"
             ]
         },
         "keyframe_timestamps": [
@@ -25652,26 +25258,8 @@
                 "bucket"
             ],
             "cue_objects": [
-                "ground",
-                "fallen_tank",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "soldier",
-                    "tank",
-                    "spatial"
-                ],
-                [
-                    "bucket",
-                    "color",
-                    "attribute"
-                ],
-                [
-                    "bucket",
-                    "ground",
-                    "spatial"
-                ]
+                "subtitle",
+                "ground"
             ]
         },
         "keyframe_timestamps": [
@@ -28631,26 +28219,9 @@
                 "finger"
             ],
             "cue_objects": [
-                "purple case",
+                "subtitle",
                 "screen",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "phone",
-                    "purple case",
-                    "attribute"
-                ],
-                [
-                    "thumb",
-                    "phone",
-                    "spatial"
-                ],
-                [
-                    "finger",
-                    "phone",
-                    "spatial"
-                ]
+                "case"
             ]
         },
         "keyframe_timestamps": [
@@ -30567,26 +30138,9 @@
                 "paper"
             ],
             "cue_objects": [
+                "subtitle",
                 "ink",
-                "drawing",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "hand",
-                    "pen",
-                    "spatial"
-                ],
-                [
-                    "pen",
-                    "paper",
-                    "spatial"
-                ],
-                [
-                    "subtitle",
-                    "drawing",
-                    "time"
-                ]
+                "drawing"
             ]
         },
         "keyframe_timestamps": [
@@ -32500,24 +32054,12 @@
             "target_objects": [
                 "person",
                 "skull",
-                "mounds of earth"
+                "mound"
             ],
             "cue_objects": [
-                "sand",
-                "wind",
-                "clothes"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "skull",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "mounds of earth",
-                    "spatial"
-                ]
+                "subtitle",
+                "art_gallery",
+                "sand"
             ]
         },
         "keyframe_timestamps": [
@@ -34430,30 +33972,13 @@
         "grounding_objects": {
             "target_objects": [
                 "black T-shirt",
-                "blue T-shirt",
+                "grey T-shirt",
                 "white shirt"
             ],
             "cue_objects": [
-                "black chairs",
-                "tan table",
-                "water bottle"
-            ],
-            "relations": [
-                [
-                    "black T-shirt",
-                    "black chairs",
-                    "spatial"
-                ],
-                [
-                    "white shirt",
-                    "tan table",
-                    "spatial"
-                ],
-                [
-                    "blue T-shirt",
-                    "black chairs",
-                    "spatial"
-                ]
+                "black backpack",
+                "blue T-shirt",
+                "white T-shirt"
             ]
         },
         "keyframe_timestamps": [
@@ -38023,31 +37548,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "blue shirt",
-                "black chair",
-                "white short sleeve"
+                "man",
+                "chair",
+                "table"
             ],
             "cue_objects": [
-                "table",
-                "paper",
-                "bottle"
-            ],
-            "relations": [
-                [
-                    "blue shirt",
-                    "black chair",
-                    "spatial"
-                ],
-                [
-                    "white short sleeve",
-                    "table",
-                    "spatial"
-                ],
-                [
-                    "bottle",
-                    "table",
-                    "spatial"
-                ]
+                "subtitle",
+                "bottle",
+                "camera"
             ]
         },
         "keyframe_timestamps": [
@@ -41617,26 +41125,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "white chair",
-                "blue water tank",
-                "black camera"
+                "man",
+                "chair",
+                "camera"
             ],
             "cue_objects": [
-                "table",
-                "paper",
-                "bottle"
-            ],
-            "relations": [
-                [
-                    "white chair",
-                    "table",
-                    "spatial"
-                ],
-                [
-                    "black camera",
-                    "bottle",
-                    "spatial"
-                ]
+                "tablet",
+                "water_bottle",
+                "map"
             ]
         },
         "keyframe_timestamps": [
@@ -45206,26 +44702,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "webpage",
-                "code",
-                "gray image"
+                "man",
+                "gray_icon",
+                "webpage"
             ],
             "cue_objects": [
-                "sidebar",
-                "icons",
-                "login"
-            ],
-            "relations": [
-                [
-                    "webpage",
-                    "code",
-                    "spatial"
-                ],
-                [
-                    "gray image",
-                    "top-right corner",
-                    "spatial"
-                ]
+                "code",
+                "login_options",
+                "settings_icon"
             ]
         },
         "keyframe_timestamps": [
@@ -47336,31 +46820,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "webpage",
-                "program code",
-                "black-and-white image"
+                "man",
+                "icon",
+                "white_line"
             ],
             "cue_objects": [
-                "sea-green background",
-                "white background",
-                "icons"
-            ],
-            "relations": [
-                [
-                    "webpage",
-                    "sea-green background",
-                    "attribute"
-                ],
-                [
-                    "program code",
-                    "webpage",
-                    "spatial"
-                ],
-                [
-                    "icons",
-                    "black-and-white image",
-                    "spatial"
-                ]
+                "webpage",
+                "code",
+                "image"
             ]
         },
         "keyframe_timestamps": [
@@ -49471,26 +48938,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
+                "man",
                 "webpage",
-                "picture",
-                "icon"
+                "icons"
             ],
             "cue_objects": [
-                "white background",
-                "black background",
-                "grey background"
-            ],
-            "relations": [
-                [
-                    "webpage",
-                    "picture",
-                    "spatial"
-                ],
-                [
-                    "icon",
-                    "identical",
-                    "attribute"
-                ]
+                "image",
+                "text",
+                "code"
             ]
         },
         "keyframe_timestamps": [
@@ -51602,30 +51057,13 @@
         "grounding_objects": {
             "target_objects": [
                 "pan",
-                "sesame balls",
+                "sesame_ball",
                 "oil"
             ],
             "cue_objects": [
-                "wooden table",
-                "light blue handles",
-                "silver strainer"
-            ],
-            "relations": [
-                [
-                    "sesame balls",
-                    "oil",
-                    "spatial"
-                ],
-                [
-                    "pan",
-                    "light blue handles",
-                    "attribute"
-                ],
-                [
-                    "silver strainer",
-                    "pan",
-                    "spatial"
-                ]
+                "strainer",
+                "wooden_table",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -52665,30 +52103,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "sesame ball",
-                "table"
+                "sesame_ball",
+                "iron_plate"
             ],
             "cue_objects": [
-                "white cabinet",
-                "red lanterns",
-                "silver refrigerator"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "sesame ball",
-                    "spatial"
-                ],
-                [
-                    "table",
-                    "glass containers",
-                    "spatial"
-                ],
-                [
-                    "table",
-                    "iron plate",
-                    "spatial"
-                ]
+                "glass_container",
+                "refrigerator",
+                "red_lantern"
             ]
         },
         "keyframe_timestamps": [
@@ -53734,24 +53155,7 @@
             "cue_objects": [
                 "blue pot",
                 "black gas stove",
-                "wooden table"
-            ],
-            "relations": [
-                [
-                    "hand",
-                    "green slotted spoon",
-                    "spatial"
-                ],
-                [
-                    "green slotted spoon",
-                    "tangyuan",
-                    "spatial"
-                ],
-                [
-                    "tangyuan",
-                    "blue pot",
-                    "spatial"
-                ]
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -54790,26 +54194,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "television screen",
+                "man",
+                "screen",
                 "badge"
             ],
             "cue_objects": [
-                "beige wall",
-                "file icons",
-                "webpage"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "television screen",
-                    "spatial"
-                ],
-                [
-                    "badge",
-                    "yellow and black",
-                    "attribute"
-                ]
+                "screen",
+                "badge",
+                "hand"
             ]
         },
         "keyframe_timestamps": [
@@ -56437,31 +55829,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "television screen",
-                "work badge"
+                "man",
+                "television",
+                "badge"
             ],
             "cue_objects": [
-                "yellow wall",
-                "webpage",
-                "file icons"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "work badge",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "television screen",
-                    "spatial"
-                ],
-                [
-                    "television screen",
-                    "webpage",
-                    "spatial"
-                ]
+                "wall",
+                "file_icon",
+                "coat"
             ]
         },
         "keyframe_timestamps": [
@@ -58089,31 +57464,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "television screen",
-                "name tag"
+                "man",
+                "television",
+                "name_tag"
             ],
             "cue_objects": [
-                "mustard-yellow wall",
-                "camouflaged uniform",
-                "black and white accessory"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "television screen",
-                    "spatial"
-                ],
-                [
-                    "name tag",
-                    "yellow and black",
-                    "attribute"
-                ],
-                [
-                    "camouflaged uniform",
-                    "black and white accessory",
-                    "attribute"
-                ]
+                "hand",
+                "screen",
+                "accessory"
             ]
         },
         "keyframe_timestamps": [
@@ -59741,26 +59099,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "police officer",
+                "police_officer",
                 "woman",
-                "medal"
+                "building"
             ],
             "cue_objects": [
                 "sunglasses",
                 "watch",
                 "crowd"
-            ],
-            "relations": [
-                [
-                    "police officer",
-                    "woman",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "medal",
-                    "attribute"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -60937,31 +60283,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "yellow shirt",
                 "toy",
-                "bag of food"
+                "bag_of_food"
             ],
             "cue_objects": [
-                "gray background",
-                "paper bag",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "yellow shirt",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "toy",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "bag of food",
-                    "spatial"
-                ]
+                "paper_bag",
+                "subtitle",
+                "teeth"
             ]
         },
         "keyframe_timestamps": [
@@ -62142,26 +61470,9 @@
                 "subtitle"
             ],
             "cue_objects": [
-                "black-and-white background",
-                "crossed hands",
-                "pointing finger"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "hat",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "subtitle",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "black-and-white background",
-                    "spatial"
-                ]
+                "man_left",
+                "man_right",
+                "man_center"
             ]
         },
         "keyframe_timestamps": [
@@ -63339,29 +62650,12 @@
             "target_objects": [
                 "person",
                 "tomato",
-                "knife"
+                "wooden board"
             ],
             "cue_objects": [
-                "wooden board",
-                "embroidered dress",
-                "ring"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "embroidered dress",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "ring",
-                    "spatial"
-                ],
-                [
-                    "knife",
-                    "tomato",
-                    "spatial"
-                ]
+                "vegetable knife",
+                "ring",
+                "parsley"
             ]
         },
         "keyframe_timestamps": [
@@ -64664,31 +63958,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "person",
                 "vegetable knife",
-                "garlic"
+                "garlic",
+                "wooden board"
             ],
             "cue_objects": [
-                "wooden board",
-                "gray clothes",
-                "right hand"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "gray clothes",
-                    "attribute"
-                ],
-                [
-                    "vegetable knife",
-                    "garlic",
-                    "spatial"
-                ],
-                [
-                    "vegetable knife",
-                    "letters on the blade",
-                    "attribute"
-                ]
+                "person",
+                "silver bracelet",
+                "watch"
             ]
         },
         "keyframe_timestamps": [
@@ -65991,26 +65268,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
+                "wooden spatula",
                 "pot",
-                "spatula",
                 "red ingredients"
             ],
             "cue_objects": [
-                "person",
-                "stove",
-                "kitchen"
-            ],
-            "relations": [
-                [
-                    "spatula",
-                    "pot",
-                    "spatial"
-                ],
-                [
-                    "red ingredients",
-                    "pot",
-                    "attribute"
-                ]
+                "chopped onions",
+                "chopped garlic",
+                "chopped celery"
             ]
         },
         "keyframe_timestamps": [
@@ -67313,26 +66578,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
+                "man",
                 "white coat",
-                "blue jeans",
-                "computer"
+                "blue jeans"
             ],
             "cue_objects": [
-                "cylindrical space",
-                "table",
-                "monitor"
-            ],
-            "relations": [
-                [
-                    "white coat",
-                    "blue jeans",
-                    "attribute"
-                ],
-                [
-                    "computer",
-                    "table",
-                    "spatial"
-                ]
+                "black-framed glasses",
+                "silver ring",
+                "red shoes"
             ]
         },
         "keyframe_timestamps": [
@@ -68416,29 +67669,12 @@
             "target_objects": [
                 "computer",
                 "keyboard",
-                "table"
+                "monitor"
             ],
             "cue_objects": [
-                "white walls",
-                "beige table",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "computer",
-                    "keyboard",
-                    "spatial"
-                ],
-                [
-                    "computer",
-                    "table",
-                    "spatial"
-                ],
-                [
-                    "table",
-                    "beige",
-                    "attribute"
-                ]
+                "subtitle",
+                "man",
+                "table"
             ]
         },
         "keyframe_timestamps": [
@@ -69520,31 +68756,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
+                "man",
+                "lab coat",
+                "control panel"
+            ],
+            "cue_objects": [
                 "red button",
                 "white button",
                 "black remote"
-            ],
-            "cue_objects": [
-                "control panel",
-                "lab coat",
-                "computer screen"
-            ],
-            "relations": [
-                [
-                    "red button",
-                    "control panel",
-                    "spatial"
-                ],
-                [
-                    "white button",
-                    "control panel",
-                    "spatial"
-                ],
-                [
-                    "black remote",
-                    "lab coat",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -70627,30 +69846,13 @@
         "grounding_objects": {
             "target_objects": [
                 "airplane",
-                "tail wings",
-                "fuselage"
+                "tail_wing",
+                "red_pattern"
             ],
             "cue_objects": [
-                "red pattern",
-                "silver color",
-                "bullet holes"
-            ],
-            "relations": [
-                [
-                    "airplane",
-                    "bullet holes",
-                    "attribute"
-                ],
-                [
-                    "tail wings",
-                    "red and white stripes",
-                    "attribute"
-                ],
-                [
-                    "fuselage",
-                    "red pattern",
-                    "attribute"
-                ]
+                "subtitle",
+                "fuselage",
+                "sky"
             ]
         },
         "keyframe_timestamps": [
@@ -71956,26 +71158,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "transport truck",
-                "decorative pattern",
-                "roadside"
+                "truck",
+                "people",
+                "flag"
             ],
             "cue_objects": [
-                "greenery",
-                "highway",
-                "uniforms"
-            ],
-            "relations": [
-                [
-                    "transport truck",
-                    "decorative pattern",
-                    "spatial"
-                ],
-                [
-                    "decorative pattern",
-                    "shape",
-                    "attribute"
-                ]
+                "weapon",
+                "uniform",
+                "bridge"
             ]
         },
         "keyframe_timestamps": [
@@ -73281,26 +72471,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "soldiers",
-                "guns",
-                "staircase"
+                "soldier",
+                "staircase",
+                "text"
             ],
             "cue_objects": [
-                "gray background",
-                "white text",
-                "bottom of stairs"
-            ],
-            "relations": [
-                [
-                    "soldiers",
-                    "guns",
-                    "spatial"
-                ],
-                [
-                    "staircase",
-                    "soldiers",
-                    "spatial"
-                ]
+                "bridge",
+                "smoke",
+                "map"
             ]
         },
         "keyframe_timestamps": [
@@ -74606,26 +73784,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "microphone",
-                "glasses"
+                "man",
+                "glasses",
+                "microphone"
             ],
             "cue_objects": [
-                "black background",
-                "GPU chips",
-                "water bottle"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "microphone",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "glasses",
-                    "attribute"
-                ]
+                "black_background",
+                "clothing",
+                "speech"
             ]
         },
         "keyframe_timestamps": [
@@ -77508,27 +76674,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "truck",
-                "building",
                 "woman",
-                "man"
+                "man",
+                "truck"
             ],
             "cue_objects": [
-                "street",
-                "clothes",
-                "phone"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "man",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "phone",
-                    "causal"
-                ]
+                "building",
+                "subtitles",
+                "street"
             ]
         },
         "keyframe_timestamps": [
@@ -80412,37 +79565,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "suit",
-                "glasses",
-                "report",
-                "microphones"
+                "microphone",
+                "report"
             ],
             "cue_objects": [
-                "blue_background",
                 "subtitle",
-                "press_conference"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "suit",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "microphones",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "report",
-                    "spatial"
-                ]
+                "glasses",
+                "suit"
             ]
         },
         "keyframe_timestamps": [
@@ -83326,25 +82455,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "clothing",
-                "subtitle"
+                "tablet",
+                "whiteboard"
             ],
             "cue_objects": [
-                "screen",
-                "text",
-                "table"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "black and white striped suit",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "subtitle",
-                    "spatial"
-                ]
+                "black_jacket",
+                "maroon_blouse",
+                "glasses"
             ]
         },
         "keyframe_timestamps": [
@@ -85539,31 +84656,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "tablet",
-                "board"
+                "woman1",
+                "woman2",
+                "whiteboard"
             ],
             "cue_objects": [
-                "equation",
-                "circled_numbers",
-                "subtitles"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "tablet",
-                    "spatial"
-                ],
-                [
-                    "equation",
-                    "circled_numbers",
-                    "spatial"
-                ],
-                [
-                    "subtitles",
-                    "circled_numbers",
-                    "time"
-                ]
+                "number",
+                "line",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -87758,26 +86858,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "slanted line",
-                "pink bar"
+                "woman1",
+                "woman2",
+                "whiteboard"
             ],
             "cue_objects": [
                 "subtitle",
-                "number",
-                "screen"
-            ],
-            "relations": [
-                [
-                    "slanted line",
-                    "color",
-                    "attribute"
-                ],
-                [
-                    "number",
-                    "pink bar",
-                    "spatial"
-                ]
+                "slanted_line",
+                "pink_bar"
             ]
         },
         "keyframe_timestamps": [
@@ -89972,31 +89060,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "red car",
-                "trees"
+                "man",
+                "woman",
+                "red car"
             ],
             "cue_objects": [
-                "black clothes",
                 "black mask",
-                "hooded outfit"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "red car",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "black clothes",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "trees",
-                    "spatial"
-                ]
+                "black hooded outfit",
+                "trees"
             ]
         },
         "keyframe_timestamps": [
@@ -91844,31 +90915,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
+                "man",
                 "stool",
-                "screen",
-                "drink"
+                "screen"
             ],
             "cue_objects": [
-                "group_of_people",
-                "black_coat",
-                "pink_drink"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "black coat",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "stool",
-                    "spatial"
-                ],
-                [
-                    "screen",
-                    "group_of_people",
-                    "spatial"
-                ]
+                "black coat",
+                "pink drink",
+                "straw"
             ]
         },
         "keyframe_timestamps": [
@@ -93717,30 +92771,13 @@
         "grounding_objects": {
             "target_objects": [
                 "screen",
-                "tile",
-                "girl"
+                "girl",
+                "tile"
             ],
             "cue_objects": [
-                "red tie",
-                "circular patterns",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "girl",
-                    "blue-haired",
-                    "attribute"
-                ],
-                [
-                    "tile",
-                    "design",
-                    "attribute"
-                ],
-                [
-                    "girl",
-                    "screen",
-                    "spatial"
-                ]
+                "subtitle",
+                "uniform",
+                "tie"
             ]
         },
         "keyframe_timestamps": [
@@ -95589,31 +94626,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "brown apron",
-                "plate",
-                "chopsticks"
+                "apron",
+                "shirt"
             ],
             "cue_objects": [
-                "sofa",
-                "flower-patterned cushions",
-                "kitchen"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "brown apron",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "plate",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "chopsticks",
-                    "spatial"
-                ]
+                "plate",
+                "chopsticks",
+                "dog"
             ]
         },
         "keyframe_timestamps": [
@@ -96911,31 +95930,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "dog",
+                "sofa",
                 "cushion",
-                "sofa"
+                "plaid_pillow"
             ],
             "cue_objects": [
-                "pearl necklace",
-                "plaid pillow",
-                "white coat"
-            ],
-            "relations": [
-                [
-                    "dog",
-                    "cushion",
-                    "spatial"
-                ],
-                [
-                    "sofa",
-                    "artificial leather",
-                    "attribute"
-                ],
-                [
-                    "sofa",
-                    "olive-colored",
-                    "attribute"
-                ]
+                "man",
+                "dog",
+                "pearl_necklace"
             ]
         },
         "keyframe_timestamps": [
@@ -98233,31 +97235,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "knife",
-                "cutting board"
+                "man",
+                "cutting_board",
+                "bottle"
             ],
             "cue_objects": [
-                "kitchen utensils",
-                "white cabinets",
-                "cooking oil bottle"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "knife",
-                    "spatial"
-                ],
-                [
-                    "knife",
-                    "cutting board",
-                    "spatial"
-                ],
-                [
-                    "cooking oil bottle",
-                    "cutting board",
-                    "spatial"
-                ]
+                "subtitle",
+                "ceiling_light",
+                "kitchen"
             ]
         },
         "keyframe_timestamps": [
@@ -99556,25 +98541,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "military uniform",
-                "shoulder decorations"
+                "uniform",
+                "shoulder_strap"
             ],
             "cue_objects": [
-                "subtitle",
+                "portrait",
                 "map",
-                "red shoulder strap"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "military uniform",
-                    "attribute"
-                ],
-                [
-                    "military uniform",
-                    "shoulder decorations",
-                    "attribute"
-                ]
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -102237,30 +101210,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "white pants",
-                "blue-sheeted rack"
+                "leg",
+                "wound"
             ],
             "cue_objects": [
-                "white skirt",
-                "injured person",
-                "wall"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "blue-sheeted rack",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "white pants",
-                    "attribute"
-                ],
-                [
-                    "injured person",
-                    "wall",
-                    "spatial"
-                ]
+                "rack",
+                "white pants",
+                "blue sheet"
             ]
         },
         "keyframe_timestamps": [
@@ -104927,21 +103883,9 @@
                 "pants"
             ],
             "cue_objects": [
-                "red chair",
-                "people",
-                "black and white photo"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "chair",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "pants",
-                    "attribute"
-                ]
+                "subtitle",
+                "map",
+                "portrait"
             ]
         },
         "keyframe_timestamps": [
@@ -107608,21 +106552,9 @@
                 "camera"
             ],
             "cue_objects": [
-                "black_and_white_scene",
-                "Ellis_Island",
-                "1913"
-            ],
-            "relations": [
-                [
-                    "statue",
-                    "subtitle",
-                    "spatial"
-                ],
-                [
-                    "camera",
-                    "subtitle",
-                    "causal"
-                ]
+                "goddess",
+                "liberty",
+                "ellis"
             ]
         },
         "keyframe_timestamps": [
@@ -108639,21 +107571,9 @@
                 "building"
             ],
             "cue_objects": [
+                "subtitle",
                 "steps",
-                "group",
-                "black-and-white"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "sign",
-                    "spatial"
-                ],
-                [
-                    "sign",
-                    "building",
-                    "spatial"
-                ]
+                "painting"
             ]
         },
         "keyframe_timestamps": [
@@ -109666,30 +108586,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "pink backpack",
-                "red stools"
+                "stool",
+                "painting"
             ],
             "cue_objects": [
-                "yellow wooden floor",
-                "red painting",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "pink backpack",
-                    "spatial"
-                ],
-                [
-                    "red stools",
-                    "yellow wooden floor",
-                    "spatial"
-                ],
-                [
-                    "subtitle",
-                    "woman",
-                    "causal"
-                ]
+                "backpack",
+                "subtitle",
+                "tears"
             ]
         },
         "keyframe_timestamps": [
@@ -110701,31 +109604,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "white short-sleeve",
-                "blue long-sleeve coat"
+                "man_white",
+                "man_blue",
+                "inner_wear"
             ],
             "cue_objects": [
-                "black background",
-                "inner wear",
-                "microphone"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "white short-sleeve",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "blue long-sleeve coat",
-                    "attribute"
-                ],
-                [
-                    "blue long-sleeve coat",
-                    "inner wear",
-                    "attribute"
-                ]
+                "man_white",
+                "man_blue",
+                "map"
             ]
         },
         "keyframe_timestamps": [
@@ -113672,25 +112558,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "suspender dress",
-                "British flag"
+                "suspender_dress",
+                "british_flag"
             ],
             "cue_objects": [
-                "black background",
+                "subtitle",
                 "ring",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "suspender dress",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "British flag",
-                    "spatial"
-                ]
+                "black_background"
             ]
         },
         "keyframe_timestamps": [
@@ -116637,30 +115511,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "hair accessory",
-                "wheat"
+                "wheat",
+                "hair_accessory"
             ],
             "cue_objects": [
-                "green meadow",
-                "riverside road",
+                "shirt",
+                "road",
                 "pedestrians"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "dark skin",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "wheat",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "hair accessory",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -119608,29 +118465,12 @@
             "target_objects": [
                 "woman",
                 "book",
-                "paper"
+                "sofa"
             ],
             "cue_objects": [
-                "sofa",
-                "railing",
-                "wall"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "book",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "sofa",
-                    "spatial"
-                ],
-                [
-                    "book",
-                    "two",
-                    "attribute"
-                ]
+                "blackford",
+                "ring",
+                "watch"
             ]
         },
         "keyframe_timestamps": [
@@ -120815,21 +119655,9 @@
                 "pen"
             ],
             "cue_objects": [
-                "white sofa",
-                "orange nail polish",
-                "necklace"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "orange nail polish",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "book",
-                    "spatial"
-                ]
+                "subtitle",
+                "sofa",
+                "wall"
             ]
         },
         "keyframe_timestamps": [
@@ -122011,24 +120839,12 @@
             "target_objects": [
                 "woman",
                 "book",
-                "necklace"
+                "sofa"
             ],
             "cue_objects": [
-                "white sofa",
-                "black railing",
-                "plant"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "book",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "necklace",
-                    "attribute"
-                ]
+                "plant",
+                "railing",
+                "necklace"
             ]
         },
         "keyframe_timestamps": [
@@ -123209,30 +122025,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "table",
-                "water cup"
+                "water_cup",
+                "flat_panel"
             ],
             "cue_objects": [
-                "wooden board",
-                "flat panel",
-                "black leather jacket"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "table",
-                    "spatial"
-                ],
-                [
-                    "water cup",
-                    "blue",
-                    "attribute"
-                ],
-                [
-                    "water cup",
-                    "table",
-                    "spatial"
-                ]
+                "subtitle",
+                "table",
+                "wooden_board"
             ]
         },
         "keyframe_timestamps": [
@@ -125495,26 +124294,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "orange area",
-                "pink text",
-                "white screen"
+                "white_screen",
+                "orange_area",
+                "pink_text"
             ],
             "cue_objects": [
-                "character cutouts",
-                "subtitle",
-                "electromagnetic spectrum"
-            ],
-            "relations": [
-                [
-                    "orange area",
-                    "pink text",
-                    "spatial"
-                ],
-                [
-                    "orange area",
-                    "white screen",
-                    "spatial"
-                ]
+                "character_cutout1",
+                "character_cutout2",
+                "subtitle_text"
             ]
         },
         "keyframe_timestamps": [
@@ -127777,26 +126564,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "glasses",
-                "clothing"
+                "woman_top",
+                "woman_bottom",
+                "tablet"
             ],
             "cue_objects": [
-                "desk",
-                "white screen",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "desk",
-                    "spatial"
-                ]
+                "glasses",
+                "tshirt",
+                "leather_jacket"
             ]
         },
         "keyframe_timestamps": [
@@ -130060,30 +128835,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "glasses",
-                "mirror"
+                "mirror",
+                "glasses"
             ],
             "cue_objects": [
+                "subtitle",
                 "car",
-                "screen",
                 "clock"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "mirror",
-                    "spatial"
-                ],
-                [
-                    "screen",
-                    "clock",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -131137,25 +129895,13 @@
         "grounding_objects": {
             "target_objects": [
                 "hand",
-                "bracelet",
-                "handrail"
+                "handrail",
+                "bracelet"
             ],
             "cue_objects": [
                 "stone",
                 "weeds",
                 "trees"
-            ],
-            "relations": [
-                [
-                    "hand",
-                    "bracelet",
-                    "attribute"
-                ],
-                [
-                    "hand",
-                    "handrail",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -132208,26 +130954,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
+                "man",
                 "backpack",
                 "headscarf"
             ],
             "cue_objects": [
+                "subtitle",
                 "stream",
-                "stones",
-                "green plants"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "headscarf",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "backpack",
-                    "spatial"
-                ]
+                "canyon"
             ]
         },
         "keyframe_timestamps": [
@@ -133280,26 +132014,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "metal rod",
+                "man",
+                "metal_rod",
                 "coat"
             ],
             "cue_objects": [
-                "dark blue coat",
-                "red coat",
-                "green shirt"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "dark blue coat",
-                    "attribute"
-                ],
-                [
-                    "metal rod",
-                    "handle material",
-                    "attribute"
-                ]
+                "green_shirt",
+                "red_coat",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -134587,21 +133309,9 @@
                 "wall"
             ],
             "cue_objects": [
+                "subtitle",
                 "tree",
-                "sun",
-                "yellow objects"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "long hair",
-                    "attribute"
-                ],
-                [
-                    "bag",
-                    "rectangle",
-                    "attribute"
-                ]
+                "sun"
             ]
         },
         "keyframe_timestamps": [
@@ -135885,25 +134595,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "stuffed toy",
-                "plastic bag"
+                "stuffed_toy",
+                "plastic_bag"
             ],
             "cue_objects": [
-                "blue jacket",
-                "white shirt",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "blue jacket",
-                    "attribute"
-                ],
-                [
-                    "stuffed toy",
-                    "color",
-                    "attribute"
-                ]
+                "blue_jacket",
+                "white_shirt",
+                "right_hand"
             ]
         },
         "keyframe_timestamps": [
@@ -137188,24 +135886,12 @@
             "target_objects": [
                 "woman",
                 "painting",
-                "shirt"
+                "desk lamp"
             ],
             "cue_objects": [
-                "white_room",
-                "wall",
-                "hair"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "shirt",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "painting",
-                    "spatial"
-                ]
+                "Norwegian flag",
+                "money",
+                "Rakfisk"
             ]
         },
         "keyframe_timestamps": [
@@ -138458,31 +137144,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "blue striped shirt",
-                "grey sofa",
-                "wooden wall"
+                "man",
+                "flag",
+                "sofa"
             ],
             "cue_objects": [
-                "face flag",
-                "blue hat",
-                "yellow small flag"
-            ],
-            "relations": [
-                [
-                    "blue striped shirt",
-                    "grey sofa",
-                    "spatial"
-                ],
-                [
-                    "wooden wall",
-                    "face flag",
-                    "spatial"
-                ],
-                [
-                    "blue hat",
-                    "yellow small flag",
-                    "spatial"
-                ]
+                "Norwegian flag",
+                "wooden wall",
+                "blue shirt"
             ]
         },
         "keyframe_timestamps": [
@@ -139735,26 +138404,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "boulder",
-                "cliffs",
-                "arrowhead"
+                "cliff",
+                "moss",
+                "boulder"
             ],
             "cue_objects": [
-                "clouds",
-                "green moss",
-                "screen"
-            ],
-            "relations": [
-                [
-                    "boulder",
-                    "cliffs",
-                    "spatial"
-                ],
-                [
-                    "arrowhead",
-                    "white outline",
-                    "attribute"
-                ]
+                "arrowhead",
+                "text",
+                "sky"
             ]
         },
         "keyframe_timestamps": [
@@ -141007,31 +139664,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "girls",
-                "white tops",
-                "beige floral skirts"
+                "girl",
+                "skirt",
+                "ornament"
             ],
             "cue_objects": [
-                "concrete ground",
-                "circle formation",
-                "ornaments"
-            ],
-            "relations": [
-                [
-                    "girls",
-                    "white tops",
-                    "attribute"
-                ],
-                [
-                    "girls",
-                    "beige floral skirts",
-                    "attribute"
-                ],
-                [
-                    "beige floral skirts",
-                    "ornaments",
-                    "spatial"
-                ]
+                "white top",
+                "beige floral",
+                "circle"
             ]
         },
         "keyframe_timestamps": [
@@ -142315,26 +140955,9 @@
                 "glasses"
             ],
             "cue_objects": [
-                "blue_yellow_banner",
-                "black_leather_jacket",
-                "blue_headscarf"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "black_leather_jacket",
-                    "attribute"
-                ],
-                [
-                    "banner",
-                    "blue_yellow",
-                    "attribute"
-                ],
-                [
-                    "glasses",
-                    "black_frames",
-                    "attribute"
-                ]
+                "hat",
+                "leather_jacket",
+                "star_moon_headscarf"
             ]
         },
         "keyframe_timestamps": [
@@ -143613,26 +142236,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "white tops",
-                "floral patterns"
+                "woman",
+                "hat",
+                "scarf"
             ],
             "cue_objects": [
-                "red wooden chair",
-                "white room",
-                "accessory"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "white tops",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "accessory",
-                    "spatial"
-                ]
+                "red chair",
+                "white top",
+                "floral pattern"
             ]
         },
         "keyframe_timestamps": [
@@ -144911,31 +143522,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "black coat",
-                "red lanterns"
+                "man",
+                "street",
+                "lantern"
             ],
             "cue_objects": [
-                "street",
-                "camera",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "black coat",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "red lanterns",
-                    "spatial"
-                ],
-                [
-                    "subtitle",
-                    "person",
-                    "time"
-                ]
+                "subtitle",
+                "coat",
+                "hair"
             ]
         },
         "keyframe_timestamps": [
@@ -146528,24 +145122,12 @@
             "target_objects": [
                 "woman",
                 "pants",
-                "street"
+                "top"
             ],
             "cue_objects": [
                 "red lanterns",
-                "brown top",
+                "subtitles",
                 "long hair"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "pants",
-                    "attribute"
-                ],
-                [
-                    "street",
-                    "red lanterns",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -148141,26 +146723,9 @@
                 "knife"
             ],
             "cue_objects": [
-                "white plate",
-                "brown wooden board",
+                "subtitle",
+                "table",
                 "vegetables"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "white top",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "apron",
-                    "spatial"
-                ],
-                [
-                    "knife",
-                    "vegetables",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -149751,27 +148316,15 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
+                "sunflower",
                 "watch",
-                "radio",
-                "car",
-                "sunflower"
+                "radio"
             ],
             "cue_objects": [
-                "airplane",
-                "colorful_images",
-                "number_36"
-            ],
-            "relations": [
-                [
-                    "watch",
-                    "radio",
-                    "spatial"
-                ],
-                [
-                    "car",
-                    "sunflower",
-                    "spatial"
-                ]
+                "car",
+                "boat",
+                "elephant",
+                "big tree"
             ]
         },
         "keyframe_timestamps": [
@@ -151651,25 +150204,13 @@
         "grounding_objects": {
             "target_objects": [
                 "sunflower",
-                "purple rectangle",
-                "text"
+                "text",
+                "diagram"
             ],
             "cue_objects": [
+                "number",
                 "subtitle",
-                "colorful picture",
-                "number"
-            ],
-            "relations": [
-                [
-                    "sunflower",
-                    "purple rectangle",
-                    "spatial"
-                ],
-                [
-                    "purple rectangle",
-                    "text",
-                    "spatial"
-                ]
+                "slide"
             ]
         },
         "keyframe_timestamps": [
@@ -153548,33 +152089,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "sunglasses",
-                "airplane",
                 "sunflower",
-                "microphone"
+                "text",
+                "image"
             ],
             "cue_objects": [
-                "colorful_image",
-                "green_text",
-                "yellow_text",
-                "red_text"
-            ],
-            "relations": [
-                [
-                    "colorful_image",
-                    "green_text",
-                    "spatial"
-                ],
-                [
-                    "colorful_image",
-                    "yellow_text",
-                    "spatial"
-                ],
-                [
-                    "colorful_image",
-                    "red_text",
-                    "spatial"
-                ]
+                "microphone",
+                "sunglasses",
+                "earrings"
             ]
         },
         "keyframe_timestamps": [
@@ -155454,25 +153976,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "black shirt",
-                "curtain"
+                "curtain",
+                "arm"
             ],
             "cue_objects": [
-                "white room",
-                "gray-white curtain",
-                "short-sleeved shirt"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "black shirt",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "curtain",
-                    "spatial"
-                ]
+                "hand",
+                "shirt",
+                "eye_mask"
             ]
         },
         "keyframe_timestamps": [
@@ -156537,24 +155047,12 @@
             "target_objects": [
                 "woman",
                 "mascara",
-                "headband"
+                "eye_patch"
             ],
             "cue_objects": [
-                "black shirt",
-                "white room",
-                "greyish-white canopy"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "headband",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "mascara",
-                    "spatial"
-                ]
+                "hand",
+                "shirt",
+                "curtain"
             ]
         },
         "keyframe_timestamps": [
@@ -157618,25 +156116,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "black shirt",
-                "object in left hand"
+                "eyelid_patch",
+                "mascara"
             ],
             "cue_objects": [
-                "white room",
-                "grey and white curtains",
-                "left hand"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "black shirt",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "object in left hand",
-                    "spatial"
-                ]
+                "hand",
+                "finger",
+                "curtain"
             ]
         },
         "keyframe_timestamps": [
@@ -158699,31 +157185,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "white board",
                 "person",
-                "rectangular board"
+                "protest_sign",
+                "shoes"
             ],
             "cue_objects": [
-                "black text",
-                "shoes",
-                "subtitles"
-            ],
-            "relations": [
-                [
-                    "white board",
-                    "person",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "shoes",
-                    "attribute"
-                ],
-                [
-                    "rectangular board",
-                    "person",
-                    "spatial"
-                ]
+                "whiteboard",
+                "rectangular_board",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -159086,7 +157555,18 @@
             102
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "terrain_map",
+                "arrow",
+                "background"
+            ],
+            "cue_objects": [
+                "cue1",
+                "cue2",
+                "cue3"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -159102,7 +157582,18 @@
             203
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "gun",
+                "gloves"
+            ],
+            "cue_objects": [
+                "forest",
+                "coat",
+                "person"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": false
@@ -159118,7 +157609,18 @@
             174
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "woman",
+                "jacket"
+            ],
+            "cue_objects": [
+                "shirt",
+                "buildings",
+                "traffic lights"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": false
@@ -159134,7 +157636,18 @@
             247
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "person",
+                "uniform",
+                "window"
+            ],
+            "cue_objects": [
+                "Peacekeeper",
+                "train",
+                "platform"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -159154,29 +157667,12 @@
             "target_objects": [
                 "man",
                 "glasses",
-                "checkered shirt"
+                "green_background"
             ],
             "cue_objects": [
-                "green background",
-                "blue pattern",
-                "pink pattern"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "checkered shirt",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "green background",
-                    "spatial"
-                ]
+                "blue_pattern",
+                "pink_pattern",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -160338,29 +158834,12 @@
             "target_objects": [
                 "woman",
                 "glasses",
-                "white coat"
+                "text"
             ],
             "cue_objects": [
-                "green background",
-                "English text",
+                "coat",
+                "background",
                 "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "green background",
-                    "spatial"
-                ],
-                [
-                    "subtitle",
-                    "English text",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -161520,31 +159999,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "green paper",
+                "man_right",
+                "green_card",
                 "pen"
             ],
             "cue_objects": [
-                "blue curtain",
-                "round table",
-                "glasses"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "green paper",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "pen",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "glasses",
-                    "attribute"
-                ]
+                "subtitle",
+                "table",
+                "curtain"
             ]
         },
         "keyframe_timestamps": [
@@ -162704,31 +161166,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "woman",
+                "woman_bottom_right",
                 "necklace",
-                "glasses"
+                "wristwatch"
             ],
             "cue_objects": [
-                "wristwatch",
-                "light-colored shirt",
+                "screen",
+                "chemical_equation",
                 "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "light-colored shirt",
-                    "attribute"
-                ],
-                [
-                    "necklace",
-                    "woman",
-                    "spatial"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -165305,26 +163750,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "glasses",
-                "checkered jacket"
+                "woman_upper_right",
+                "woman_lower_right",
+                "chemical_equation"
             ],
             "cue_objects": [
-                "chemical formulas",
-                "PPT",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "checkered jacket",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "subtitle",
-                    "spatial"
-                ]
+                "subtitle_text",
+                "black_jacket",
+                "glasses"
             ]
         },
         "keyframe_timestamps": [
@@ -167901,26 +166334,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "woman",
-                "chair",
-                "mirror"
+                "woman_upper_right",
+                "woman_lower_right",
+                "chair"
             ],
             "cue_objects": [
-                "subtitle",
-                "chemical formulas",
-                "PPT"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "chair",
-                    "spatial"
-                ],
-                [
-                    "chair",
-                    "off-white",
-                    "attribute"
-                ]
+                "chemical_equation",
+                "mirror",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -170502,21 +168923,9 @@
                 "sunset"
             ],
             "cue_objects": [
-                "water",
-                "short sleeves",
-                "tied hair"
-            ],
-            "relations": [
-                [
-                    "girl",
-                    "kayak",
-                    "spatial"
-                ],
-                [
-                    "sunset",
-                    "water",
-                    "spatial"
-                ]
+                "subtitle",
+                "short_sleeve",
+                "tied_hair"
             ]
         },
         "keyframe_timestamps": [
@@ -171616,29 +170025,12 @@
             "target_objects": [
                 "woman",
                 "girl",
-                "vegetable garden"
+                "vegetable"
             ],
             "cue_objects": [
-                "blue suit",
-                "white outfit",
-                "pink flower"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "girl",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "blue suit",
-                    "attribute"
-                ],
-                [
-                    "girl",
-                    "white outfit",
-                    "attribute"
-                ]
+                "subtitle",
+                "garden",
+                "hat"
             ]
         },
         "keyframe_timestamps": [
@@ -172741,21 +171133,9 @@
                 "seawater"
             ],
             "cue_objects": [
+                "subtitle",
                 "coral reefs",
-                "seashells",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "diving suit",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "seawater",
-                    "spatial"
-                ]
+                "seashells"
             ]
         },
         "keyframe_timestamps": [
@@ -173851,7 +172231,18 @@
             71
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "tv",
+                "wall",
+                "people"
+            ],
+            "cue_objects": [
+                "reporter",
+                "microphone",
+                "subtitle"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -173867,7 +172258,18 @@
             49
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "phone",
+                "bed"
+            ],
+            "cue_objects": [
+                "lamp",
+                "door",
+                "plate"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -173883,7 +172285,18 @@
             33
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "woman",
+                "crowd"
+            ],
+            "cue_objects": [
+                "hair",
+                "mustache",
+                "subtitle"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -173899,7 +172312,18 @@
             132
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "pot",
+                "chicken",
+                "green vegetable"
+            ],
+            "cue_objects": [
+                "wooden spoon",
+                "broth",
+                "tomato sauce"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@recipesbyanne-7234536361296940314_en.json'",
         "is_subtitle_question": true
@@ -173915,7 +172339,18 @@
             29
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "chocolate_ball",
+                "knife",
+                "table"
+            ],
+            "cue_objects": [
+                "subtitle",
+                "hand",
+                "frosting"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@healthfood-6917750501975100677_en.json'",
         "is_subtitle_question": true
@@ -173931,7 +172366,18 @@
             221
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "sofa",
+                "bowl"
+            ],
+            "cue_objects": [
+                "spoon",
+                "pillow",
+                "socks"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@healthfood-6867204066108329221_en.json'",
         "is_subtitle_question": true
@@ -173947,7 +172393,18 @@
             229
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "shorts",
+                "waterfall"
+            ],
+            "cue_objects": [
+                "cave",
+                "subtitle",
+                "stairs"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@placesunleashed-7325156862486220038_en.json'",
         "is_subtitle_question": true
@@ -173963,7 +172420,18 @@
             45
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "cat",
+                "alley",
+                "house"
+            ],
+            "cue_objects": [
+                "flower_pot",
+                "stone_slab",
+                "shadow"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@jetset_anna-6985193727107009798_en.json'",
         "is_subtitle_question": true
@@ -173979,7 +172447,18 @@
             171
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "woman",
+                "car"
+            ],
+            "cue_objects": [
+                "subtitle",
+                "hand",
+                "shoulder"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@movie.explained6-7254803496900267266_en.json'",
         "is_subtitle_question": true
@@ -173995,7 +172474,18 @@
             35
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "cat",
+                "cushion",
+                "shelf"
+            ],
+            "cue_objects": [
+                "subtitle",
+                "vases",
+                "wall"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@lisolna-7203500499360877829_en.json'",
         "is_subtitle_question": true
@@ -174014,30 +172504,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "white coat",
-                "black outfit"
+                "hand",
+                "PPT"
             ],
             "cue_objects": [
-                "circular frame",
                 "subtitle",
-                "white background"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "white coat",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "circular frame",
-                    "spatial"
-                ],
-                [
-                    "subtitle",
-                    "woman",
-                    "spatial"
-                ]
+                "coat",
+                "circle"
             ]
         },
         "keyframe_timestamps": [
@@ -175043,30 +173516,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "white coat",
-                "table"
+                "hands",
+                "tablet"
             ],
             "cue_objects": [
-                "subtitle",
-                "webcam",
-                "circular frame"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "white coat",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "table",
-                    "spatial"
-                ],
-                [
-                    "subtitle",
-                    "woman",
-                    "time"
-                ]
+                "video_screen",
+                "PPT",
+                "chemistry_formula"
             ]
         },
         "keyframe_timestamps": [
@@ -176072,25 +174528,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "white coat",
-                "black inner clothing"
+                "PPT",
+                "subtitle"
             ],
             "cue_objects": [
-                "circular frame",
-                "subtitle",
-                "arrows"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "white coat",
-                    "attribute"
-                ],
-                [
-                    "subtitle",
-                    "woman",
-                    "spatial"
-                ]
+                "arrow",
+                "chemical symbol",
+                "circular frame"
             ]
         },
         "keyframe_timestamps": [
@@ -177100,21 +175544,9 @@
                 "earring"
             ],
             "cue_objects": [
-                "ponytail",
-                "black coat",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "woman",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "earring",
-                    "attribute"
-                ]
+                "watermelon",
+                "ring",
+                "earphone"
             ]
         },
         "keyframe_timestamps": [
@@ -177686,26 +176118,12 @@
             "target_objects": [
                 "person",
                 "jacket",
-                "ground"
+                "phone"
             ],
             "cue_objects": [
-                "hat",
-                "earring",
-                "computer",
-                "phone",
-                "watch"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "jacket",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "ground",
-                    "spatial"
-                ]
+                "subtitle",
+                "desert",
+                "stab"
             ]
         },
         "keyframe_timestamps": [
@@ -178277,29 +176695,12 @@
             "target_objects": [
                 "girl",
                 "doll",
-                "ponytails"
+                "door"
             ],
             "cue_objects": [
-                "brown door",
-                "flowers",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "girl",
-                    "ponytails",
-                    "attribute"
-                ],
-                [
-                    "girl",
-                    "doll",
-                    "spatial"
-                ],
-                [
-                    "subtitle",
-                    "girl",
-                    "time"
-                ]
+                "subtitle",
+                "wall",
+                "coat"
             ]
         },
         "keyframe_timestamps": [
@@ -178994,26 +177395,14 @@
         "question_category": "T2E",
         "grounding_objects": {
             "target_objects": [
-                "person",
-                "bag",
-                "car"
+                "man",
+                "car",
+                "tree"
             ],
             "cue_objects": [
-                "tree",
-                "path",
-                "wooden railing"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "holding bag",
-                    "attribute"
-                ],
-                [
-                    "car",
-                    "tree",
-                    "spatial"
-                ]
+                "woman",
+                "bag",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -179708,26 +178097,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "cigarette",
-                "steering wheel",
-                "sunglasses"
+                "man",
+                "woman",
+                "cigarette"
             ],
             "cue_objects": [
+                "pirate",
                 "car",
-                "khaki clothes",
-                "bow tie"
-            ],
-            "relations": [
-                [
-                    "cigarette",
-                    "steering wheel",
-                    "spatial"
-                ],
-                [
-                    "sunglasses",
-                    "steering wheel",
-                    "attribute"
-                ]
+                "steering_wheel"
             ]
         },
         "keyframe_timestamps": [
@@ -180300,30 +178677,13 @@
         "grounding_objects": {
             "target_objects": [
                 "person",
-                "white shirt",
-                "olive clothing"
+                "hat",
+                "tree"
             ],
             "cue_objects": [
-                "sea",
-                "trees",
-                "crowd"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "white shirt",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "olive clothing",
-                    "spatial"
-                ],
-                [
-                    "crowd",
-                    "trees",
-                    "spatial"
-                ]
+                "person",
+                "water cup",
+                "helicopter"
             ]
         },
         "keyframe_timestamps": [
@@ -180893,7 +179253,18 @@
             1023
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "woman",
+                "tape"
+            ],
+            "cue_objects": [
+                "floor",
+                "venom",
+                "subtitle"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@movie.explained6-7253164232307379457_en.json'",
         "is_subtitle_question": true
@@ -180909,7 +179280,18 @@
             261
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "face mask",
+                "beauty bed",
+                "lighting stand"
+            ],
+            "cue_objects": [
+                "false eyelashes",
+                "powder puff",
+                "mirror"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@kerstinong-7074483613273754882_en.json'",
         "is_subtitle_question": true
@@ -180925,7 +179307,18 @@
             209
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "hair dryer",
+                "hair curlers"
+            ],
+            "cue_objects": [
+                "mask",
+                "top",
+                "hair"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@jonijawne-7214559428471770374_en.json'",
         "is_subtitle_question": true
@@ -180941,7 +179334,18 @@
             313
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "pot",
+                "stove",
+                "bowl"
+            ],
+            "cue_objects": [
+                "blue flame",
+                "subtitle",
+                "macaroni"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@jess.morg-7206809277867052330_en.json'",
         "is_subtitle_question": true
@@ -180957,7 +179361,18 @@
             729
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "hand",
+                "bottle",
+                "shelf"
+            ],
+            "cue_objects": [
+                "nail_polish",
+                "subtitle",
+                "floor"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@lisolna-7333990579963039009_en.json'",
         "is_subtitle_question": true
@@ -180973,7 +179388,18 @@
             1178
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "hand",
+                "wardrobe"
+            ],
+            "cue_objects": [
+                "subtitle",
+                "text",
+                "camera"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@kerstinong-7254520467002854657_en.json'",
         "is_subtitle_question": true
@@ -180989,7 +179415,18 @@
             14
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "man",
+                "pink_hoodie",
+                "white_door"
+            ],
+            "cue_objects": [
+                "lantern",
+                "street",
+                "parked_cars"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -181005,7 +179442,18 @@
             106
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "lady",
+                "yellow flowers",
+                "blue sky"
+            ],
+            "cue_objects": [
+                "snowy mountain",
+                "green long-sleeved outfit",
+                "brown long-sleeved outfit"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -181022,7 +179470,18 @@
             330
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "person",
+                "plate",
+                "paper"
+            ],
+            "cue_objects": [
+                "shirt",
+                "ink",
+                "desk"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": false
@@ -181038,7 +179497,19 @@
             192
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "computer_desk",
+                "lamp"
+            ],
+            "cue_objects": [
+                "orange_string",
+                "blue_painting",
+                "white_bookshelf",
+                "white_keyboard"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -181054,7 +179525,18 @@
             16
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "hand",
+                "bowl",
+                "food"
+            ],
+            "cue_objects": [
+                "table",
+                "oven",
+                "cutting_board"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true
@@ -181074,24 +179556,12 @@
             "target_objects": [
                 "person",
                 "gun",
-                "grass hut"
+                "grass_hut"
             ],
             "cue_objects": [
-                "subtitle",
-                "ground",
-                "bird"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "gun",
-                    "spatial"
-                ],
-                [
-                    "gun",
-                    "grass hut",
-                    "spatial"
-                ]
+                "target",
+                "soldiers",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -181705,30 +180175,13 @@
         "grounding_objects": {
             "target_objects": [
                 "person",
-                "snow",
-                "item"
+                "weapon",
+                "target"
             ],
             "cue_objects": [
                 "tree",
                 "snow",
-                "group"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "item",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "snow",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "tree",
-                    "spatial"
-                ]
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -182341,31 +180794,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
+                "man",
                 "laptop",
-                "pillow",
-                "kitchen"
+                "pillow"
             ],
             "cue_objects": [
-                "sofa",
+                "kitchen",
                 "cabinets",
-                "shirt"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "red shirt",
-                    "attribute"
-                ],
-                [
-                    "laptop",
-                    "sofa",
-                    "spatial"
-                ],
-                [
-                    "pillow",
-                    "sofa",
-                    "spatial"
-                ]
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -182924,31 +181360,14 @@
         "question_category": "T2O",
         "grounding_objects": {
             "target_objects": [
-                "sofa",
+                "man",
                 "laptop",
-                "kitchen"
+                "pillow"
             ],
             "cue_objects": [
-                "pillow",
-                "cabinet",
-                "potted plant"
-            ],
-            "relations": [
-                [
-                    "sofa",
-                    "laptop",
-                    "spatial"
-                ],
-                [
-                    "sofa",
-                    "pillow",
-                    "spatial"
-                ],
-                [
-                    "kitchen",
-                    "cabinet",
-                    "spatial"
-                ]
+                "kitchen",
+                "cabinets",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -183509,29 +181928,12 @@
             "target_objects": [
                 "woman",
                 "man",
-                "camera"
+                "phone"
             ],
             "cue_objects": [
-                "Tibetan blue top",
-                "black crossbody bag",
-                "grey buildings"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "Tibetan blue top",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "man",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "black crossbody bag",
-                    "attribute"
-                ]
+                "subtitle",
+                "building",
+                "plants"
             ]
         },
         "keyframe_timestamps": [
@@ -184228,26 +182630,9 @@
                 "backpack"
             ],
             "cue_objects": [
-                "blue shirt",
+                "caption",
                 "scattered items",
                 "ground"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "blue shirt",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "wristwatch",
-                    "spatial"
-                ],
-                [
-                    "wristwatch",
-                    "black",
-                    "attribute"
-                ]
             ]
         },
         "keyframe_timestamps": [
@@ -184937,7 +183322,18 @@
             892
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "woman",
+                "chopsticks",
+                "bowl"
+            ],
+            "cue_objects": [
+                "cricket",
+                "pad thai",
+                "table"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@tiffycooks-7201571680890670342_en.json'",
         "is_subtitle_question": true
@@ -184953,7 +183349,18 @@
             170
         ],
         "question_category": "T2A",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "tortilla",
+                "sauce",
+                "plate"
+            ],
+            "cue_objects": [
+                "hand",
+                "spoon",
+                "countertop"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@healthfood-6948509102305791238_en.json'",
         "is_subtitle_question": true
@@ -184969,7 +183376,18 @@
             269
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "avocado",
+                "bowl",
+                "sweetened_condensed_milk"
+            ],
+            "cue_objects": [
+                "text",
+                "spoon",
+                "cutting_board"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@healthfood-7125042270381853995_en.json'",
         "is_subtitle_question": false
@@ -184985,7 +183403,18 @@
             173
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "person",
+                "chicken breast",
+                "knife"
+            ],
+            "cue_objects": [
+                "glove",
+                "cutting board",
+                "sauce"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@thatrecipe.us-7309241426028596523_en.json'",
         "is_subtitle_question": true
@@ -185001,7 +183430,18 @@
             358
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "circular structured object",
+                "yellowish vast terrain",
+                "text overlay"
+            ],
+            "cue_objects": [
+                "TRY TO VIEW IT FROM",
+                "Try to view it from space if you can",
+                "Richat Structure"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@placesunleashed-7298820532466683142_en.json'",
         "is_subtitle_question": true
@@ -185020,25 +183460,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "orange shirt",
-                "square frame"
+                "square_frame",
+                "green_area"
             ],
             "cue_objects": [
-                "black background",
-                "green area",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "orange shirt",
-                    "attribute"
-                ],
-                [
-                    "square frame",
-                    "green area",
-                    "spatial"
-                ]
+                "subtitle",
+                "droplet_shape",
+                "orange_shirt"
             ]
         },
         "keyframe_timestamps": [
@@ -186292,29 +184720,12 @@
             "target_objects": [
                 "man",
                 "plate",
-                "food"
+                "food_picture"
             ],
             "cue_objects": [
-                "black background",
                 "subtitle",
-                "picture"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "plate",
-                    "spatial"
-                ],
-                [
-                    "plate",
-                    "food",
-                    "attribute"
-                ],
-                [
-                    "picture",
-                    "subtitle",
-                    "spatial"
-                ]
+                "map",
+                "spice_bags"
             ]
         },
         "keyframe_timestamps": [
@@ -187572,25 +185983,8 @@
             ],
             "cue_objects": [
                 "black background",
-                "short-sleeve shirt",
-                "thick hair"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "thick hair",
-                    "attribute"
-                ],
-                [
-                    "shirt",
-                    "orange",
-                    "attribute"
-                ],
-                [
-                    "subtitle",
-                    "shirt",
-                    "time"
-                ]
+                "thick hair",
+                "buttons"
             ]
         },
         "keyframe_timestamps": [
@@ -188847,26 +187241,9 @@
                 "wall"
             ],
             "cue_objects": [
-                "blue_wall",
-                "long_sleeves",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "person",
-                    "painting",
-                    "spatial"
-                ],
-                [
-                    "person",
-                    "long_sleeves",
-                    "attribute"
-                ],
-                [
-                    "person",
-                    "blue_wall",
-                    "spatial"
-                ]
+                "subtitle",
+                "long_sleeve",
+                "back_view"
             ]
         },
         "keyframe_timestamps": [
@@ -189026,29 +187403,12 @@
             "target_objects": [
                 "woman",
                 "car",
-                "steering wheel"
+                "steering_wheel"
             ],
             "cue_objects": [
-                "blue jeans",
-                "high ponytail",
-                "driver's seat"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "car",
-                    "spatial"
-                ],
-                [
-                    "woman",
-                    "blue jeans",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "black top",
-                    "attribute"
-                ]
+                "jeans",
+                "ponytail",
+                "top"
             ]
         },
         "keyframe_timestamps": [
@@ -189177,29 +187537,12 @@
             "target_objects": [
                 "man",
                 "camera",
-                "striped black-and-white shirt"
+                "shirt"
             ],
             "cue_objects": [
-                "ground",
+                "photographer",
                 "photo",
-                "crouching"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "striped black-and-white shirt",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "camera",
-                    "spatial"
-                ],
-                [
-                    "man",
-                    "ground",
-                    "spatial"
-                ]
+                "fence"
             ]
         },
         "keyframe_timestamps": [
@@ -189350,7 +187693,18 @@
             457
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "person",
+                "jar",
+                "flowers"
+            ],
+            "cue_objects": [
+                "refrigerator",
+                "oven",
+                "measuring cup"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@healthfood-7267233980473314606_en.json'",
         "is_subtitle_question": true
@@ -189366,7 +187720,18 @@
             288
         ],
         "question_category": "T2E",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "yoda_baby",
+                "subtitle",
+                "man_in_armor"
+            ],
+            "cue_objects": [
+                "ear",
+                "eye",
+                "bucket"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "[Errno 2] No such file or directory: '/l/users/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles/@movie.explained6-7277140989259599105_en.json'",
         "is_subtitle_question": true
@@ -189389,26 +187754,9 @@
                 "forest"
             ],
             "cue_objects": [
-                "bun",
-                "short_black_hair",
-                "subtitle"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "short_black_hair",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "bun",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "woman",
-                    "spatial"
-                ]
+                "subtitle",
+                "kiss",
+                "Korrigan"
             ]
         },
         "keyframe_timestamps": [
@@ -189538,30 +187886,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "glasses",
-                "black suit"
+                "suit",
+                "glasses"
             ],
             "cue_objects": [
-                "studio",
-                "nighttime city view",
-                "screen"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "black suit",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "glasses",
-                    "spatial"
-                ],
-                [
-                    "screen",
-                    "nighttime city view",
-                    "spatial"
-                ]
+                "subtitle",
+                "city_view",
+                "desk"
             ]
         },
         "keyframe_timestamps": [
@@ -190070,29 +188401,12 @@
             "target_objects": [
                 "woman",
                 "pen",
-                "watch"
+                "desk"
             ],
             "cue_objects": [
-                "desk",
-                "screen",
-                "cityscape"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "watch",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "pen",
-                    "spatial"
-                ],
-                [
-                    "screen",
-                    "cityscape",
-                    "spatial"
-                ]
+                "watch",
+                "cityscape",
+                "subtitle"
             ]
         },
         "keyframe_timestamps": [
@@ -190599,26 +188913,14 @@
         "question_category": "T2A",
         "grounding_objects": {
             "target_objects": [
-                "circle",
-                "blue rectangle",
-                "subtitle"
+                "man",
+                "blue_square",
+                "red_circle"
             ],
             "cue_objects": [
-                "white background",
-                "black text",
-                "glasses"
-            ],
-            "relations": [
-                [
-                    "circle",
-                    "color",
-                    "attribute"
-                ],
-                [
-                    "blue rectangle",
-                    "subtitle",
-                    "spatial"
-                ]
+                "text",
+                "test_example",
+                "decision_boundary"
             ]
         },
         "keyframe_timestamps": [
@@ -191285,30 +189587,13 @@
         "grounding_objects": {
             "target_objects": [
                 "man",
-                "glasses",
-                "suit"
+                "green_ellipse",
+                "red_error_symbol"
             ],
             "cue_objects": [
-                "white background",
-                "black letters",
-                "red symbols"
-            ],
-            "relations": [
-                [
-                    "man",
-                    "glasses",
-                    "attribute"
-                ],
-                [
-                    "man",
-                    "suit",
-                    "attribute"
-                ],
-                [
-                    "white background",
-                    "black letters",
-                    "spatial"
-                ]
+                "subtitle_text",
+                "training_examples",
+                "test_example"
             ]
         },
         "keyframe_timestamps": [
@@ -191975,25 +190260,13 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "pink backpack",
-                "white clothes"
+                "white clothes",
+                "river"
             ],
             "cue_objects": [
-                "riverbank",
-                "fire",
-                "ground"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "pink backpack",
-                    "attribute"
-                ],
-                [
-                    "white clothes",
-                    "riverbank",
-                    "spatial"
-                ]
+                "backpack",
+                "black pants",
+                "car"
             ]
         },
         "keyframe_timestamps": [
@@ -192688,25 +190961,14 @@
         "grounding_objects": {
             "target_objects": [
                 "woman",
-                "flower",
-                "grass field"
+                "man",
+                "flower"
             ],
             "cue_objects": [
-                "denim jacket",
-                "white top",
-                "grass"
-            ],
-            "relations": [
-                [
-                    "woman",
-                    "white top",
-                    "attribute"
-                ],
-                [
-                    "woman",
-                    "flower",
-                    "spatial"
-                ]
+                "gun",
+                "shield",
+                "dagger",
+                "sword"
             ]
         },
         "keyframe_timestamps": [
@@ -193398,7 +191660,18 @@
             20
         ],
         "question_category": "T2O",
-        "grounding_objects": [],
+        "grounding_objects": {
+            "target_objects": [
+                "onion",
+                "knife",
+                "bowl"
+            ],
+            "cue_objects": [
+                "tomato",
+                "cucumber",
+                "fire"
+            ]
+        },
         "keyframe_timestamps": [],
         "error": "Frame count does not match grid dimensions",
         "is_subtitle_question": true

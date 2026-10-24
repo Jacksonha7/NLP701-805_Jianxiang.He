@@ -1,0 +1,105 @@
+{
+  "run_id": "20261022_214320_job336257_w0.0_F8_n0_full",
+  "start_time": "2026-10-22T21:43:20.623283",
+  "command": "cd /home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core && /home/jianxiang.he/.conda/envs/vsi/bin/python run_multimodal_search.py --device cuda:0 --output_dir results/output --text_weight 0.0 --search_nframes 8 --run_name full --wandb_tags full,w0.0",
+  "args": {
+    "text_weight": 0.0,
+    "dataset": "LongVideoBench",
+    "data_path": "obj_PTonly_LongVideoBench_gpt4_cot_vid1.json",
+    "grounding_dir": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core/data/object_grounding",
+    "video_root": "/nfs-stor/jianxiang.he/continual-vsi/data/LongVideoBench/videos",
+    "results_dir": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core/results",
+    "config_path": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/third_party/YOLO-World/configs/pretrain/yolo_world_v2_xl_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_lvis_minival.py",
+    "checkpoint_path": "/l/users/jianxiang.he/YOLO-World/weights/yolo_world_v2_xl_obj365v1_goldg_cc3mlite_pretrain-5daf1395.pth",
+    "device": "cuda:0",
+    "search_nframes": 8,
+    "grid_rows": 4,
+    "grid_cols": 4,
+    "confidence_threshold": 0.7,
+    "search_budget": 1.0,
+    "output_dir": "results/output",
+    "prefix": "stitched_image",
+    "backend": "gpt4",
+    "prompt_type": "cot",
+    "save_batch": 10,
+    "num": 0,
+    "upload_video": 1,
+    "update_method": "spline",
+    "filter_subtitle": false,
+    "visual_only_if_no_subtitle": false,
+    "subtitle_root": "/nfs-stor/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles",
+    "sim_threshold": 0.5,
+    "time_window": 2.0,
+    "debug_mode": false,
+    "analyze_results": false,
+    "retain_sampling_history": false,
+    "run_name": "full",
+    "wandb_project": "vsi-lvb-rerun",
+    "wandb_entity": "",
+    "wandb_mode": "online",
+    "wandb_tags": "full,w0.0"
+  },
+  "inputs": {
+    "grounding_json": {
+      "path": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core/data/object_grounding/obj_PTonly_LongVideoBench_gpt4_cot_vid1.json",
+      "size": 314938,
+      "mtime": "2026-10-22T16:39:17.924865",
+      "md5": "3314c9b353b1b525aea984be5973c54d"
+    },
+    "yolo_config": {
+      "path": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/third_party/YOLO-World/configs/pretrain/yolo_world_v2_xl_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_lvis_minival.py",
+      "size": 7241,
+      "mtime": "2026-09-03T18:23:52.088804",
+      "md5": "732cfb55dbc7f8abc9cae945109ecd67"
+    },
+    "yolo_checkpoint": {
+      "path": "/l/users/jianxiang.he/YOLO-World/weights/yolo_world_v2_xl_obj365v1_goldg_cc3mlite_pretrain-5daf1395.pth",
+      "size": 673005606,
+      "mtime": "2026-10-22T16:39:34",
+      "md5": "647e00a99823f1b150a764353b14694b"
+    },
+    "video_root": {
+      "path": "/nfs-stor/jianxiang.he/continual-vsi/data/LongVideoBench/videos",
+      "size": 3993,
+      "mtime": "2024-05-28T09:32:53",
+      "num_entries": 3991
+    },
+    "subtitle_root": {
+      "path": "/nfs-stor/jianxiang.he/continual-vsi/data/LongVideoBench/subtitles",
+      "size": 9344,
+      "mtime": "2024-05-28T08:57:52",
+      "num_entries": 9342
+    }
+  },
+  "environment": {
+    "hostname": "gpu-49",
+    "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+    "platform": "Linux-6.12.95-ql-generic-14-12-x86_64-with-glibc2.39",
+    "conda_env": "vsi",
+    "cwd": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core",
+    "slurm": {
+      "SLURM_SUBMIT_DIR": "/home/jianxiang.he/Project/Visual-Subtitle-Integration/NLP701-805_Jianxiang.He/VSI-core",
+      "SLURM_JOB_PARTITION": "cscc-gpu-p",
+      "SLURM_CPUS_PER_TASK": "8",
+      "SLURM_MEM_PER_NODE": "65536",
+      "SLURM_JOB_ID": "336257",
+      "SLURM_JOB_NAME": "vsi-lvb",
+      "SLURM_JOB_NODELIST": "gpu-49"
+    },
+    "CUDA_VISIBLE_DEVICES": "2",
+    "HF_HUB_OFFLINE": "1",
+    "gpu": "NVIDIA A100-SXM4-40GB, 40960 MiB, 570.195.03\nNVIDIA A100-SXM4-40GB, 40960 MiB, 570.195.03\nNVIDIA A100-SXM4-40GB, 40960 MiB, 570.195.03\nNVIDIA A100-SXM4-40GB, 40960 MiB, 570.195.03",
+    "torch": "2.0.1+cu118",
+    "cuda": "11.8",
+    "cudnn": 8700,
+    "mmdet": "3.0.0",
+    "mmyolo": "0.6.0",
+    "mmcv": "2.0.1",
+    "mmengine": "0.10.7",
+    "decord": "0.6.0",
+    "sentence_transformers": "2.7.0",
+    "transformers": "4.36.2",
+    "numpy": "1.26.4",
+    "scipy": "1.15.3"
+  }
+}
