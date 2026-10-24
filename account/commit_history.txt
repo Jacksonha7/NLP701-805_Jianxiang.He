@@ -1,0 +1,48 @@
+dd0d82e | 2026-10-24 18:16 | Jacksonha7 | Reorganize reproduced results into before/new and add account notes
+b179796 | 2026-10-24 00:12 | Jackson Ha | Delete
+a5792c4 | 2026-10-23 20:10 | Jacksonha7 | experiment command log result
+ac9fff0 | 2026-10-23 18:41 | Jacksonha7 | standard
+11b9b4c | 2026-10-23 11:09 | Jacksonha7 | v3
+1e57194 | 2026-10-23 10:54 | Jacksonha7 | Add quoted-subtitle query and subtitle offset correction switches
+27321f3 | 2026-10-23 10:51 | Jacksonha7 | scorers
+c57b64d | 2026-10-22 22:39 | Jacksonha7 | v2
+90e6767 | 2026-10-23 02:22 | Jackson Ha | Delete Keyframe_Matching.py
+91991f4 | 2026-10-22 22:21 | Jacksonha7 | reproduced file object grounding
+cea696d | 2026-10-22 22:18 | Jacksonha7 | reproduced file
+cf231c8 | 2026-10-22 22:18 | Jacksonha7 | origin
+fd69571 | 2026-10-22 22:02 | Jacksonha7 | Re-run original VSI keyframe search on the T2A/T2E/T2O subset
+4b77ca5 | 2026-10-23 01:16 | Jackson Ha | Delete reproduced/VSLS_PTonly_LongVideoBench_gpt4_cot_vid1.json
+1e9b8f4 | 2026-10-23 01:16 | Jackson Ha | Fix text in README for clarity and formatting
+21e501f | 2026-10-23 01:13 | Jackson Ha | Update README with new features and sections
+53f7ac4 | 2026-10-23 01:12 | Jackson Ha | Revise reproduction steps in README
+b384c00 | 2026-10-23 01:08 | Jackson Ha | Update to-do list in README.md
+1f9e1d2 | 2026-10-22 21:05 | Jacksonha7 | Add LongVideoBench T2A/T2E/T2O loader with 24 fps GT and subtitle offset
+8062e9e | 2026-10-22 16:16 | Jackson Ha | Delete reproduced/obj_PTonly_LongVideoBench_gpt4_cot_vid1.json
+3dca498 | 2026-10-22 16:10 | Jacksonha7 | Add reproduced LongVideoBench PTonly keyframe search objects
+cab6a93 | 2026-10-22 12:06 | Jackson Ha | Update README.md
+8a91f01 | 2026-10-22 11:55 | Jackson Ha | Add Logic-in-Frames repository to reproduction steps
+05a388c | 2026-10-22 11:48 | Jackson Ha | Delete detector.py
+969db88 | 2026-10-22 11:47 | Jackson Ha | Update accuracy definitions in README.md
+12f09e4 | 2026-10-22 11:46 | Jackson Ha | Update README with accuracy metrics table
+7eb2aba | 2026-10-22 11:45 | Jackson Ha | Update README to remove Document Description section
+a23e5b1 | 2026-10-22 11:44 | Jackson Ha | Update README.md
+0720f6b | 2026-10-22 11:39 | Jacksonha7 | Add reproduced LongVideoBench PTonly keyframe search results
+cb8999e | 2026-10-22 11:31 | Jackson Ha | Format reproduction steps in README
+67ac545 | 2026-10-22 11:17 | Jackson Ha | Update section headings and improve formatting in README
+e4315d0 | 2026-10-22 11:11 | Jackson Ha | Delete vsi.py
+d94afc0 | 2026-10-14 14:17 | Jackson Ha | Update README with reproducibility results link
+e7e8035 | 2026-10-14 10:09 | Jacksonha7 | test file
+bb8998d | 2026-10-13 19:10 | Jackson Ha | Add Mid-Term Report link to README
+31c6a30 | 2026-10-13 13:45 | Jacksonha7 | result
+089b2ae | 2026-10-13 13:44 | Jacksonha7 | Final
+cc3e6dc | 2026-10-13 13:41 | Jacksonha7 | Train
+cfc38fe | 2026-10-13 13:35 | Jacksonha7 | Add Feature
+6678bb8 | 2026-10-13 13:11 | Jacksonha7 | Try CAMeL Tools
+73333ec | 2026-10-13 15:12 | Jackson Ha | Add proposal link to README
+f913f93 | 2026-10-13 14:46 | Jackson Ha | Update README.md
+b13e2c9 | 2026-10-13 14:36 | Jackson Ha | Add files via upload
+c6c4205 | 2026-10-13 04:43 | Jackson Ha | Add problem statement to README
+254934f | 2026-10-13 04:39 | Jackson Ha | Mark all to-do items as completed in README
+d8e2af4 | 2026-10-13 04:36 | Jackson Ha | Revise README with project details and to-do list
+c9661a5 | 2026-10-13 04:20 | Jackson Ha | Add files via upload
+c7f079d | 2026-08-27 15:14 | Jackson Ha | Initial commit

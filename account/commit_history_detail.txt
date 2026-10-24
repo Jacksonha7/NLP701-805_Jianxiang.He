@@ -1,0 +1,1156 @@
+commit dd0d82e0483f22d1b051eab38218daa5fb6e8b24
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-24 18:16:49 +0400
+
+    Reorganize reproduced results into before/new and add account notes
+
+ account/explain.md                                 |     17 +
+ account/reply.md                                   |     44 +
+ account/timeline.md                                |     18 +
+ account/work.md                                    |     25 +
+ ...Tstar_PTonly_LongVideoBench_gpt4_cot_vid1.json} |   4587 +-
+ ...1_VSI_PTonly_LongVideoBench_gpt4_cot_vid1.json} |   4518 +-
+ .../before/matching_results/R1_Tstar/command.txt   |      2 +
+ .../before/matching_results/R1_Tstar/matching.log  |     25 +
+ .../matching_results_k8_t200_20261023_112157.json  |  12836 +
+ .../before/matching_results/R1_VSI/command.txt     |      2 +
+ .../before/matching_results/R1_VSI/matching.log    |     25 +
+ .../matching_results_k8_t200_20261023_112157.json  |  12836 +
+ reproduced/before/qwen3vl8b.json                   |   6901 +
+ reproduced/before/qwen_grounding.log               |    226 +
+ reproduced/before/qwen_grounding.py                |     88 +
+ reproduced/{ => before}/run_multimodal_search.py   |      0
+ ..._Tstar_PTonly_LongVideoBench_gpt4_cot_vid1.json | 351153 ++++++++++++++++++
+ ...R2_VSI_PTonly_LongVideoBench_gpt4_cot_vid1.json | 351153 ++++++++++++++++++
+ reproduced/new/logs_w0.0/command.txt               |     31 +
+ reproduced/new/logs_w0.0/config.json               |    105 +
+ reproduced/new/logs_w0.0/env.txt                   |    106 +
+ reproduced/new/logs_w0.0/matching.log              |     25 +
+ reproduced/new/logs_w0.0/metrics.json              |     35 +
+ reproduced/new/logs_w0.0/slurm_vsi-lvb_336257.out  |  24609 ++
+ reproduced/new/logs_w0.0/stdout.log                |  24603 ++
+ reproduced/new/logs_w1.0/command.txt               |     31 +
+ reproduced/new/logs_w1.0/config.json               |    105 +
+ reproduced/new/logs_w1.0/env.txt                   |    106 +
+ reproduced/new/logs_w1.0/matching.log              |     25 +
+ reproduced/new/logs_w1.0/metrics.json              |     35 +
+ reproduced/new/logs_w1.0/slurm_vsi-lvb_336107.out  |  26130 ++
+ reproduced/new/logs_w1.0/stdout.log                |  26124 ++
+ .../new/matching_results/R2_Tstar/command.txt      |      2 +
+ .../new/matching_results/R2_Tstar/matching.log     |     25 +
+ .../matching_results_k8_t200_20261023_112156.json  |  12836 +
+ reproduced/new/matching_results/R2_VSI/command.txt |      2 +
+ .../new/matching_results/R2_VSI/matching.log       |     25 +
+ .../matching_results_k8_t200_20261023_112156.json  |  12836 +
+ reproduced/new/qwen3vl8b.json                      |   6901 +
+ reproduced/new/run_multimodal_search.py            |    713 +
+ .../obj_PTonly_LongVideoBench_gpt4_cot_vid1.json   |   8544 -
+ 41 files changed, 873623 insertions(+), 14787 deletions(-)
+
+commit b1797966826fa9382a6c9029a7b120e1066224fb
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-24 00:12:16 +0800
+
+    Delete
+
+ reproduced/Keyframe_Matching.py | 309 ----------------------------------------
+ 1 file changed, 309 deletions(-)
+
+commit a5792c44020e68227c507883d2b4d8a285d676aa
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 20:10:25 +0400
+
+    experiment command log result
+
+ nlp805/experiments/exp1_encoder/logs/bge.log       | 1096 ++++++
+ nlp805/experiments/exp1_encoder/logs/bm25.log      | 1089 ++++++
+ nlp805/experiments/exp1_encoder/logs/commands.txt  |    6 +
+ nlp805/experiments/exp1_encoder/logs/minilm.log    | 1091 ++++++
+ .../experiments/exp1_encoder/logs/pip_freeze.txt   |  106 +
+ .../experiments/exp1_encoder/logs/slurm-336180.out |    9 +
+ .../exp1_encoder/outputs/bge.config.json           |   42 +
+ nlp805/experiments/exp1_encoder/outputs/bge.json   |    1 +
+ .../exp1_encoder/outputs/bm25.config.json          |   42 +
+ nlp805/experiments/exp1_encoder/outputs/bm25.json  |    1 +
+ .../exp1_encoder/outputs/minilm.config.json        |   42 +
+ .../experiments/exp1_encoder/outputs/minilm.json   |    1 +
+ .../bge/-An3wZyoYe0_score_history.npy              |  Bin 0 -> 1004096 bytes
+ .../bge/-PnG8Jp2gFw_score_history.npy              |  Bin 0 -> 1538336 bytes
+ .../bge/-Xg2-SUq6wo_score_history.npy              |  Bin 0 -> 168608 bytes
+ .../bge/-iCLYpeghJs_score_history.npy              |  Bin 0 -> 2096 bytes
+ .../bge/0t1vtW0cT1E_score_history.npy              |  Bin 0 -> 913088 bytes
+ .../bge/2F7d7aUCmUU_score_history.npy              |  Bin 0 -> 384 bytes
+ .../bge/3t_Knk7FWT8_score_history.npy              |  Bin 0 -> 368 bytes
+ .../bge/3zv9RkDPX14_score_history.npy              |  Bin 0 -> 272 bytes
+ .../bge/58mCJVNMJvw_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/59iv6EYWNn8_score_history.npy              |  Bin 0 -> 272 bytes
+ .../bge/5Ugjg2ru5QQ_score_history.npy              |  Bin 0 -> 480 bytes
+ .../bge/5qMcDQd17Y4_score_history.npy              |  Bin 0 -> 121600 bytes
+ .../bge/5tN9hyfdkaE_score_history.npy              |  Bin 0 -> 1501040 bytes
+ .../bge/6867204066108329221_score_history.npy      |  Bin 0 -> 576 bytes
+ .../bge/6917750501975100677_score_history.npy      |  Bin 0 -> 608 bytes
+ .../bge/6948509102305791238_score_history.npy      |  Bin 0 -> 2384 bytes
+ .../bge/6985193727107009798_score_history.npy      |  Bin 0 -> 576 bytes
+ .../bge/7074483613273754882_score_history.npy      |  Bin 0 -> 2384 bytes
+ .../bge/7125042270381853995_score_history.npy      |  Bin 0 -> 384 bytes
+ .../bge/7201571680890670342_score_history.npy      |  Bin 0 -> 2432 bytes
+ .../bge/7203500499360877829_score_history.npy      |  Bin 0 -> 480 bytes
+ .../bge/7206809277867052330_score_history.npy      |  Bin 0 -> 1760 bytes
+ .../bge/7214559428471770374_score_history.npy      |  Bin 0 -> 1024 bytes
+ .../bge/7234536361296940314_score_history.npy      |  Bin 0 -> 480 bytes
+ .../bge/7253164232307379457_score_history.npy      |  Bin 0 -> 3968 bytes
+ .../bge/7254520467002854657_score_history.npy      |  Bin 0 -> 3968 bytes
+ .../bge/7254803496900267266_score_history.npy      |  Bin 0 -> 544 bytes
+ .../bge/7267233980473314606_score_history.npy      |  Bin 0 -> 864 bytes
+ .../bge/7277140989259599105_score_history.npy      |  Bin 0 -> 3904 bytes
+ .../bge/7298820532466683142_score_history.npy      |  Bin 0 -> 384 bytes
+ .../bge/7309241426028596523_score_history.npy      |  Bin 0 -> 3968 bytes
+ .../bge/7325156862486220038_score_history.npy      |  Bin 0 -> 608 bytes
+ .../bge/7333990579963039009_score_history.npy      |  Bin 0 -> 3968 bytes
+ .../bge/8_MG-E8QlBM_score_history.npy              |  Bin 0 -> 73024 bytes
+ .../bge/8urCPp_yhWs_score_history.npy              |  Bin 0 -> 272 bytes
+ .../bge/9PD3ciudpIE_score_history.npy              |  Bin 0 -> 186928 bytes
+ .../bge/9aWPbYosJUw_score_history.npy              |  Bin 0 -> 512 bytes
+ .../bge/AxciimuEZAc_score_history.npy              |  Bin 0 -> 65152 bytes
+ .../bge/FH1L2Dq6964_score_history.npy              |  Bin 0 -> 384 bytes
+ .../bge/FnKDgC9aNu0_score_history.npy              |  Bin 0 -> 3495872 bytes
+ .../bge/GAoK4XjssrM_score_history.npy              |  Bin 0 -> 272 bytes
+ .../bge/GKgl3aJr5Xw_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/GZFL58_pXPg_score_history.npy              |  Bin 0 -> 384 bytes
+ .../bge/H2ksp6sRR-k_score_history.npy              |  Bin 0 -> 1066592 bytes
+ .../bge/H7gnsO4UZmU_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/HRYlXC_ChzU_score_history.npy              |  Bin 0 -> 928 bytes
+ .../bge/H_b5d-rLXJU_score_history.npy              |  Bin 0 -> 288 bytes
+ .../bge/I-yg_3yx6iA_score_history.npy              |  Bin 0 -> 1213760 bytes
+ .../bge/IGmuaY1jB1w_score_history.npy              |  Bin 0 -> 1791344 bytes
+ .../bge/IN0osLg-Mn8_score_history.npy              |  Bin 0 -> 224768 bytes
+ .../bge/IuVyCbtGBFQ_score_history.npy              |  Bin 0 -> 576 bytes
+ .../bge/J1IwKg2ufk8_score_history.npy              |  Bin 0 -> 1210736 bytes
+ .../bge/JASFwBtUK40_score_history.npy              |  Bin 0 -> 6240 bytes
+ .../bge/JLnsWrzV_j4_score_history.npy              |  Bin 0 -> 349408 bytes
+ .../bge/JhlzvoqKOc8_score_history.npy              |  Bin 0 -> 350592 bytes
+ .../bge/JpjytHmGHZ4_score_history.npy              |  Bin 0 -> 3776 bytes
+ .../bge/KlZpZVphLrc_score_history.npy              |  Bin 0 -> 120160 bytes
+ .../bge/LVFvRNRTEd4_score_history.npy              |  Bin 0 -> 1190576 bytes
+ .../bge/LfUsGv-ESbc_score_history.npy              |  Bin 0 -> 2025200 bytes
+ .../bge/LlqsCCa6y58_score_history.npy              |  Bin 0 -> 1824608 bytes
+ .../bge/M5Umm-ltnao_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/MJYBHfYF8LI_score_history.npy              |  Bin 0 -> 2803376 bytes
+ .../bge/N2mrK33gCYE_score_history.npy              |  Bin 0 -> 576 bytes
+ .../bge/NMHmqgO04rU_score_history.npy              |  Bin 0 -> 1205696 bytes
+ .../bge/NS2V_OHYkvA_score_history.npy              |  Bin 0 -> 272 bytes
+ .../bge/OLO19ZtdRwQ_score_history.npy              |  Bin 0 -> 560 bytes
+ .../bge/RTUFPjliMCU_score_history.npy              |  Bin 0 -> 2109872 bytes
+ .../bge/SAkgZJllNzw_score_history.npy              |  Bin 0 -> 2336 bytes
+ .../bge/T57jVsvVVR0_score_history.npy              |  Bin 0 -> 71664 bytes
+ .../bge/TlaX2iIYZD4_score_history.npy              |  Bin 0 -> 2494928 bytes
+ .../bge/UD5ifzOPzhc_score_history.npy              |  Bin 0 -> 324992 bytes
+ .../bge/VwZeSoYugZk_score_history.npy              |  Bin 0 -> 309808 bytes
+ .../bge/YebUIUOCo94_score_history.npy              |  Bin 0 -> 2580608 bytes
+ .../bge/ZRMbh0wSly0_score_history.npy              |  Bin 0 -> 1186544 bytes
+ .../bge/ZfapKqwklG4_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/_BDzMutoy6A_score_history.npy              |  Bin 0 -> 884656 bytes
+ .../bge/_EUDpS9UF9o_score_history.npy              |  Bin 0 -> 272 bytes
+ .../bge/_g3Y_mk64Wc_score_history.npy              |  Bin 0 -> 69120 bytes
+ .../bge/_uL3a3aMdMQ_score_history.npy              |  Bin 0 -> 2866880 bytes
+ .../bge/_zEM6Fc-7NI_score_history.npy              |  Bin 0 -> 82208 bytes
+ .../bge/anrKq6HgPvs_score_history.npy              |  Bin 0 -> 448 bytes
+ .../bge/bAGhXcYc0o4_score_history.npy              |  Bin 0 -> 1160336 bytes
+ .../bge/bgklOaBBmB8_score_history.npy              |  Bin 0 -> 512 bytes
+ .../bge/c6fuIEzOZ2E_score_history.npy              |  Bin 0 -> 215424 bytes
+ .../bge/cc0T2vtuJtc_score_history.npy              |  Bin 0 -> 11936 bytes
+ .../bge/cceTeD4JADU_score_history.npy              |  Bin 0 -> 288 bytes
+ .../bge/dE5iWeCVpGI_score_history.npy              |  Bin 0 -> 171520 bytes
+ .../bge/eE5Z7gDbgVA_score_history.npy              |  Bin 0 -> 1082720 bytes
+ .../bge/fryyNwUCPWA_score_history.npy              |  Bin 0 -> 972288 bytes
+ .../bge/fsz6bkkIHzQ_score_history.npy              |  Bin 0 -> 830048 bytes
+ .../bge/fvCrE5NCsts_score_history.npy              |  Bin 0 -> 261760 bytes
+ .../bge/g7zuBUMBr2E_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/gURB1JwPfJw_score_history.npy              |  Bin 0 -> 823664 bytes
+ .../bge/gyV6EqgiPNg_score_history.npy              |  Bin 0 -> 2336 bytes
+ .../bge/hXFfPjytMo0_score_history.npy              |  Bin 0 -> 448 bytes
+ .../bge/iHNjWhx3EaI_score_history.npy              |  Bin 0 -> 1760 bytes
+ .../bge/iHzypa15yRA_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/kWUmHAzCp7s_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/l3vxOGgAM2g_score_history.npy              |  Bin 0 -> 384 bytes
+ .../bge/lQODAJ_F5yE_score_history.npy              |  Bin 0 -> 70304 bytes
+ .../bge/lzuixOdhZow_score_history.npy              |  Bin 0 -> 992 bytes
+ .../bge/mHccnoh9f5w_score_history.npy              |  Bin 0 -> 384 bytes
+ .../bge/md3LVlEzFBU_score_history.npy              |  Bin 0 -> 89504 bytes
+ .../bge/mld0TnA2jEs_score_history.npy              |  Bin 0 -> 14752 bytes
+ .../bge/n24n_20Kwe4_score_history.npy              |  Bin 0 -> 275280 bytes
+ .../bge/nBWB-h68E4k_score_history.npy              |  Bin 0 -> 3904 bytes
+ .../bge/nvG2YMWiwqU_score_history.npy              |  Bin 0 -> 3904 bytes
+ .../bge/oddHY1vwcjo_score_history.npy              |  Bin 0 -> 544 bytes
+ .../bge/oiBhGhROP5o_score_history.npy              |  Bin 0 -> 608 bytes
+ .../bge/pZ-9hGQNHuA_score_history.npy              |  Bin 0 -> 512 bytes
+ .../bge/qZVBFAtfp2A_score_history.npy              |  Bin 0 -> 448 bytes
+ .../bge/rzIiQ4Vxlbk_score_history.npy              |  Bin 0 -> 3392 bytes
+ .../bge/sEiyR7-0FOA_score_history.npy              |  Bin 0 -> 2875952 bytes
+ .../bge/sHUEJw1BsGQ_score_history.npy              |  Bin 0 -> 225728 bytes
+ .../bge/sWfcgeDth_w_score_history.npy              |  Bin 0 -> 272 bytes
+ .../bge/shGkzHpzwAQ_score_history.npy              |  Bin 0 -> 480 bytes
+ .../bge/u-vYvqxHejY_score_history.npy              |  Bin 0 -> 256 bytes
+ .../bge/vE0faFD1F_g_score_history.npy              |  Bin 0 -> 2816 bytes
+ .../bge/vEy6tcU6eLU_score_history.npy              |  Bin 0 -> 1159328 bytes
+ .../bge/vJ9hYCUDHTo_score_history.npy              |  Bin 0 -> 310368 bytes
+ .../bge/wSHPuI7wWIg_score_history.npy              |  Bin 0 -> 1760096 bytes
+ .../bge/x4UBaEojM6U_score_history.npy              |  Bin 0 -> 938064 bytes
+ .../bge/x4dFLY_-vKs_score_history.npy              |  Bin 0 -> 71936 bytes
+ .../bge/yXXhrMqfMlk_score_history.npy              |  Bin 0 -> 10272 bytes
+ .../bge/ydm72ftJStQ_score_history.npy              |  Bin 0 -> 79904 bytes
+ .../bge/ysRFFN5nzqE_score_history.npy              |  Bin 0 -> 2178416 bytes
+ .../bge/ze66pbJYr18_score_history.npy              |  Bin 0 -> 155328 bytes
+ .../bm25/-An3wZyoYe0_score_history.npy             |  Bin 0 -> 1004096 bytes
+ .../bm25/-PnG8Jp2gFw_score_history.npy             |  Bin 0 -> 1538336 bytes
+ .../bm25/-Xg2-SUq6wo_score_history.npy             |  Bin 0 -> 168608 bytes
+ .../bm25/-iCLYpeghJs_score_history.npy             |  Bin 0 -> 2096 bytes
+ .../bm25/0t1vtW0cT1E_score_history.npy             |  Bin 0 -> 913088 bytes
+ .../bm25/2F7d7aUCmUU_score_history.npy             |  Bin 0 -> 384 bytes
+ .../bm25/3t_Knk7FWT8_score_history.npy             |  Bin 0 -> 368 bytes
+ .../bm25/3zv9RkDPX14_score_history.npy             |  Bin 0 -> 272 bytes
+ .../bm25/58mCJVNMJvw_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/59iv6EYWNn8_score_history.npy             |  Bin 0 -> 272 bytes
+ .../bm25/5Ugjg2ru5QQ_score_history.npy             |  Bin 0 -> 480 bytes
+ .../bm25/5qMcDQd17Y4_score_history.npy             |  Bin 0 -> 102912 bytes
+ .../bm25/5tN9hyfdkaE_score_history.npy             |  Bin 0 -> 1501040 bytes
+ .../bm25/6867204066108329221_score_history.npy     |  Bin 0 -> 576 bytes
+ .../bm25/6917750501975100677_score_history.npy     |  Bin 0 -> 608 bytes
+ .../bm25/6948509102305791238_score_history.npy     |  Bin 0 -> 2384 bytes
+ .../bm25/6985193727107009798_score_history.npy     |  Bin 0 -> 576 bytes
+ .../bm25/7074483613273754882_score_history.npy     |  Bin 0 -> 2384 bytes
+ .../bm25/7125042270381853995_score_history.npy     |  Bin 0 -> 384 bytes
+ .../bm25/7201571680890670342_score_history.npy     |  Bin 0 -> 2432 bytes
+ .../bm25/7203500499360877829_score_history.npy     |  Bin 0 -> 480 bytes
+ .../bm25/7206809277867052330_score_history.npy     |  Bin 0 -> 1760 bytes
+ .../bm25/7214559428471770374_score_history.npy     |  Bin 0 -> 1024 bytes
+ .../bm25/7234536361296940314_score_history.npy     |  Bin 0 -> 480 bytes
+ .../bm25/7253164232307379457_score_history.npy     |  Bin 0 -> 3968 bytes
+ .../bm25/7254520467002854657_score_history.npy     |  Bin 0 -> 3968 bytes
+ .../bm25/7254803496900267266_score_history.npy     |  Bin 0 -> 544 bytes
+ .../bm25/7267233980473314606_score_history.npy     |  Bin 0 -> 864 bytes
+ .../bm25/7277140989259599105_score_history.npy     |  Bin 0 -> 3904 bytes
+ .../bm25/7298820532466683142_score_history.npy     |  Bin 0 -> 384 bytes
+ .../bm25/7309241426028596523_score_history.npy     |  Bin 0 -> 3968 bytes
+ .../bm25/7325156862486220038_score_history.npy     |  Bin 0 -> 608 bytes
+ .../bm25/7333990579963039009_score_history.npy     |  Bin 0 -> 3968 bytes
+ .../bm25/8_MG-E8QlBM_score_history.npy             |  Bin 0 -> 73024 bytes
+ .../bm25/8urCPp_yhWs_score_history.npy             |  Bin 0 -> 272 bytes
+ .../bm25/9PD3ciudpIE_score_history.npy             |  Bin 0 -> 224288 bytes
+ .../bm25/9aWPbYosJUw_score_history.npy             |  Bin 0 -> 512 bytes
+ .../bm25/AxciimuEZAc_score_history.npy             |  Bin 0 -> 65152 bytes
+ .../bm25/FH1L2Dq6964_score_history.npy             |  Bin 0 -> 384 bytes
+ .../bm25/FnKDgC9aNu0_score_history.npy             |  Bin 0 -> 3495872 bytes
+ .../bm25/GAoK4XjssrM_score_history.npy             |  Bin 0 -> 272 bytes
+ .../bm25/GKgl3aJr5Xw_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/GZFL58_pXPg_score_history.npy             |  Bin 0 -> 384 bytes
+ .../bm25/H2ksp6sRR-k_score_history.npy             |  Bin 0 -> 1066592 bytes
+ .../bm25/H7gnsO4UZmU_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/HRYlXC_ChzU_score_history.npy             |  Bin 0 -> 928 bytes
+ .../bm25/H_b5d-rLXJU_score_history.npy             |  Bin 0 -> 288 bytes
+ .../bm25/I-yg_3yx6iA_score_history.npy             |  Bin 0 -> 1213760 bytes
+ .../bm25/IGmuaY1jB1w_score_history.npy             |  Bin 0 -> 1791344 bytes
+ .../bm25/IN0osLg-Mn8_score_history.npy             |  Bin 0 -> 224768 bytes
+ .../bm25/IuVyCbtGBFQ_score_history.npy             |  Bin 0 -> 576 bytes
+ .../bm25/J1IwKg2ufk8_score_history.npy             |  Bin 0 -> 1210736 bytes
+ .../bm25/JASFwBtUK40_score_history.npy             |  Bin 0 -> 6240 bytes
+ .../bm25/JLnsWrzV_j4_score_history.npy             |  Bin 0 -> 349408 bytes
+ .../bm25/JhlzvoqKOc8_score_history.npy             |  Bin 0 -> 350592 bytes
+ .../bm25/JpjytHmGHZ4_score_history.npy             |  Bin 0 -> 3776 bytes
+ .../bm25/KlZpZVphLrc_score_history.npy             |  Bin 0 -> 120160 bytes
+ .../bm25/LVFvRNRTEd4_score_history.npy             |  Bin 0 -> 1190576 bytes
+ .../bm25/LfUsGv-ESbc_score_history.npy             |  Bin 0 -> 2025200 bytes
+ .../bm25/LlqsCCa6y58_score_history.npy             |  Bin 0 -> 1824608 bytes
+ .../bm25/M5Umm-ltnao_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/MJYBHfYF8LI_score_history.npy             |  Bin 0 -> 2803376 bytes
+ .../bm25/N2mrK33gCYE_score_history.npy             |  Bin 0 -> 576 bytes
+ .../bm25/NMHmqgO04rU_score_history.npy             |  Bin 0 -> 1205696 bytes
+ .../bm25/NS2V_OHYkvA_score_history.npy             |  Bin 0 -> 272 bytes
+ .../bm25/OLO19ZtdRwQ_score_history.npy             |  Bin 0 -> 560 bytes
+ .../bm25/RTUFPjliMCU_score_history.npy             |  Bin 0 -> 2109872 bytes
+ .../bm25/SAkgZJllNzw_score_history.npy             |  Bin 0 -> 2336 bytes
+ .../bm25/T57jVsvVVR0_score_history.npy             |  Bin 0 -> 71664 bytes
+ .../bm25/TlaX2iIYZD4_score_history.npy             |  Bin 0 -> 2494928 bytes
+ .../bm25/UD5ifzOPzhc_score_history.npy             |  Bin 0 -> 324992 bytes
+ .../bm25/VwZeSoYugZk_score_history.npy             |  Bin 0 -> 309808 bytes
+ .../bm25/YebUIUOCo94_score_history.npy             |  Bin 0 -> 2580608 bytes
+ .../bm25/ZRMbh0wSly0_score_history.npy             |  Bin 0 -> 1186544 bytes
+ .../bm25/ZfapKqwklG4_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/_BDzMutoy6A_score_history.npy             |  Bin 0 -> 225008 bytes
+ .../bm25/_EUDpS9UF9o_score_history.npy             |  Bin 0 -> 272 bytes
+ .../bm25/_g3Y_mk64Wc_score_history.npy             |  Bin 0 -> 51872 bytes
+ .../bm25/_uL3a3aMdMQ_score_history.npy             |  Bin 0 -> 2866880 bytes
+ .../bm25/_zEM6Fc-7NI_score_history.npy             |  Bin 0 -> 82208 bytes
+ .../bm25/anrKq6HgPvs_score_history.npy             |  Bin 0 -> 448 bytes
+ .../bm25/bAGhXcYc0o4_score_history.npy             |  Bin 0 -> 1160336 bytes
+ .../bm25/bgklOaBBmB8_score_history.npy             |  Bin 0 -> 512 bytes
+ .../bm25/c6fuIEzOZ2E_score_history.npy             |  Bin 0 -> 215424 bytes
+ .../bm25/cc0T2vtuJtc_score_history.npy             |  Bin 0 -> 63104 bytes
+ .../bm25/cceTeD4JADU_score_history.npy             |  Bin 0 -> 288 bytes
+ .../bm25/dE5iWeCVpGI_score_history.npy             |  Bin 0 -> 171520 bytes
+ .../bm25/eE5Z7gDbgVA_score_history.npy             |  Bin 0 -> 1082720 bytes
+ .../bm25/fryyNwUCPWA_score_history.npy             |  Bin 0 -> 972288 bytes
+ .../bm25/fsz6bkkIHzQ_score_history.npy             |  Bin 0 -> 830048 bytes
+ .../bm25/fvCrE5NCsts_score_history.npy             |  Bin 0 -> 261760 bytes
+ .../bm25/g7zuBUMBr2E_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/gURB1JwPfJw_score_history.npy             |  Bin 0 -> 823664 bytes
+ .../bm25/gyV6EqgiPNg_score_history.npy             |  Bin 0 -> 2336 bytes
+ .../bm25/hXFfPjytMo0_score_history.npy             |  Bin 0 -> 448 bytes
+ .../bm25/iHNjWhx3EaI_score_history.npy             |  Bin 0 -> 1760 bytes
+ .../bm25/iHzypa15yRA_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/kWUmHAzCp7s_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/l3vxOGgAM2g_score_history.npy             |  Bin 0 -> 384 bytes
+ .../bm25/lQODAJ_F5yE_score_history.npy             |  Bin 0 -> 70304 bytes
+ .../bm25/lzuixOdhZow_score_history.npy             |  Bin 0 -> 992 bytes
+ .../bm25/mHccnoh9f5w_score_history.npy             |  Bin 0 -> 384 bytes
+ .../bm25/md3LVlEzFBU_score_history.npy             |  Bin 0 -> 89504 bytes
+ .../bm25/mld0TnA2jEs_score_history.npy             |  Bin 0 -> 14752 bytes
+ .../bm25/n24n_20Kwe4_score_history.npy             |  Bin 0 -> 132960 bytes
+ .../bm25/nBWB-h68E4k_score_history.npy             |  Bin 0 -> 3904 bytes
+ .../bm25/nvG2YMWiwqU_score_history.npy             |  Bin 0 -> 3904 bytes
+ .../bm25/oddHY1vwcjo_score_history.npy             |  Bin 0 -> 544 bytes
+ .../bm25/oiBhGhROP5o_score_history.npy             |  Bin 0 -> 608 bytes
+ .../bm25/pZ-9hGQNHuA_score_history.npy             |  Bin 0 -> 512 bytes
+ .../bm25/qZVBFAtfp2A_score_history.npy             |  Bin 0 -> 448 bytes
+ .../bm25/rzIiQ4Vxlbk_score_history.npy             |  Bin 0 -> 3392 bytes
+ .../bm25/sEiyR7-0FOA_score_history.npy             |  Bin 0 -> 2875952 bytes
+ .../bm25/sHUEJw1BsGQ_score_history.npy             |  Bin 0 -> 225728 bytes
+ .../bm25/sWfcgeDth_w_score_history.npy             |  Bin 0 -> 272 bytes
+ .../bm25/shGkzHpzwAQ_score_history.npy             |  Bin 0 -> 480 bytes
+ .../bm25/u-vYvqxHejY_score_history.npy             |  Bin 0 -> 256 bytes
+ .../bm25/vE0faFD1F_g_score_history.npy             |  Bin 0 -> 2816 bytes
+ .../bm25/vEy6tcU6eLU_score_history.npy             |  Bin 0 -> 1159328 bytes
+ .../bm25/vJ9hYCUDHTo_score_history.npy             |  Bin 0 -> 310368 bytes
+ .../bm25/wSHPuI7wWIg_score_history.npy             |  Bin 0 -> 1760096 bytes
+ .../bm25/x4UBaEojM6U_score_history.npy             |  Bin 0 -> 938064 bytes
+ .../bm25/x4dFLY_-vKs_score_history.npy             |  Bin 0 -> 71936 bytes
+ .../bm25/yXXhrMqfMlk_score_history.npy             |  Bin 0 -> 10272 bytes
+ .../bm25/ydm72ftJStQ_score_history.npy             |  Bin 0 -> 79904 bytes
+ .../bm25/ysRFFN5nzqE_score_history.npy             |  Bin 0 -> 2178416 bytes
+ .../bm25/ze66pbJYr18_score_history.npy             |  Bin 0 -> 155328 bytes
+ .../minilm/-An3wZyoYe0_score_history.npy           |  Bin 0 -> 1004096 bytes
+ .../minilm/-PnG8Jp2gFw_score_history.npy           |  Bin 0 -> 1538336 bytes
+ .../minilm/-Xg2-SUq6wo_score_history.npy           |  Bin 0 -> 168608 bytes
+ .../minilm/-iCLYpeghJs_score_history.npy           |  Bin 0 -> 2096 bytes
+ .../minilm/0t1vtW0cT1E_score_history.npy           |  Bin 0 -> 913088 bytes
+ .../minilm/2F7d7aUCmUU_score_history.npy           |  Bin 0 -> 384 bytes
+ .../minilm/3t_Knk7FWT8_score_history.npy           |  Bin 0 -> 368 bytes
+ .../minilm/3zv9RkDPX14_score_history.npy           |  Bin 0 -> 272 bytes
+ .../minilm/58mCJVNMJvw_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/59iv6EYWNn8_score_history.npy           |  Bin 0 -> 272 bytes
+ .../minilm/5Ugjg2ru5QQ_score_history.npy           |  Bin 0 -> 480 bytes
+ .../minilm/5qMcDQd17Y4_score_history.npy           |  Bin 0 -> 271104 bytes
+ .../minilm/5tN9hyfdkaE_score_history.npy           |  Bin 0 -> 1501040 bytes
+ .../minilm/6867204066108329221_score_history.npy   |  Bin 0 -> 576 bytes
+ .../minilm/6917750501975100677_score_history.npy   |  Bin 0 -> 608 bytes
+ .../minilm/6948509102305791238_score_history.npy   |  Bin 0 -> 2384 bytes
+ .../minilm/6985193727107009798_score_history.npy   |  Bin 0 -> 576 bytes
+ .../minilm/7074483613273754882_score_history.npy   |  Bin 0 -> 2384 bytes
+ .../minilm/7125042270381853995_score_history.npy   |  Bin 0 -> 384 bytes
+ .../minilm/7201571680890670342_score_history.npy   |  Bin 0 -> 2432 bytes
+ .../minilm/7203500499360877829_score_history.npy   |  Bin 0 -> 480 bytes
+ .../minilm/7206809277867052330_score_history.npy   |  Bin 0 -> 1760 bytes
+ .../minilm/7214559428471770374_score_history.npy   |  Bin 0 -> 1024 bytes
+ .../minilm/7234536361296940314_score_history.npy   |  Bin 0 -> 480 bytes
+ .../minilm/7253164232307379457_score_history.npy   |  Bin 0 -> 3968 bytes
+ .../minilm/7254520467002854657_score_history.npy   |  Bin 0 -> 3968 bytes
+ .../minilm/7254803496900267266_score_history.npy   |  Bin 0 -> 544 bytes
+ .../minilm/7267233980473314606_score_history.npy   |  Bin 0 -> 864 bytes
+ .../minilm/7277140989259599105_score_history.npy   |  Bin 0 -> 3904 bytes
+ .../minilm/7298820532466683142_score_history.npy   |  Bin 0 -> 384 bytes
+ .../minilm/7309241426028596523_score_history.npy   |  Bin 0 -> 3968 bytes
+ .../minilm/7325156862486220038_score_history.npy   |  Bin 0 -> 608 bytes
+ .../minilm/7333990579963039009_score_history.npy   |  Bin 0 -> 3968 bytes
+ .../minilm/8_MG-E8QlBM_score_history.npy           |  Bin 0 -> 73024 bytes
+ .../minilm/8urCPp_yhWs_score_history.npy           |  Bin 0 -> 272 bytes
+ .../minilm/9PD3ciudpIE_score_history.npy           |  Bin 0 -> 224288 bytes
+ .../minilm/9aWPbYosJUw_score_history.npy           |  Bin 0 -> 512 bytes
+ .../minilm/AxciimuEZAc_score_history.npy           |  Bin 0 -> 65152 bytes
+ .../minilm/FH1L2Dq6964_score_history.npy           |  Bin 0 -> 384 bytes
+ .../minilm/FnKDgC9aNu0_score_history.npy           |  Bin 0 -> 3495872 bytes
+ .../minilm/GAoK4XjssrM_score_history.npy           |  Bin 0 -> 272 bytes
+ .../minilm/GKgl3aJr5Xw_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/GZFL58_pXPg_score_history.npy           |  Bin 0 -> 384 bytes
+ .../minilm/H2ksp6sRR-k_score_history.npy           |  Bin 0 -> 1066592 bytes
+ .../minilm/H7gnsO4UZmU_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/HRYlXC_ChzU_score_history.npy           |  Bin 0 -> 928 bytes
+ .../minilm/H_b5d-rLXJU_score_history.npy           |  Bin 0 -> 288 bytes
+ .../minilm/I-yg_3yx6iA_score_history.npy           |  Bin 0 -> 1213760 bytes
+ .../minilm/IGmuaY1jB1w_score_history.npy           |  Bin 0 -> 1791344 bytes
+ .../minilm/IN0osLg-Mn8_score_history.npy           |  Bin 0 -> 224768 bytes
+ .../minilm/IuVyCbtGBFQ_score_history.npy           |  Bin 0 -> 576 bytes
+ .../minilm/J1IwKg2ufk8_score_history.npy           |  Bin 0 -> 1210736 bytes
+ .../minilm/JASFwBtUK40_score_history.npy           |  Bin 0 -> 6240 bytes
+ .../minilm/JLnsWrzV_j4_score_history.npy           |  Bin 0 -> 349408 bytes
+ .../minilm/JhlzvoqKOc8_score_history.npy           |  Bin 0 -> 350592 bytes
+ .../minilm/JpjytHmGHZ4_score_history.npy           |  Bin 0 -> 3776 bytes
+ .../minilm/KlZpZVphLrc_score_history.npy           |  Bin 0 -> 120160 bytes
+ .../minilm/LVFvRNRTEd4_score_history.npy           |  Bin 0 -> 1190576 bytes
+ .../minilm/LfUsGv-ESbc_score_history.npy           |  Bin 0 -> 2025200 bytes
+ .../minilm/LlqsCCa6y58_score_history.npy           |  Bin 0 -> 1824608 bytes
+ .../minilm/M5Umm-ltnao_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/MJYBHfYF8LI_score_history.npy           |  Bin 0 -> 2803376 bytes
+ .../minilm/N2mrK33gCYE_score_history.npy           |  Bin 0 -> 576 bytes
+ .../minilm/NMHmqgO04rU_score_history.npy           |  Bin 0 -> 1205696 bytes
+ .../minilm/NS2V_OHYkvA_score_history.npy           |  Bin 0 -> 272 bytes
+ .../minilm/OLO19ZtdRwQ_score_history.npy           |  Bin 0 -> 560 bytes
+ .../minilm/RTUFPjliMCU_score_history.npy           |  Bin 0 -> 2109872 bytes
+ .../minilm/SAkgZJllNzw_score_history.npy           |  Bin 0 -> 2336 bytes
+ .../minilm/T57jVsvVVR0_score_history.npy           |  Bin 0 -> 71664 bytes
+ .../minilm/TlaX2iIYZD4_score_history.npy           |  Bin 0 -> 2494928 bytes
+ .../minilm/UD5ifzOPzhc_score_history.npy           |  Bin 0 -> 324992 bytes
+ .../minilm/VwZeSoYugZk_score_history.npy           |  Bin 0 -> 309808 bytes
+ .../minilm/YebUIUOCo94_score_history.npy           |  Bin 0 -> 2580608 bytes
+ .../minilm/ZRMbh0wSly0_score_history.npy           |  Bin 0 -> 1186544 bytes
+ .../minilm/ZfapKqwklG4_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/_BDzMutoy6A_score_history.npy           |  Bin 0 -> 749728 bytes
+ .../minilm/_EUDpS9UF9o_score_history.npy           |  Bin 0 -> 272 bytes
+ .../minilm/_g3Y_mk64Wc_score_history.npy           |  Bin 0 -> 396832 bytes
+ .../minilm/_uL3a3aMdMQ_score_history.npy           |  Bin 0 -> 2866880 bytes
+ .../minilm/_zEM6Fc-7NI_score_history.npy           |  Bin 0 -> 82208 bytes
+ .../minilm/anrKq6HgPvs_score_history.npy           |  Bin 0 -> 448 bytes
+ .../minilm/bAGhXcYc0o4_score_history.npy           |  Bin 0 -> 1160336 bytes
+ .../minilm/bgklOaBBmB8_score_history.npy           |  Bin 0 -> 512 bytes
+ .../minilm/c6fuIEzOZ2E_score_history.npy           |  Bin 0 -> 215424 bytes
+ .../minilm/cc0T2vtuJtc_score_history.npy           |  Bin 0 -> 15872 bytes
+ .../minilm/cceTeD4JADU_score_history.npy           |  Bin 0 -> 288 bytes
+ .../minilm/dE5iWeCVpGI_score_history.npy           |  Bin 0 -> 171520 bytes
+ .../minilm/eE5Z7gDbgVA_score_history.npy           |  Bin 0 -> 1082720 bytes
+ .../minilm/fryyNwUCPWA_score_history.npy           |  Bin 0 -> 972288 bytes
+ .../minilm/fsz6bkkIHzQ_score_history.npy           |  Bin 0 -> 830048 bytes
+ .../minilm/fvCrE5NCsts_score_history.npy           |  Bin 0 -> 261760 bytes
+ .../minilm/g7zuBUMBr2E_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/gURB1JwPfJw_score_history.npy           |  Bin 0 -> 823664 bytes
+ .../minilm/gyV6EqgiPNg_score_history.npy           |  Bin 0 -> 2336 bytes
+ .../minilm/hXFfPjytMo0_score_history.npy           |  Bin 0 -> 448 bytes
+ .../minilm/iHNjWhx3EaI_score_history.npy           |  Bin 0 -> 1760 bytes
+ .../minilm/iHzypa15yRA_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/kWUmHAzCp7s_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/l3vxOGgAM2g_score_history.npy           |  Bin 0 -> 384 bytes
+ .../minilm/lQODAJ_F5yE_score_history.npy           |  Bin 0 -> 70304 bytes
+ .../minilm/lzuixOdhZow_score_history.npy           |  Bin 0 -> 992 bytes
+ .../minilm/mHccnoh9f5w_score_history.npy           |  Bin 0 -> 384 bytes
+ .../minilm/md3LVlEzFBU_score_history.npy           |  Bin 0 -> 89504 bytes
+ .../minilm/mld0TnA2jEs_score_history.npy           |  Bin 0 -> 14752 bytes
+ .../minilm/n24n_20Kwe4_score_history.npy           |  Bin 0 -> 76032 bytes
+ .../minilm/nBWB-h68E4k_score_history.npy           |  Bin 0 -> 3904 bytes
+ .../minilm/nvG2YMWiwqU_score_history.npy           |  Bin 0 -> 3904 bytes
+ .../minilm/oddHY1vwcjo_score_history.npy           |  Bin 0 -> 544 bytes
+ .../minilm/oiBhGhROP5o_score_history.npy           |  Bin 0 -> 608 bytes
+ .../minilm/pZ-9hGQNHuA_score_history.npy           |  Bin 0 -> 512 bytes
+ .../minilm/qZVBFAtfp2A_score_history.npy           |  Bin 0 -> 448 bytes
+ .../minilm/rzIiQ4Vxlbk_score_history.npy           |  Bin 0 -> 3392 bytes
+ .../minilm/sEiyR7-0FOA_score_history.npy           |  Bin 0 -> 2875952 bytes
+ .../minilm/sHUEJw1BsGQ_score_history.npy           |  Bin 0 -> 225728 bytes
+ .../minilm/sWfcgeDth_w_score_history.npy           |  Bin 0 -> 272 bytes
+ .../minilm/shGkzHpzwAQ_score_history.npy           |  Bin 0 -> 480 bytes
+ .../minilm/u-vYvqxHejY_score_history.npy           |  Bin 0 -> 256 bytes
+ .../minilm/vE0faFD1F_g_score_history.npy           |  Bin 0 -> 2816 bytes
+ .../minilm/vEy6tcU6eLU_score_history.npy           |  Bin 0 -> 1159328 bytes
+ .../minilm/vJ9hYCUDHTo_score_history.npy           |  Bin 0 -> 310368 bytes
+ .../minilm/wSHPuI7wWIg_score_history.npy           |  Bin 0 -> 1760096 bytes
+ .../minilm/x4UBaEojM6U_score_history.npy           |  Bin 0 -> 938064 bytes
+ .../minilm/x4dFLY_-vKs_score_history.npy           |  Bin 0 -> 71936 bytes
+ .../minilm/yXXhrMqfMlk_score_history.npy           |  Bin 0 -> 10272 bytes
+ .../minilm/ydm72ftJStQ_score_history.npy           |  Bin 0 -> 79904 bytes
+ .../minilm/ysRFFN5nzqE_score_history.npy           |  Bin 0 -> 2178416 bytes
+ .../minilm/ze66pbJYr18_score_history.npy           |  Bin 0 -> 155328 bytes
+ .../exp1_encoder/results/eval_vs_mpnet.txt         |    6 +
+ nlp805/experiments/exp1_encoder/run.sbatch         |   65 +
+ nlp805/experiments/exp2_query/logs/commands.txt    |    4 +
+ nlp805/experiments/exp2_query/logs/mpnet_full.log  | 3613 ++++++++++++++++++++
+ nlp805/experiments/exp2_query/logs/mpnet_quote.log | 3607 +++++++++++++++++++
+ nlp805/experiments/exp2_query/logs/pip_freeze.txt  |  106 +
+ .../experiments/exp2_query/logs/slurm-336181.out   |   16 +
+ .../exp2_query/outputs/mpnet_full.config.json      |   42 +
+ .../experiments/exp2_query/outputs/mpnet_full.json |    1 +
+ .../exp2_query/outputs/mpnet_quote.config.json     |   42 +
+ .../exp2_query/outputs/mpnet_quote.json            |    1 +
+ .../mpnet_full/-An3wZyoYe0_score_history.npy       |  Bin 0 -> 1004096 bytes
+ .../mpnet_full/-PnG8Jp2gFw_score_history.npy       |  Bin 0 -> 464032 bytes
+ .../mpnet_full/-Xg2-SUq6wo_score_history.npy       |  Bin 0 -> 168608 bytes
+ .../mpnet_full/-iCLYpeghJs_score_history.npy       |  Bin 0 -> 2096 bytes
+ .../mpnet_full/0t1vtW0cT1E_score_history.npy       |  Bin 0 -> 913088 bytes
+ .../mpnet_full/2F7d7aUCmUU_score_history.npy       |  Bin 0 -> 384 bytes
+ .../mpnet_full/3t_Knk7FWT8_score_history.npy       |  Bin 0 -> 368 bytes
+ .../mpnet_full/3zv9RkDPX14_score_history.npy       |  Bin 0 -> 272 bytes
+ .../mpnet_full/58mCJVNMJvw_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/59iv6EYWNn8_score_history.npy       |  Bin 0 -> 272 bytes
+ .../mpnet_full/5Ugjg2ru5QQ_score_history.npy       |  Bin 0 -> 480 bytes
+ .../mpnet_full/5qMcDQd17Y4_score_history.npy       |  Bin 0 -> 56192 bytes
+ .../mpnet_full/5tN9hyfdkaE_score_history.npy       |  Bin 0 -> 1501040 bytes
+ .../6867204066108329221_score_history.npy          |  Bin 0 -> 576 bytes
+ .../6917750501975100677_score_history.npy          |  Bin 0 -> 608 bytes
+ .../6948509102305791238_score_history.npy          |  Bin 0 -> 2384 bytes
+ .../6985193727107009798_score_history.npy          |  Bin 0 -> 576 bytes
+ .../7074483613273754882_score_history.npy          |  Bin 0 -> 2384 bytes
+ .../7125042270381853995_score_history.npy          |  Bin 0 -> 384 bytes
+ .../7201571680890670342_score_history.npy          |  Bin 0 -> 2432 bytes
+ .../7203500499360877829_score_history.npy          |  Bin 0 -> 480 bytes
+ .../7206809277867052330_score_history.npy          |  Bin 0 -> 1760 bytes
+ .../7214559428471770374_score_history.npy          |  Bin 0 -> 1024 bytes
+ .../7234536361296940314_score_history.npy          |  Bin 0 -> 480 bytes
+ .../7253164232307379457_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../7254520467002854657_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../7254803496900267266_score_history.npy          |  Bin 0 -> 544 bytes
+ .../7267233980473314606_score_history.npy          |  Bin 0 -> 864 bytes
+ .../7277140989259599105_score_history.npy          |  Bin 0 -> 3904 bytes
+ .../7298820532466683142_score_history.npy          |  Bin 0 -> 384 bytes
+ .../7309241426028596523_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../7325156862486220038_score_history.npy          |  Bin 0 -> 608 bytes
+ .../7333990579963039009_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../mpnet_full/8_MG-E8QlBM_score_history.npy       |  Bin 0 -> 73024 bytes
+ .../mpnet_full/8urCPp_yhWs_score_history.npy       |  Bin 0 -> 272 bytes
+ .../mpnet_full/9PD3ciudpIE_score_history.npy       |  Bin 0 -> 224288 bytes
+ .../mpnet_full/9aWPbYosJUw_score_history.npy       |  Bin 0 -> 512 bytes
+ .../mpnet_full/AxciimuEZAc_score_history.npy       |  Bin 0 -> 65152 bytes
+ .../mpnet_full/FH1L2Dq6964_score_history.npy       |  Bin 0 -> 384 bytes
+ .../mpnet_full/FnKDgC9aNu0_score_history.npy       |  Bin 0 -> 3495872 bytes
+ .../mpnet_full/GAoK4XjssrM_score_history.npy       |  Bin 0 -> 272 bytes
+ .../mpnet_full/GKgl3aJr5Xw_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/GZFL58_pXPg_score_history.npy       |  Bin 0 -> 384 bytes
+ .../mpnet_full/H2ksp6sRR-k_score_history.npy       |  Bin 0 -> 1066592 bytes
+ .../mpnet_full/H7gnsO4UZmU_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/HRYlXC_ChzU_score_history.npy       |  Bin 0 -> 928 bytes
+ .../mpnet_full/H_b5d-rLXJU_score_history.npy       |  Bin 0 -> 288 bytes
+ .../mpnet_full/I-yg_3yx6iA_score_history.npy       |  Bin 0 -> 1213760 bytes
+ .../mpnet_full/IGmuaY1jB1w_score_history.npy       |  Bin 0 -> 1791344 bytes
+ .../mpnet_full/IN0osLg-Mn8_score_history.npy       |  Bin 0 -> 224768 bytes
+ .../mpnet_full/IuVyCbtGBFQ_score_history.npy       |  Bin 0 -> 576 bytes
+ .../mpnet_full/J1IwKg2ufk8_score_history.npy       |  Bin 0 -> 1210736 bytes
+ .../mpnet_full/JASFwBtUK40_score_history.npy       |  Bin 0 -> 6240 bytes
+ .../mpnet_full/JLnsWrzV_j4_score_history.npy       |  Bin 0 -> 349408 bytes
+ .../mpnet_full/JhlzvoqKOc8_score_history.npy       |  Bin 0 -> 350592 bytes
+ .../mpnet_full/JpjytHmGHZ4_score_history.npy       |  Bin 0 -> 3776 bytes
+ .../mpnet_full/KlZpZVphLrc_score_history.npy       |  Bin 0 -> 120160 bytes
+ .../mpnet_full/LVFvRNRTEd4_score_history.npy       |  Bin 0 -> 1190576 bytes
+ .../mpnet_full/LfUsGv-ESbc_score_history.npy       |  Bin 0 -> 2025200 bytes
+ .../mpnet_full/LlqsCCa6y58_score_history.npy       |  Bin 0 -> 1824608 bytes
+ .../mpnet_full/M5Umm-ltnao_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/MJYBHfYF8LI_score_history.npy       |  Bin 0 -> 2803376 bytes
+ .../mpnet_full/N2mrK33gCYE_score_history.npy       |  Bin 0 -> 576 bytes
+ .../mpnet_full/NMHmqgO04rU_score_history.npy       |  Bin 0 -> 1205696 bytes
+ .../mpnet_full/NS2V_OHYkvA_score_history.npy       |  Bin 0 -> 272 bytes
+ .../mpnet_full/OLO19ZtdRwQ_score_history.npy       |  Bin 0 -> 560 bytes
+ .../mpnet_full/RTUFPjliMCU_score_history.npy       |  Bin 0 -> 2109872 bytes
+ .../mpnet_full/SAkgZJllNzw_score_history.npy       |  Bin 0 -> 2336 bytes
+ .../mpnet_full/T57jVsvVVR0_score_history.npy       |  Bin 0 -> 71664 bytes
+ .../mpnet_full/TlaX2iIYZD4_score_history.npy       |  Bin 0 -> 2494928 bytes
+ .../mpnet_full/UD5ifzOPzhc_score_history.npy       |  Bin 0 -> 324992 bytes
+ .../mpnet_full/VwZeSoYugZk_score_history.npy       |  Bin 0 -> 309808 bytes
+ .../mpnet_full/YebUIUOCo94_score_history.npy       |  Bin 0 -> 2580608 bytes
+ .../mpnet_full/ZRMbh0wSly0_score_history.npy       |  Bin 0 -> 1186544 bytes
+ .../mpnet_full/ZfapKqwklG4_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/_BDzMutoy6A_score_history.npy       |  Bin 0 -> 479872 bytes
+ .../mpnet_full/_EUDpS9UF9o_score_history.npy       |  Bin 0 -> 272 bytes
+ .../mpnet_full/_g3Y_mk64Wc_score_history.npy       |  Bin 0 -> 86368 bytes
+ .../mpnet_full/_uL3a3aMdMQ_score_history.npy       |  Bin 0 -> 2866880 bytes
+ .../mpnet_full/_zEM6Fc-7NI_score_history.npy       |  Bin 0 -> 82208 bytes
+ .../mpnet_full/anrKq6HgPvs_score_history.npy       |  Bin 0 -> 448 bytes
+ .../mpnet_full/bAGhXcYc0o4_score_history.npy       |  Bin 0 -> 1160336 bytes
+ .../mpnet_full/bgklOaBBmB8_score_history.npy       |  Bin 0 -> 512 bytes
+ .../mpnet_full/c6fuIEzOZ2E_score_history.npy       |  Bin 0 -> 215424 bytes
+ .../mpnet_full/cc0T2vtuJtc_score_history.npy       |  Bin 0 -> 15872 bytes
+ .../mpnet_full/cceTeD4JADU_score_history.npy       |  Bin 0 -> 288 bytes
+ .../mpnet_full/dE5iWeCVpGI_score_history.npy       |  Bin 0 -> 171520 bytes
+ .../mpnet_full/eE5Z7gDbgVA_score_history.npy       |  Bin 0 -> 1082720 bytes
+ .../mpnet_full/fryyNwUCPWA_score_history.npy       |  Bin 0 -> 972288 bytes
+ .../mpnet_full/fsz6bkkIHzQ_score_history.npy       |  Bin 0 -> 830048 bytes
+ .../mpnet_full/fvCrE5NCsts_score_history.npy       |  Bin 0 -> 261760 bytes
+ .../mpnet_full/g7zuBUMBr2E_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/gURB1JwPfJw_score_history.npy       |  Bin 0 -> 823664 bytes
+ .../mpnet_full/gyV6EqgiPNg_score_history.npy       |  Bin 0 -> 2336 bytes
+ .../mpnet_full/hXFfPjytMo0_score_history.npy       |  Bin 0 -> 448 bytes
+ .../mpnet_full/iHNjWhx3EaI_score_history.npy       |  Bin 0 -> 1760 bytes
+ .../mpnet_full/iHzypa15yRA_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/kWUmHAzCp7s_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/l3vxOGgAM2g_score_history.npy       |  Bin 0 -> 384 bytes
+ .../mpnet_full/lQODAJ_F5yE_score_history.npy       |  Bin 0 -> 70304 bytes
+ .../mpnet_full/lzuixOdhZow_score_history.npy       |  Bin 0 -> 992 bytes
+ .../mpnet_full/mHccnoh9f5w_score_history.npy       |  Bin 0 -> 384 bytes
+ .../mpnet_full/md3LVlEzFBU_score_history.npy       |  Bin 0 -> 89504 bytes
+ .../mpnet_full/mld0TnA2jEs_score_history.npy       |  Bin 0 -> 14752 bytes
+ .../mpnet_full/n24n_20Kwe4_score_history.npy       |  Bin 0 -> 123472 bytes
+ .../mpnet_full/nBWB-h68E4k_score_history.npy       |  Bin 0 -> 3904 bytes
+ .../mpnet_full/nvG2YMWiwqU_score_history.npy       |  Bin 0 -> 3904 bytes
+ .../mpnet_full/oddHY1vwcjo_score_history.npy       |  Bin 0 -> 544 bytes
+ .../mpnet_full/oiBhGhROP5o_score_history.npy       |  Bin 0 -> 608 bytes
+ .../mpnet_full/pZ-9hGQNHuA_score_history.npy       |  Bin 0 -> 512 bytes
+ .../mpnet_full/qZVBFAtfp2A_score_history.npy       |  Bin 0 -> 448 bytes
+ .../mpnet_full/rzIiQ4Vxlbk_score_history.npy       |  Bin 0 -> 3392 bytes
+ .../mpnet_full/sEiyR7-0FOA_score_history.npy       |  Bin 0 -> 2875952 bytes
+ .../mpnet_full/sHUEJw1BsGQ_score_history.npy       |  Bin 0 -> 225728 bytes
+ .../mpnet_full/sWfcgeDth_w_score_history.npy       |  Bin 0 -> 272 bytes
+ .../mpnet_full/shGkzHpzwAQ_score_history.npy       |  Bin 0 -> 480 bytes
+ .../mpnet_full/u-vYvqxHejY_score_history.npy       |  Bin 0 -> 256 bytes
+ .../mpnet_full/vE0faFD1F_g_score_history.npy       |  Bin 0 -> 2816 bytes
+ .../mpnet_full/vEy6tcU6eLU_score_history.npy       |  Bin 0 -> 1159328 bytes
+ .../mpnet_full/vJ9hYCUDHTo_score_history.npy       |  Bin 0 -> 310368 bytes
+ .../mpnet_full/wSHPuI7wWIg_score_history.npy       |  Bin 0 -> 1760096 bytes
+ .../mpnet_full/x4UBaEojM6U_score_history.npy       |  Bin 0 -> 938064 bytes
+ .../mpnet_full/x4dFLY_-vKs_score_history.npy       |  Bin 0 -> 71936 bytes
+ .../mpnet_full/yXXhrMqfMlk_score_history.npy       |  Bin 0 -> 10272 bytes
+ .../mpnet_full/ydm72ftJStQ_score_history.npy       |  Bin 0 -> 79904 bytes
+ .../mpnet_full/ysRFFN5nzqE_score_history.npy       |  Bin 0 -> 2178416 bytes
+ .../mpnet_full/ze66pbJYr18_score_history.npy       |  Bin 0 -> 155328 bytes
+ .../mpnet_quote/-An3wZyoYe0_score_history.npy      |  Bin 0 -> 1004096 bytes
+ .../mpnet_quote/-PnG8Jp2gFw_score_history.npy      |  Bin 0 -> 1538336 bytes
+ .../mpnet_quote/-Xg2-SUq6wo_score_history.npy      |  Bin 0 -> 168608 bytes
+ .../mpnet_quote/-iCLYpeghJs_score_history.npy      |  Bin 0 -> 2096 bytes
+ .../mpnet_quote/0t1vtW0cT1E_score_history.npy      |  Bin 0 -> 913088 bytes
+ .../mpnet_quote/2F7d7aUCmUU_score_history.npy      |  Bin 0 -> 384 bytes
+ .../mpnet_quote/3t_Knk7FWT8_score_history.npy      |  Bin 0 -> 368 bytes
+ .../mpnet_quote/3zv9RkDPX14_score_history.npy      |  Bin 0 -> 272 bytes
+ .../mpnet_quote/58mCJVNMJvw_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/59iv6EYWNn8_score_history.npy      |  Bin 0 -> 272 bytes
+ .../mpnet_quote/5Ugjg2ru5QQ_score_history.npy      |  Bin 0 -> 480 bytes
+ .../mpnet_quote/5qMcDQd17Y4_score_history.npy      |  Bin 0 -> 224384 bytes
+ .../mpnet_quote/5tN9hyfdkaE_score_history.npy      |  Bin 0 -> 1501040 bytes
+ .../6867204066108329221_score_history.npy          |  Bin 0 -> 576 bytes
+ .../6917750501975100677_score_history.npy          |  Bin 0 -> 608 bytes
+ .../6948509102305791238_score_history.npy          |  Bin 0 -> 2384 bytes
+ .../6985193727107009798_score_history.npy          |  Bin 0 -> 576 bytes
+ .../7074483613273754882_score_history.npy          |  Bin 0 -> 2384 bytes
+ .../7125042270381853995_score_history.npy          |  Bin 0 -> 384 bytes
+ .../7201571680890670342_score_history.npy          |  Bin 0 -> 2432 bytes
+ .../7203500499360877829_score_history.npy          |  Bin 0 -> 480 bytes
+ .../7206809277867052330_score_history.npy          |  Bin 0 -> 1760 bytes
+ .../7214559428471770374_score_history.npy          |  Bin 0 -> 1024 bytes
+ .../7234536361296940314_score_history.npy          |  Bin 0 -> 480 bytes
+ .../7253164232307379457_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../7254520467002854657_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../7254803496900267266_score_history.npy          |  Bin 0 -> 544 bytes
+ .../7267233980473314606_score_history.npy          |  Bin 0 -> 864 bytes
+ .../7277140989259599105_score_history.npy          |  Bin 0 -> 3904 bytes
+ .../7298820532466683142_score_history.npy          |  Bin 0 -> 384 bytes
+ .../7309241426028596523_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../7325156862486220038_score_history.npy          |  Bin 0 -> 608 bytes
+ .../7333990579963039009_score_history.npy          |  Bin 0 -> 3968 bytes
+ .../mpnet_quote/8_MG-E8QlBM_score_history.npy      |  Bin 0 -> 73024 bytes
+ .../mpnet_quote/8urCPp_yhWs_score_history.npy      |  Bin 0 -> 272 bytes
+ .../mpnet_quote/9PD3ciudpIE_score_history.npy      |  Bin 0 -> 224288 bytes
+ .../mpnet_quote/9aWPbYosJUw_score_history.npy      |  Bin 0 -> 512 bytes
+ .../mpnet_quote/AxciimuEZAc_score_history.npy      |  Bin 0 -> 65152 bytes
+ .../mpnet_quote/FH1L2Dq6964_score_history.npy      |  Bin 0 -> 384 bytes
+ .../mpnet_quote/FnKDgC9aNu0_score_history.npy      |  Bin 0 -> 3495872 bytes
+ .../mpnet_quote/GAoK4XjssrM_score_history.npy      |  Bin 0 -> 272 bytes
+ .../mpnet_quote/GKgl3aJr5Xw_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/GZFL58_pXPg_score_history.npy      |  Bin 0 -> 384 bytes
+ .../mpnet_quote/H2ksp6sRR-k_score_history.npy      |  Bin 0 -> 1066592 bytes
+ .../mpnet_quote/H7gnsO4UZmU_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/HRYlXC_ChzU_score_history.npy      |  Bin 0 -> 928 bytes
+ .../mpnet_quote/H_b5d-rLXJU_score_history.npy      |  Bin 0 -> 288 bytes
+ .../mpnet_quote/I-yg_3yx6iA_score_history.npy      |  Bin 0 -> 1213760 bytes
+ .../mpnet_quote/IGmuaY1jB1w_score_history.npy      |  Bin 0 -> 1791344 bytes
+ .../mpnet_quote/IN0osLg-Mn8_score_history.npy      |  Bin 0 -> 224768 bytes
+ .../mpnet_quote/IuVyCbtGBFQ_score_history.npy      |  Bin 0 -> 576 bytes
+ .../mpnet_quote/J1IwKg2ufk8_score_history.npy      |  Bin 0 -> 1210736 bytes
+ .../mpnet_quote/JASFwBtUK40_score_history.npy      |  Bin 0 -> 6240 bytes
+ .../mpnet_quote/JLnsWrzV_j4_score_history.npy      |  Bin 0 -> 349408 bytes
+ .../mpnet_quote/JhlzvoqKOc8_score_history.npy      |  Bin 0 -> 350592 bytes
+ .../mpnet_quote/JpjytHmGHZ4_score_history.npy      |  Bin 0 -> 3776 bytes
+ .../mpnet_quote/KlZpZVphLrc_score_history.npy      |  Bin 0 -> 120160 bytes
+ .../mpnet_quote/LVFvRNRTEd4_score_history.npy      |  Bin 0 -> 1190576 bytes
+ .../mpnet_quote/LfUsGv-ESbc_score_history.npy      |  Bin 0 -> 2025200 bytes
+ .../mpnet_quote/LlqsCCa6y58_score_history.npy      |  Bin 0 -> 1824608 bytes
+ .../mpnet_quote/M5Umm-ltnao_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/MJYBHfYF8LI_score_history.npy      |  Bin 0 -> 2803376 bytes
+ .../mpnet_quote/N2mrK33gCYE_score_history.npy      |  Bin 0 -> 576 bytes
+ .../mpnet_quote/NMHmqgO04rU_score_history.npy      |  Bin 0 -> 1205696 bytes
+ .../mpnet_quote/NS2V_OHYkvA_score_history.npy      |  Bin 0 -> 272 bytes
+ .../mpnet_quote/OLO19ZtdRwQ_score_history.npy      |  Bin 0 -> 560 bytes
+ .../mpnet_quote/RTUFPjliMCU_score_history.npy      |  Bin 0 -> 2109872 bytes
+ .../mpnet_quote/SAkgZJllNzw_score_history.npy      |  Bin 0 -> 2336 bytes
+ .../mpnet_quote/T57jVsvVVR0_score_history.npy      |  Bin 0 -> 71664 bytes
+ .../mpnet_quote/TlaX2iIYZD4_score_history.npy      |  Bin 0 -> 2494928 bytes
+ .../mpnet_quote/UD5ifzOPzhc_score_history.npy      |  Bin 0 -> 324992 bytes
+ .../mpnet_quote/VwZeSoYugZk_score_history.npy      |  Bin 0 -> 309808 bytes
+ .../mpnet_quote/YebUIUOCo94_score_history.npy      |  Bin 0 -> 2580608 bytes
+ .../mpnet_quote/ZRMbh0wSly0_score_history.npy      |  Bin 0 -> 1186544 bytes
+ .../mpnet_quote/ZfapKqwklG4_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/_BDzMutoy6A_score_history.npy      |  Bin 0 -> 240000 bytes
+ .../mpnet_quote/_EUDpS9UF9o_score_history.npy      |  Bin 0 -> 272 bytes
+ .../mpnet_quote/_g3Y_mk64Wc_score_history.npy      |  Bin 0 -> 120864 bytes
+ .../mpnet_quote/_uL3a3aMdMQ_score_history.npy      |  Bin 0 -> 2866880 bytes
+ .../mpnet_quote/_zEM6Fc-7NI_score_history.npy      |  Bin 0 -> 82208 bytes
+ .../mpnet_quote/anrKq6HgPvs_score_history.npy      |  Bin 0 -> 448 bytes
+ .../mpnet_quote/bAGhXcYc0o4_score_history.npy      |  Bin 0 -> 1160336 bytes
+ .../mpnet_quote/bgklOaBBmB8_score_history.npy      |  Bin 0 -> 512 bytes
+ .../mpnet_quote/c6fuIEzOZ2E_score_history.npy      |  Bin 0 -> 215424 bytes
+ .../mpnet_quote/cc0T2vtuJtc_score_history.npy      |  Bin 0 -> 23744 bytes
+ .../mpnet_quote/cceTeD4JADU_score_history.npy      |  Bin 0 -> 288 bytes
+ .../mpnet_quote/dE5iWeCVpGI_score_history.npy      |  Bin 0 -> 171520 bytes
+ .../mpnet_quote/eE5Z7gDbgVA_score_history.npy      |  Bin 0 -> 1082720 bytes
+ .../mpnet_quote/fryyNwUCPWA_score_history.npy      |  Bin 0 -> 972288 bytes
+ .../mpnet_quote/fsz6bkkIHzQ_score_history.npy      |  Bin 0 -> 830048 bytes
+ .../mpnet_quote/fvCrE5NCsts_score_history.npy      |  Bin 0 -> 261760 bytes
+ .../mpnet_quote/g7zuBUMBr2E_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/gURB1JwPfJw_score_history.npy      |  Bin 0 -> 823664 bytes
+ .../mpnet_quote/gyV6EqgiPNg_score_history.npy      |  Bin 0 -> 2336 bytes
+ .../mpnet_quote/hXFfPjytMo0_score_history.npy      |  Bin 0 -> 448 bytes
+ .../mpnet_quote/iHNjWhx3EaI_score_history.npy      |  Bin 0 -> 1760 bytes
+ .../mpnet_quote/iHzypa15yRA_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/kWUmHAzCp7s_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/l3vxOGgAM2g_score_history.npy      |  Bin 0 -> 384 bytes
+ .../mpnet_quote/lQODAJ_F5yE_score_history.npy      |  Bin 0 -> 70304 bytes
+ .../mpnet_quote/lzuixOdhZow_score_history.npy      |  Bin 0 -> 992 bytes
+ .../mpnet_quote/mHccnoh9f5w_score_history.npy      |  Bin 0 -> 384 bytes
+ .../mpnet_quote/md3LVlEzFBU_score_history.npy      |  Bin 0 -> 89504 bytes
+ .../mpnet_quote/mld0TnA2jEs_score_history.npy      |  Bin 0 -> 14752 bytes
+ .../mpnet_quote/n24n_20Kwe4_score_history.npy      |  Bin 0 -> 360672 bytes
+ .../mpnet_quote/nBWB-h68E4k_score_history.npy      |  Bin 0 -> 3904 bytes
+ .../mpnet_quote/nvG2YMWiwqU_score_history.npy      |  Bin 0 -> 3904 bytes
+ .../mpnet_quote/oddHY1vwcjo_score_history.npy      |  Bin 0 -> 544 bytes
+ .../mpnet_quote/oiBhGhROP5o_score_history.npy      |  Bin 0 -> 608 bytes
+ .../mpnet_quote/pZ-9hGQNHuA_score_history.npy      |  Bin 0 -> 512 bytes
+ .../mpnet_quote/qZVBFAtfp2A_score_history.npy      |  Bin 0 -> 448 bytes
+ .../mpnet_quote/rzIiQ4Vxlbk_score_history.npy      |  Bin 0 -> 3392 bytes
+ .../mpnet_quote/sEiyR7-0FOA_score_history.npy      |  Bin 0 -> 2875952 bytes
+ .../mpnet_quote/sHUEJw1BsGQ_score_history.npy      |  Bin 0 -> 225728 bytes
+ .../mpnet_quote/sWfcgeDth_w_score_history.npy      |  Bin 0 -> 272 bytes
+ .../mpnet_quote/shGkzHpzwAQ_score_history.npy      |  Bin 0 -> 480 bytes
+ .../mpnet_quote/u-vYvqxHejY_score_history.npy      |  Bin 0 -> 256 bytes
+ .../mpnet_quote/vE0faFD1F_g_score_history.npy      |  Bin 0 -> 2816 bytes
+ .../mpnet_quote/vEy6tcU6eLU_score_history.npy      |  Bin 0 -> 1159328 bytes
+ .../mpnet_quote/vJ9hYCUDHTo_score_history.npy      |  Bin 0 -> 310368 bytes
+ .../mpnet_quote/wSHPuI7wWIg_score_history.npy      |  Bin 0 -> 1760096 bytes
+ .../mpnet_quote/x4UBaEojM6U_score_history.npy      |  Bin 0 -> 938064 bytes
+ .../mpnet_quote/x4dFLY_-vKs_score_history.npy      |  Bin 0 -> 71936 bytes
+ .../mpnet_quote/yXXhrMqfMlk_score_history.npy      |  Bin 0 -> 10272 bytes
+ .../mpnet_quote/ydm72ftJStQ_score_history.npy      |  Bin 0 -> 79904 bytes
+ .../mpnet_quote/ysRFFN5nzqE_score_history.npy      |  Bin 0 -> 2178416 bytes
+ .../mpnet_quote/ze66pbJYr18_score_history.npy      |  Bin 0 -> 155328 bytes
+ .../exp2_query/results/eval_quote_vs_full.txt      |    4 +
+ nlp805/experiments/exp2_query/run.sbatch           |   67 +
+ 660 files changed, 11100 insertions(+)
+
+commit ac9fff088a9bb35f381665692503fa52ba73efcf
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 18:41:49 +0400
+
+    standard
+
+ nlp805/data.py | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+commit 11b9b4c5ebb155f1aa5958a6063c4d523cbb0303
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 11:09:29 +0400
+
+    v3
+
+ nlp805/run_fused_search.py | 124 ++++++++++++++++++++++++++++++++++++++-------
+ 1 file changed, 105 insertions(+), 19 deletions(-)
+
+commit 1e5719409f0cf72b376be78b7a99ec25cd415489
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 10:54:58 +0400
+
+    Add quoted-subtitle query and subtitle offset correction switches
+
+ nlp805/run_fused_search.py | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+commit 27321f36e41548eac1d90a47aca05203c0cd671e
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 10:51:59 +0400
+
+    scorers
+
+ nlp805/retrievers.py | 88 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 88 insertions(+)
+
+commit c57b64defe698fcd6d789d4c735bd75d05666d48
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 22:39:41 +0400
+
+    v2
+
+ nlp805/run_fused_search.py | 44 +++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 33 insertions(+), 11 deletions(-)
+
+commit 90e6767f0f851e42d4745b93e6ef5f5ff3226e3d
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 02:22:43 +0800
+
+    Delete Keyframe_Matching.py
+
+ Keyframe_Matching.py | 309 ---------------------------------------------------
+ 1 file changed, 309 deletions(-)
+
+commit 91991f44645e33bb33d5814d2f4f8845533ce6e8
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 22:21:57 +0400
+
+    reproduced file object grounding
+
+ .../obj_PTonly_LongVideoBench_gpt4_cot_vid1.json   | 8544 ++++++++++++++++++++
+ 1 file changed, 8544 insertions(+)
+
+commit cea696d5e4752f45363fb5d7da142225121c7b1b
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 22:18:55 +0400
+
+    reproduced file
+
+ reproduced/run_multimodal_search.py | 713 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 713 insertions(+)
+
+commit cf231c8ff4bb0fb6cdf01bdc68c43886f5d6c965
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 22:18:10 +0400
+
+    origin
+
+ reproduced/Keyframe_Matching.py | 309 ++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 309 insertions(+)
+
+commit fd6957180d67e6900b6543ff1bcad7c291534a51
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 22:02:32 +0400
+
+    Re-run original VSI keyframe search on the T2A/T2E/T2O subset
+
+ nlp805/run_fused_search.py | 117 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 117 insertions(+)
+
+commit 4b77ca5a002dcd1bab325f23f4877cade941eb58
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 01:16:44 +0800
+
+    Delete reproduced/VSLS_PTonly_LongVideoBench_gpt4_cot_vid1.json
+
+ .../VSLS_PTonly_LongVideoBench_gpt4_cot_vid1.json  | 193370 ------------------
+ 1 file changed, 193370 deletions(-)
+
+commit 1e9b8f4758ad7098c53b7df187d5f2ad25570ff6
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 01:16:19 +0800
+
+    Fix text in README for clarity and formatting
+    
+    Corrected phrasing in the 'Why' section and removed unnecessary characters from the README.
+
+ README.md | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit 21e501fa6437e5f52ac480331653848835528a2a
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 01:13:36 +0800
+
+    Update README with new features and sections
+
+ README.md | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+commit 53f7ac42ddf6f83d6c3fcc8da6361e5b23acc06d
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 01:12:55 +0800
+
+    Revise reproduction steps in README
+    
+    Updated reproduction steps in README to consolidate instructions.
+
+ README.md | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+commit b384c008f022a9443e3492c1a3a3a0dcfff09665
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-23 01:08:58 +0800
+
+    Update to-do list in README.md
+    
+    Removed completed tasks from the to-do list in README.
+
+ README.md | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+
+commit 1f9e1d27db072bf9da9b0ca673d2e820a77c72a4
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 21:05:44 +0400
+
+    Add LongVideoBench T2A/T2E/T2O loader with 24 fps GT and subtitle offset
+
+ nlp805/data.py | 98 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 98 insertions(+)
+
+commit 8062e9e26436b263a9fb6db4f73e5e78051e90f5
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 16:16:45 +0400
+
+    Delete reproduced/obj_PTonly_LongVideoBench_gpt4_cot_vid1.json
+
+ .../obj_PTonly_LongVideoBench_gpt4_cot_vid1.json   | 8544 --------------------
+ 1 file changed, 8544 deletions(-)
+
+commit 3dca498554ddfea52fc631264b84774bc433ab17
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 16:10:03 +0400
+
+    Add reproduced LongVideoBench PTonly keyframe search objects
+
+ .../obj_PTonly_LongVideoBench_gpt4_cot_vid1.json   | 8544 ++++++++++++++++++++
+ 1 file changed, 8544 insertions(+)
+
+commit cab6a930516fe4c0c11b2b4e5951023ebfc00ac0
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 12:06:16 +0400
+
+    Update README.md
+
+commit 8a91f012ab0dbdadaea28bef272ac66d987a0259
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:55:52 +0400
+
+    Add Logic-in-Frames repository to reproduction steps
+    
+    Updated instructions to include Logic-in-Frames repository.
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 05a388c13d6e77b6b1378d2cc2c61448ff6bd429
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:48:18 +0400
+
+    Delete detector.py
+
+ detector.py | 45 ---------------------------------------------
+ 1 file changed, 45 deletions(-)
+
+commit 969db884e7c4150b946f065eb6afab66a132b504
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:47:30 +0400
+
+    Update accuracy definitions in README.md
+    
+    Clarify definitions for video-level and frame-level accuracy in README.
+
+ README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 12f09e4fa8b7b35f996c0cc592889e720c80b311
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:46:00 +0400
+
+    Update README with accuracy metrics table
+    
+    Added accuracy metrics for different methods and modalities.
+
+ README.md | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit 7eb2aba62278a4ae7fa2b98ff89b8081933d48c2
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:45:31 +0400
+
+    Update README to remove Document Description section
+    
+    Removed the Document Description section and its link to the Reproducibility Results Document.
+
+ README.md | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit a23e5b1ee9f9822700071ac094b8561f4a18a0ab
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:44:22 +0400
+
+    Update README.md
+
+ README.md | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+commit 0720f6b63a2259078f0058d7a8be7a2f8581a930
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:39:48 +0400
+
+    Add reproduced LongVideoBench PTonly keyframe search results
+
+ .../Tstar_PTonly_LongVideoBench_gpt4_cot_vid1.json | 193406 ++++++++++++++++++
+ .../VSI_PTonly_LongVideoBench_gpt4_cot_vid1.json   | 192176 +++++++++++++++++
+ .../VSLS_PTonly_LongVideoBench_gpt4_cot_vid1.json  | 193370 +++++++++++++++++
+ 3 files changed, 578952 insertions(+)
+
+commit cb8999e98ea147a0630a4fb8c49a9bc4f1a40dc6
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:31:50 +0400
+
+    Format reproduction steps in README
+    
+    Added formatting to steps in the reproduction process.
+
+ README.md | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 67ac545da9b794d72481c846c7c8f951722159a8
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:17:15 +0400
+
+    Update section headings and improve formatting in README
+
+ README.md | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit e4315d0300b766ce026b5e4e7e895834bcae4f8c
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-22 11:11:14 +0400
+
+    Delete vsi.py
+
+ vsi.py | 266 -----------------------------------------------------------------
+ 1 file changed, 266 deletions(-)
+
+commit d94afc0a5675780fdb127cf009dea49b31b7c649
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-14 14:17:18 +0800
+
+    Update README with reproducibility results link
+    
+    Added link to reproducibility results document and instructions for obtaining experimental results.
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit e7e8035571bdd0bf1806c49375a6db38cbd48c23
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-14 10:09:23 +0400
+
+    test file
+
+ Keyframe_Matching.py | 309 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 309 insertions(+)
+
+commit bb8998d7169053411fe57c7c596ad280c7f2ad9b
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 19:10:07 +0800
+
+    Add Mid-Term Report link to README
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 31c6a30eeebf76ae7c65804f713f9616ee244bcc
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 13:45:10 +0400
+
+    result
+
+ ANERCorp_CamelLab_test.pred.txt | 25932 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 25932 insertions(+)
+
+commit 089b2ae67a55b97d5e84f8b65bf0061409af44c7
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 13:44:47 +0400
+
+    Final
+
+ jupyternotebook.ipynb | 63 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 63 insertions(+)
+
+commit cc3e6dcfcce709fc1f75085e4b6de7bd68b691a1
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 13:41:31 +0400
+
+    Train
+
+ jupyternotebook.ipynb | 76 ++++++++++++++++++++++++---------------------------
+ 1 file changed, 35 insertions(+), 41 deletions(-)
+
+commit cfc38fe74950b9ba04f880f3001905fc79b38534
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 13:35:33 +0400
+
+    Add Feature
+
+ jupyternotebook.ipynb | 60 ++++++++++++++++++++++++++-------------------------
+ 1 file changed, 31 insertions(+), 29 deletions(-)
+
+commit 6678bb8b3650ab2959b4032fb54c4392da561d7c
+Author: Jacksonha7 <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 13:11:46 +0400
+
+    Try CAMeL Tools
+
+ jupyternotebook.ipynb | 159 ++++++++++++++++++++++++++++++++++++--------------
+ 1 file changed, 116 insertions(+), 43 deletions(-)
+
+commit 73333ec169ef581b9853ca7e1ca623ae174d1c21
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 15:12:54 +0800
+
+    Add proposal link to README
+    
+    Added a link to the proposal in the Overleaf section.
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit f913f93dff34dd0d2cd48419622c3ab6728a9040
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 14:46:30 +0800
+
+    Update README.md
+
+ README.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit b13e2c951b9abab9e0ccfaf30ba1f62c270934c3
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 14:36:09 +0800
+
+    Add files via upload
+
+ jupyternotebook.ipynb | 331 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 331 insertions(+)
+
+commit c6c4205caac73ac0650c11c6160034d5be7c8d7c
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 04:43:48 +0800
+
+    Add problem statement to README
+    
+    Added a section outlining the problems with current text-related keyframe search methods and their limitations.
+
+ README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 254934fabd0ca9013ec6a9dfac25bb0c9f048b84
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 04:39:49 +0800
+
+    Mark all to-do items as completed in README
+    
+    Updated the to-do list to mark all tasks as completed.
+
+ README.md | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+commit d8e2af4a770ec1beb475eddd98bc44af3b5c5568
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 04:36:49 +0800
+
+    Revise README with project details and to-do list
+    
+    Updated project title and added sections on motivation, reproduced repositories, and to-do list.
+
+ README.md | 22 ++++++++++++++++++++--
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+
+commit c9661a5649dfcd73249617430367ea875ddf8d13
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-10-13 04:20:21 +0800
+
+    Add files via upload
+
+ detector.py |  45 ++++++++++
+ vsi.py      | 266 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 311 insertions(+)
+
+commit c7f079d2ed50c85a98d4028fc37c84051e0792dc
+Author: Jackson Ha <jhe307@connect.hkust-gz.edu.cn>
+Date:   2026-08-27 15:14:03 +0800
+
+    Initial commit
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
