@@ -1,4 +1,5 @@
 # Timeline for github and overleaf
+For specific details, please refer to commit_history.txt and commit_history_detail.txt in the same folder.
 ## github
 - 8.27 Create a GitHub repository
 - 10.13-10.15 Started organizing the GitHub repository, updated the Overleaf link, improved the README, uploaded the key code used for the replication, and also uploaded the code related to Assignment 1.
