@@ -10,7 +10,7 @@ Since the implementation in my previous code repository was integrated, meaning 
 
 I divided the code into three parts: object_grounding, frame_searching, and QA. Our main focus is on the frame_searching part, which is about how to make it achieve better frame searching performance. Therefore, there was no part related to QA in the replication process.
 
-- object_grounding: I locally deployed the qwen3vl8b model for extracting objects from questions. The code is qwen_grounding.py, and the logs are saved in the same folder. The output result is qwen3vl8b.json.
+- object_grounding: I locally deployed the qwen3vl8b model for extracting objects from questions. The code is qwen_grounding.py. The output result is qwen3vl8b.json.
 - keyframe_searching: When reproducing, I did not make extensive modifications to this file. I only made adjustments to adapt to the server side. The output result is 
 R1_Tstar_PTonly_LongVideoBench_gpt4_cot_vid1.json R1_VSI_PTonly_LongVideoBench_gpt4_cot_vid1.json
 
