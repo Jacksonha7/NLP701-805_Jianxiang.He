@@ -33,7 +33,7 @@ Attached materials
 - Account of the work completed during this course, separated from my previous publications: [work](https://github.com/Jacksonha7/NLP701-805_Jianxiang.He/blob/main/account/work.md)
 - Experimental commands, configurations, logs, outputs, and separately reported results: [github](https://github.com/Jacksonha7/NLP701-805_Jianxiang.He)
 - GitHub commit history: [history](https://github.com/Jacksonha7/NLP701-805_Jianxiang.He/blob/main/account/commit_history_detail.txt)
-- Overleaf version history: [https://www.overleaf.com/read/spfjgfpsbsdr#e336e6](https://www.overleaf.com/3693258572dwjbngzzpzyx#c552c4)
+- Overleaf version history: [Edit](https://www.overleaf.com/3693258572dwjbngzzpzyx#c552c4)
 - AI tools used explain: [Explain](https://github.com/Jacksonha7/NLP701-805_Jianxiang.He/blob/main/account/explain.md)
 
 Once again, I am sorry for these problems. I understand the importance of the requirements now, and I will make sure the final submission clearly and accurately shows what I have done for this course.
