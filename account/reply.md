@@ -15,7 +15,7 @@ Since then, I have started implementing the extensions.  After receiving your em
 3. Reproduction results
 
 I became clearly aware of this issue, and as a result, I accomplished two things: 
- - I consolidated the experimental results and logs that I had completed before the mid-pre stage into the same folder and uploaded them to the GitHub repository.
+ - I consolidated the experimental results that I had completed before the mid-pre stage into the same folder and uploaded them to the GitHub repository.
  - In order to preserve the complete operation log, I ran the reproduction process again and retained all the commands, logs, and output results, so that you can confirm that I did complete the reproduction task as I claimed. 
 
 Of course, I understand that replicating results cannot be regarded as a research contribution. Therefore, I will provide further detailed explanations in the attachment about what I have done for this course.
