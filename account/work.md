@@ -22,3 +22,4 @@ Since the reproducibility in the early stage did not retain specific log informa
 
 I have completed the code construction for the ablation of the encoder and conducted the experiments. The code for the experiments is placed in the "nlp805" folder, and the detailed experimental records are located in "nlp805/experiment". Meanwhile, the specific details of the experiment, the data and the conclusions have been updated in the latest midterm report. 
 
+For Assignment 1 and the implementation of new features, I followed the course requirements and pushed incremental code optimizations to the GitHub repository step by step. I hope this record helps ease your concerns.
