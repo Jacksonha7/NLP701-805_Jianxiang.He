@@ -65,8 +65,35 @@ class SubtitleVariantFramework(MultimodalTStarFramework):
         if self.args.dump_text:
             self.text_debug = self._make_text_debug(subs, boosted, frame_scores)
         return frame_scores
-
-
+    def _make_text_debug(self, subs, boosted, frame_scores, topk=5)
+        sims = np.asarray(sims, dtype=float)
+        boosted = np.asarray(boosted, dtype=float)
+        def dist(s, g):
+            return 0.0 if s.start <= g <= s.end else min(abs(s.start - g), abs(s.end - g))
+        gt_lines = sorted({min(range(len(subs)), key=lambda j: dist(subs[j], g))
+                           for g in self.q.gt_secs})
+        order = np.argsort(-sims, kind="stable")
+        rank = np.empty(len(sims), dtype=int)
+        rank[order] = np.arange(1, len(sims) + 1)
+        return {
+            "query": query,
+            "n_lines": len(subs),
+            "gt_secs": self.q.gt_secs,
+            "gt_lines": gt_lines,
+            "gt_best_rank": int(rank[gt_lines].min()),
+            # 分数尺度：mpnet 和 bge 的余弦分布不一样，theta=0.5 的软阈值对两者影响不同
+            "sim_stats": {"max": float(sims.max()), "mean": float(sims.mean()),
+                          "std": float(sims.std()),
+                          "frac_above_theta": float((sims > self.args.theta).mean())},
+            "top": [{"idx": int(j), "start": subs[j].start, "end": subs[j].end,
+                     "text": subs[j].text, "sim": float(sims[j]),
+                     "boosted": float(boosted[j]), "is_gt": int(j) in gt_lines}
+                    for j in order[:topk]],
+            "gt": [{"idx": j, "start": subs[j].start, "text": subs[j].text,
+                    "sim": float(sims[j]), "rank": int(rank[j])} for j in gt_lines],
+            "sims": sims.round(4).tolist(),
+            "frame_peak_sec": float(np.argmax(frame_scores) / self.fps),
+        }
 def adaptive_grid(duration: float, rows: int, cols: int):
     n = int(duration)
     if n >= rows * cols:
