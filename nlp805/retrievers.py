@@ -73,13 +73,11 @@ class BM25Scorer:
 
 
 def to_unit_range(scores: np.ndarray) -> np.ndarray:
-    """Divide unbounded scores (BM25) by their per-video maximum."""
     m = scores.max() if len(scores) else 0.0
     return scores / m if m > 0 else np.zeros_like(scores)
 
 
 def rrf(score_lists: List[np.ndarray], k: int = 60) -> np.ndarray:
-    """Reciprocal rank fusion (Cormack et al., 2009) over line rankings."""
     out = np.zeros(len(score_lists[0]))
     for s in score_lists:
         ranks = np.empty(len(s))

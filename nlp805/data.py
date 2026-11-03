@@ -55,7 +55,6 @@ def _to_seconds(v) -> float:
 
 
 def load_subtitles(path: str) -> List[Subtitle]:
-    """Both LongVideoBench formats: {start,end,line} and {timestamp,text}."""
     with open(path, encoding="utf-8") as f:
         items = json.load(f)
     subs = []
