@@ -16,8 +16,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.dirname(HERE))
 
-from data import DATA_ROOT, load_questions  # noqa: E402
-from retrievers import BM25Scorer, DenseScorer, to_unit_range, vsi_filter  # noqa: E402
+from data import DATA_ROOT, load_questions, TOLERANCE_S
+from retrievers import BM25Scorer, DenseScorer, to_unit_range, vsi_filter  
 from VSI_keyframe_search import (  # noqa: E402
     MultimodalTStarFramework, ScoreFusionManager, SubtitleProcessor,
     TextSimilarityCalculator, VideoSearchConfig)
@@ -32,8 +32,6 @@ DENSE_MODELS = {
 
 
 class SubtitleVariantFramework(MultimodalTStarFramework):
-    """VSI framework whose subtitle line scores come from a pluggable scorer."""
-
     def __init__(self, config, yolo_scorer, text_calculator, question, args, scorer):
         # Skip the parent constructor: it reloads the sentence encoder per video.
         self.config = config
@@ -48,6 +46,7 @@ class SubtitleVariantFramework(MultimodalTStarFramework):
         self.q, self.args, self.scorer = question, args, scorer
 
     def _compute_text_similarity_scores(self) -> np.ndarray:
+        self.text_debug = None
         subs = self.q.subtitles(fix_offset=self.args.fix_offset)
         if self.scorer is None or not subs:
             return np.zeros(self.total_frame_num)
@@ -61,12 +60,14 @@ class SubtitleVariantFramework(MultimodalTStarFramework):
             sims = self.scorer.score(query, lines)
         boosted = self.text_calculator._apply_soft_threshold(np.asarray(sims, dtype=float),
                                                              threshold=self.args.theta)
-        return self.text_calculator._convert_to_frame_scores(
+        frame_scores = self.text_calculator._convert_to_frame_scores(
             [(s.start, s.end) for s in subs], boosted, self.total_frame_num, self.fps)
+        if self.args.dump_text:
+            self.text_debug = self._make_text_debug(subs, boosted, frame_scores)
+        return frame_scores
 
 
 def adaptive_grid(duration: float, rows: int, cols: int):
-    """Largest square grid a clip sampled at 1 fps can fill, capped at rows x cols."""
     n = int(duration)
     if n >= rows * cols:
         return rows, cols
@@ -75,10 +76,6 @@ def adaptive_grid(duration: float, rows: int, cols: int):
 
 
 def load_grounding(primary: str, fallbacks):
-    """GPT-4o grounding per (video_id, question). The released runs overwrite
-    `grounding_objects` with [] when a search fails, so missing entries are
-    filled from other released runs, in the order given. Returns
-    {key: (grounding, source file name)}."""
     out = {}
     for path in [primary, *fallbacks]:
         if not os.path.exists(path):
@@ -93,7 +90,6 @@ def load_grounding(primary: str, fallbacks):
 
 
 def write_run_config(args, path):
-    """Record the exact command, resolved arguments and environment of a run."""
     import hashlib
     import platform
     import subprocess
@@ -128,7 +124,6 @@ def main():
                     "MVSLS_0_w0.3_rel0.0_LongVideoBench_gpt4_cot_all.json")
     ap.add_argument("--grounding_fallback", nargs="*", default=[
         "/nfs-stor/jianxiang.he/nlp805/frame_search/KFS_UNI_0_F32_rel0.0_PTonly_LongVideoBench_gpt4_cot_vid1.json",
-        # Local Qwen3-VL-8B grounding (qwen_grounding.py) for questions no GPT-4o run covers.
         "/nfs-stor/jianxiang.he/nlp805/grounding/qwen3vl8b.json"])
     ap.add_argument("--config_path", default=os.path.join(
         os.path.dirname(HERE), "third_party/YOLO-World/configs/pretrain/"
@@ -191,7 +186,6 @@ def main():
         rows, cols = adaptive_grid(q.duration, 4, 4) if args.grid_fix else (4, 4)
         video_path = os.path.join(DATA_ROOT, "videos", f"{q.video_id}.mp4")
         if not os.path.exists(video_path):
-            # TikTok ids look like "@user-<digits>", but the file is stored as "<digits>.mp4".
             video_path = os.path.join(DATA_ROOT, "videos", f"{q.video_id.rsplit('-', 1)[-1]}.mp4")
         config = VideoSearchConfig(
             video_path=video_path,
