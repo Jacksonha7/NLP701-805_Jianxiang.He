@@ -33,7 +33,6 @@ DENSE_MODELS = {
 
 class SubtitleVariantFramework(MultimodalTStarFramework):
     def __init__(self, config, yolo_scorer, text_calculator, question, args, scorer):
-        # Skip the parent constructor: it reloads the sentence encoder per video.
         self.config = config
         self.grounder = None
         self.yolo_scorer = yolo_scorer
@@ -81,7 +80,6 @@ class SubtitleVariantFramework(MultimodalTStarFramework):
             "gt_secs": self.q.gt_secs,
             "gt_lines": gt_lines,
             "gt_best_rank": int(rank[gt_lines].min()),
-            # 分数尺度：mpnet 和 bge 的余弦分布不一样，theta=0.5 的软阈值对两者影响不同
             "sim_stats": {"max": float(sims.max()), "mean": float(sims.mean()),
                           "std": float(sims.std()),
                           "frac_above_theta": float((sims > self.args.theta).mean())},
@@ -129,7 +127,6 @@ def write_run_config(args, path):
         "text_encoder": (DENSE_MODELS[args.scorer][0] if args.scorer in DENSE_MODELS else args.scorer),
         "git_commit": subprocess.run(["git", "-C", repo, "rev-parse", "HEAD"],
                                      capture_output=True, text=True).stdout.strip(),
-        # nlp805/ is not tracked by git, so pin the code version by file hash.
         "source_sha256": {p: hashlib.sha256(open(os.path.join(repo, p), "rb").read()).hexdigest()[:16]
                           for p in sources},
         "host": platform.node(),
@@ -155,6 +152,7 @@ def main():
     ap.add_argument("--config_path", default=os.path.join(
         os.path.dirname(HERE), "third_party/YOLO-World/configs/pretrain/"
         "yolo_world_v2_s_vlpan_bn_2e-3_100e_4x8gpus_obj365v1_goldg_train_1280ft_lvis_minival.py"))
+    ap.add_argument("--dump_text", action="store_true")
     ap.add_argument("--checkpoint_path", default="/l/users/jianxiang.he/YOLO-World/weights/s_stage1-d1c1d7d8.pth")
     ap.add_argument("--scorer", default="mpnet", choices=["none", *DENSE_MODELS, "bm25"])
     ap.add_argument("--query", default="full", choices=["full", "quote"])
@@ -180,7 +178,6 @@ def main():
     write_run_config(args, os.path.join(args.out_dir, f"{args.name}.config.json"))
     done = {}
     if os.path.exists(out_path):
-        # Errored questions are retried on resume.
         done = {r["qid"]: r for r in json.load(open(out_path)) if "error" not in r}
 
     grounding = load_grounding(args.grounding_json, args.grounding_fallback)
@@ -226,11 +223,13 @@ def main():
         t0 = time.time()
         try:
             np.random.seed(args.seed + (zlib.crc32(q.qid.encode()) % 100003 if args.qid_seed else i))
+            if args.dump_text:
+                rec["text_debug"] = fw.text_debug
             fw = SubtitleVariantFramework(config, yolo, text_calc, q, args, scorer)
             res = fw.process_video(grounding[(q.video_id, q.question)][0])
             rec.update(keyframe_timestamps=[float(t) for t in res.keyframe_timestamps],
                        num_iterations=res.num_iterations)
-        except Exception as e:  # noqa: BLE001 -- recorded and counted as a miss
+        except Exception as e:
             rec.update(keyframe_timestamps=[], error=f"{type(e).__name__}: {e}",
                        traceback=traceback.format_exc(limit=3))
             log.error("%s failed: %s", q.qid, e)
