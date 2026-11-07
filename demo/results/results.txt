@@ -1,0 +1,54 @@
+
+===== case 1: LfUsGv-ESbc_0  (33 min video, 498 subtitle lines)
+Q: The screen displays a webpage. The webpage contains some code, a gray image at the top, three clickable icons in the left sidebar, and login and settings options on the right side. In the bottom right corner, a man with sunglasses and short hair, wearing black clothes, is explaining something. When he mentions 'there you go and nothing happens of,' what is the shape of the gray icon in the top-right corner of the screen?
+answer: Circle   at 490s
+
+[mpnet]  rank of gold line: 78   search result: miss
+   0.411   1882.9s    a clock then this rectangle on the right
+   0.389    941.7s    the image so we can use that to draw a
+   0.387    827.4s    boundaries or it could be X Y width
+   8 frames picked (s): [824, 907, 941, 948, 957, 965, 1668, 1881]
+   max diff vs saved scores: 5.0e-05
+
+[bge]  rank of gold line: 1   search result: HIT
+   0.593    490.0s  * there you go and nothing happens of
+   0.498   1108.4s    W dot text and let's just go with x and
+   0.484     90.6s    is an image so let's go find an image
+   8 frames picked (s): [292, 489, 490, 521, 684, 801, 1372, 1393]
+   max diff vs saved scores: 5.0e-05
+
+===== case 2: wSHPuI7wWIg_1  (29 min video, 286 subtitle lines)
+Q: A man wearing a black coat is sitting on a stool. The man is holding a black straw and a pink drink. Behind the man, there is a white stool and a screen. The screen displays an image of a large group of people gathered together. When the caption 'Can't complain' appears, what object is present in the scene?
+answer: A ring   at 135s
+
+[mpnet]  rank of gold line: 69   search result: miss
+   0.346    366.3s    obvious place to have a drink
+   0.268     72.1s    - What are they?
+   0.249   1444.3s    conveyor belt sushi,
+   8 frames picked (s): [72, 73, 366, 367, 368, 375, 1320, 1444]
+   max diff vs saved scores: 5.0e-05
+
+[bge]  rank of gold line: 2   search result: HIT
+   0.522    374.6s    and chilling with a drink in hand.
+   0.511    133.7s  * Can't complain.
+   0.484    398.5s    - Someone actually reads the menu
+   8 frames picked (s): [134, 367, 375, 376, 399, 433, 451, 1451]
+   max diff vs saved scores: 5.0e-05
+
+===== case 3: 0t1vtW0cT1E_0  (16 min video, 368 subtitle lines)
+Q: In a dark car, there is a screen above, and a clock in front displaying 0:17. A man wearing glasses sitting in the front right seat is looking at the mirror. When the subtitle 'you guys to charity what's your name' appears, what action is this man with glasses doing?
+answer: Pointing at the mirror with his index finger   at 410s
+
+[mpnet]  rank of gold line: 2   search result: miss
+   0.478    143.5s    selling sunglasses there was another guy
+   0.298    406.0s  * to sit in the front if I'm sitting down
+   0.287    411.1s  * you guys to charity what's your name
+   8 frames picked (s): [87, 96, 123, 143, 144, 879, 898, 918]
+   max diff vs saved scores: 5.0e-05
+
+[bge]  rank of gold line: 1   search result: HIT
+   0.581    411.1s  * you guys to charity what's your name
+   0.514    143.5s    selling sunglasses there was another guy
+   0.470    406.0s  * to sit in the front if I'm sitting down
+   8 frames picked (s): [143, 209, 410, 411, 550, 587, 842, 934]
+   max diff vs saved scores: 5.0e-05
