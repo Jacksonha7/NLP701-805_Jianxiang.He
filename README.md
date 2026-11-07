@@ -40,6 +40,10 @@ NLP701-805_Jianxiang.He/
 ```
 
 ## Demo
+A small demo of the main result of this project: with the same VSI keyframe search, switching the subtitle encoder from **mpnet** (all-mpnet-base-v2) to **BGE**(bge-base-en-v1.5) moves the correct subtitle line to the top of the ranking, and the search then finds the answer moment.
+
+It runs on 3 LongVideoBench questions where mpnet misses and BGE hits.
+
 ```bash
 pip install -r requirements.txt
 python demo.py
