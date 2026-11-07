@@ -39,6 +39,12 @@ NLP701-805_Jianxiang.He/
 └── README.md
 ```
 
+## Demo
+```bash
+pip install -r requirements.txt
+python demo.py
+```
+
 ## Why
 Visual-only keyframe searchers cannot handle text-related tasks. Although the VSI method that utilizes text information has achieved certain improvements in text-related tasks, it still has not solved all the problems.
 
